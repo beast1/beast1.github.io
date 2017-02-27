@@ -26,27 +26,94 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="wrapper">
+  <div class="about-me">
+    <div class="description">
+      <h2 class="g-title">Обо мне</h2>
+      <p>Прошел интенсивный онлайн курс «Базовый HTML и CSS», уверенно работаю над проектами с фиксированной разметкой и поддержкой всех актуальных браузеров.</p>
+    </div>
+    <div class="education">
+      <h2 class="g-title">Мои навыки</h2>
+      <div class="education-item">
+        <b class="education-title">Интенсивный курс «Базовый HTML и CSS»</b>
+        <span class="education-description">HTML Academy / 17 января – 22 февраля 2017</span>
+        <div class="education-certificate"></div>
+      </div>
+<!--
+      <div class="skill-item">
+        <span class="skill-var">HTML</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-var">CSS</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-var">JS</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+-->
+    </div>
+  </div>
+  <div class="price">
+    <div class="price-list">
+      <h2 class="g-title">Услуги</h2>
+    </div>
+    <form class="price-interactive" action="echo.htmlacademy.ru" method="post">
+      <h2 class="g-title">Оценить макет</h2>
+      <div class="fieldset">
+        <input type="text" name="ask-sender-mail" placeholder="Почта для ответа" required>
+        <input type="date" name="deadline" required>
+      </div>
+      <div class="fieldset fieldset-upload">
+        <button class="upload-files" type="button">Загрузить файл</button>
+        <span>Файл не загружен</span>
+      </div>
+      <small class="text-muted">Файл не должен привышать 10МБ</small>
+      <textarea name="ask-details" cols="30" rows="10" placeholder="Комментарий (не обязательно)"></textarea>
+      <small class="text-muted">Если файл слишком большой, вы можете оставить здесь ссылку на облако</small>
+      <div class="fieldset fieldset-send">
+        <button class="send-ask-btn" type="submit">Отправить</button>
+        <span class="send-ask-label">Отправить</span>
+      </div>
+    </form>
+  </div>
+  <div class="works">
+    <h2 class="g-title">Мои работы</h2>
+    <div class="works-list">
+      <a class="works-item"></a>
+      <a class="works-item"></a>
+      <a class="works-item"></a>
+    </div>
+  </div>
+  </main>
   <div class="contacts">
     <div class="wrapper">
       <div class="contacts-links">
-        <b class="contacts-title g-title">Свяжитесь со мной</b>
+        <h3 class="contacts-title">Все контакты</h3>
         <ul class="contacts-links-list">
           <li class="contacts-links-item">Скайп: <span class="value">аллалала</span></li>
           <li class="contacts-links-item">Телефон: <span class="value">трапапа</span></li>
           <li class="contacts-links-item">Почта: <span class="value">прум пум</span></li>
         </ul>
       </div>
-      <form class="contacts-massage" action="echo.htmlacademy.ru" method="post">
-        <input type="text">
-        <input type="text">
-        <textarea name="massage" cols="30" rows="10"></textarea>
-        <button type="submit">Отправить</button>
+      <form class="massage" action="echo.htmlacademy.ru" method="post">
+        <h3 class="massage-title">Отправить ворона</h3>
+<!--        <div class="inputs-container">-->
+          <input type="text" name="sender-name" required>
+          <input type="text" name="sender-mail" required>
+<!--        </div>-->
+        <textarea name="sender-massage" cols="30" rows="10" required></textarea>
+        <button class="send-massage-btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
-  </main>
-  
 </body>
 
 </html>
