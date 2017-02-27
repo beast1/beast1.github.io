@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Егор</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="page-header">
+    <section class="crossroads  slider">
+      <input class="g-visualy-hidden" id="crossroads-toggle-1" type="radio" name="crossroads-slider" checked>
+      <input class="g-visualy-hidden" id="crossroads-toggle-2" type="radio" name="crossroads-slider">
+      <input class="g-visualy-hidden" id="crossroads-toggle-3" type="radio" name="crossroads-slider">
+      <section class="crossroads__slider-controls  slider__controls">
+        <label class="crossroads__tuggle" for="crossroads-toggle-1">Кружок</label>
+        <label class="crossroads__tuggle" for="crossroads-toggle-2">Кружок</label>
+        <label class="crossroads__tuggle" for="crossroads-toggle-3">Кружок</label>
+      </section>
+      <section class="crossroads__wrapper crossroads__wrapper-1">
+        <b class="crossroads__title">Образование</b>
+        <a class="crossroads__btn" href="education">Перейти</a>
+      </section>
+      <section class="crossroads__wrapper crossroads__wrapper-2">
+        <b class="crossroads__title">Портфолио</b>
+        <a class="crossroads__btn" href="portfolio">Перейти</a>
+      </section>
+      <section class="crossroads__wrapper crossroads__wrapper-3">
+        <b class="crossroads__title">Связатся</b>
+        <a class="crossroads__btn" href="find-me">Перейти</a>
+      </section>
+    </section>
+  </header>
+  <main>
+    <section id="education" class="education">
+      <h2 class="education__title">Образование</h2>
+      <p class="education__description">ОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразование</p>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <h2 class="portfolio__title">Портфолио</h2>
+      <p class="portfolio__description">ПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолио</p>
+      <div class="portfolio__list">
+        <div class="portfolio__item"></div>
+        <div class="portfolio__item"></div>
+        <div class="portfolio__item"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div id="find-me" class="find-me">
+      <b class="find-me__title">Свяжитесь со мной</b>
+      <section class="contacts">
+        <p class="contacts__description">Доступные контакты</p>
+        <ul class="contacts__list">
+          <li class="contacts__item">Скайп:<span class="contacts__item-fill">fakesky.com</span></li>
+          <li class="contacts__item">Телефон:<span class="contacts__item-fill">fakephone.com</span></li>
+          <li class="contacts__item">Почта:<span class="contacts__item-fill">fakemail.com</span></li>
+        </ul>
+      </section>
+      <form class="email-me" action="echo.htmlacademy.ru" method="post">
+        <label for="sender-name"></label>
+        <input type="text" name="sender-name" placeholder="Ваше имя">
+        <label for="sender-email"></label>
+        <input type="text" name="sender-email" placeholder="Ваша почта">
+        <textarea name="sender-massege" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+      </form>
+    </div>
+  </footer>
+</body>
+</html>
