@@ -50,6 +50,7 @@
     </section>
   </main>
   <footer class="page-footer">
+    
     <div id="find-me" class="find-me">
       <b class="find-me__title">Свяжитесь со мной</b>
       <section class="contacts">
@@ -61,13 +62,25 @@
         </ul>
       </section>
       <form class="email-me" action="echo.htmlacademy.ru" method="post">
-        <label for="sender-name"></label>
+        <label for="sender-name">Ваше имя?</label>
         <input type="text" name="sender-name" placeholder="Ваше имя">
-        <label for="sender-email"></label>
+        <label for="sender-email">Ваша почта?</label>
         <input type="text" name="sender-email" placeholder="Ваша почта">
         <textarea name="sender-massege" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
       </form>
     </div>
+
+<!--
+    <form class="modal-feedback-form" action="#" method="post">
+      <input type="text" name="client" id="fb-name" placeholder="Как вас зовут?" required autofocus>
+      <label for="fb-name">Как вас зовут?</label>
+      <input type="text" name="email" id="fb-email" placeholder="Ваша почта для ответа?" required>
+      <label for="fb-email">Ваша почта для ответа?</label>
+      <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+      <button class="btn" type="submit" name="feedback-btn">Отправить</button>
+    </form>
+-->
   </footer>
 </body>
+
 </html>
