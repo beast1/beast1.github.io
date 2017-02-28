@@ -11,76 +11,178 @@
 
 <body>
   <header class="page-header">
-    <section class="crossroads  slider">
-      <input class="g-visualy-hidden" id="crossroads-toggle-1" type="radio" name="crossroads-slider" checked>
-      <input class="g-visualy-hidden" id="crossroads-toggle-2" type="radio" name="crossroads-slider">
-      <input class="g-visualy-hidden" id="crossroads-toggle-3" type="radio" name="crossroads-slider">
-      <section class="crossroads__slider-controls  slider__controls">
-        <label class="crossroads__tuggle" for="crossroads-toggle-1">Кружок</label>
-        <label class="crossroads__tuggle" for="crossroads-toggle-2">Кружок</label>
-        <label class="crossroads__tuggle" for="crossroads-toggle-3">Кружок</label>
-      </section>
-      <section class="crossroads__wrapper crossroads__wrapper-1">
-        <b class="crossroads__title">Образование</b>
-        <a class="crossroads__btn" href="education">Перейти</a>
-      </section>
-      <section class="crossroads__wrapper crossroads__wrapper-2">
-        <b class="crossroads__title">Портфолио</b>
-        <a class="crossroads__btn" href="portfolio">Перейти</a>
-      </section>
-      <section class="crossroads__wrapper crossroads__wrapper-3">
-        <b class="crossroads__title">Связатся</b>
-        <a class="crossroads__btn" href="find-me">Перейти</a>
-      </section>
-    </section>
+    <div class="wrapper">
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about-me">Обо мне</a></li>
+          <li class="nav-item"><a href="#price">Прайс</a></li>
+          <li class="nav-item"><a href="#works">Портфолио</a></li>
+          <li class="nav-item"><a href="#contacts">Связь</a></li>
+        </ul>
+      </nav>
+      <div class="short-contacts">
+        <a class="short-contacts-item vkontakte" href="#">Вконтакте</a>
+        <a class="short-contacts-item gmail" href="#">Почта гугл</a>
+        <a class="short-contacts-item skype" href="#">Скайп</a>
+<!--
+        <a class="short-contacts-item htmlacademy" href="#">Академия</a>
+        <a class="short-contacts-item fl" href="#">Гит Хаб</a>
+        <a class="short-contacts-item github" href="#">Гит Хаб</a>
+-->
+      </div>
+    </div>
   </header>
-  <main>
-    <section id="education" class="education">
-      <h2 class="education__title">Образование</h2>
-      <p class="education__description">ОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразованиеОбразование</p>
-    </section>
-    <section id="portfolio" class="portfolio">
-      <h2 class="portfolio__title">Портфолио</h2>
-      <p class="portfolio__description">ПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолиоПортфолио</p>
-      <div class="portfolio__list">
-        <div class="portfolio__item"></div>
-        <div class="portfolio__item"></div>
-        <div class="portfolio__item"></div>
+  <main class="wrapper">
+  <a name="about-me"></a>
+  <div class="about-me holder"  id="about-me">
+    <div class="description fill">
+      <h2 class="g-title">Обо мне</h2>
+      <p>Верстка макета с нуля, редизайн сайта, доработка чужой верстки, совместная работа через GitHub.</p>
+      <p>Уверенно работаю над проектами с фиксированной разметкой и поддержкой всех актуальных браузеров.</p>
+    </div>
+    <div class="education fill">
+      <h2 class="g-title">Мои навыки</h2>
+      <div class="education-item">
+        <b class="education-title">Интенсивный курс «Базовый HTML и CSS»</b>
+        <span class="education-description">HTML Academy / 17 января – 22 февраля 2017</span>
+        <div class="education-certificate">
+          <img src="img/preview-certificate-15(384x540).jpg" alt="Сертификат Интенсивный курс «Базовый HTML и CSS»" width="384" height="540px">
+          <div class="certificate-wrapper"><a class="g-btn--radian" href="#">PDF</a></div>
+        </div>
+      </div>
+<!--
+      <div class="skill-item">
+        <span class="skill-var">HTML</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-var">CSS</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <span class="skill-var">JS</span>
+        <div class="skill-skale">
+          <div class="skill-range"></div>
+        </div>
+      </div>
+-->
+    </div>
+  </div>
+  <div class="price holder" id="price">
+    <div class="price-list fill fill--black">
+      <h2 class="g-title">Услуги</h2>
+      <h3>Базовые</h3>
+      <ul class="price-types">
+        <lh class="price-types-title">Помимо базового функционала верстки вы получите:</lh>
+        <li class="price-types-item">Кроссбраузерность</li>
+        <li class="price-types-item">Критическую функциональность</li>
+        <li class="price-types-item">Оптимизированную скорость загрузки</li>
+<!--        <li class="price-types-item"></li>-->
+      </ul>
+      <h3>Дополнительные</h3>
+      <ul class="price-types">
+        <lh class="price-types-title">За отдельную плату вы получите:</lh>
+        <li class="price-types-item">Семантичность</li>
+        <li class="price-types-item">Адаптивность(mobile-first)</li>
+        <li class="price-types-item">Прогрессивное улучшение</li>
+        <li class="price-types-item">Пиксель-перфект</li>
+<!--        <li class="price-types-item"></li>-->
+<!--        <li class="price-types-item"></li>-->
+      </ul>
+      <h3>Тарификация</h3>
+      <table>
+<!--
+        <tr>
+          <th>Тарификация</th>
+        </tr>
+-->
+        <tr>
+          <td>Час работы</td>
+          <td>35 руб.</td>
+        </tr>
+        <tr>
+          <td>Месяц работы(160 ч.)</td>
+          <td>5000 руб.</td>
+        </tr>
+      </table>
+<!--      <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>-->
+      <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>
+    </div>
+    <form class="price-interactive fill" action="echo.htmlacademy.ru" method="post">
+      <h2 class="g-title">Оценить макет</h2>
+      <div class="fieldset">
+        <input type="text" name="ask-sender-mail" placeholder="Почта для ответа" required>
+        <input type="date" name="deadline" placeholder="Сроки:" required>
+      </div>
+      <div class="fieldset fieldset-upload">
+        <button class="upload-files" type="button">Загрузить файл</button>
+        <span>Файл не загружен</span>
+      </div>
+      <small class="text-muted">Файл не должен привышать 10МБ</small>
+      <textarea name="ask-details" cols="30" rows="10" placeholder="Комментарий (не обязательно)"></textarea>
+      <small class="text-muted">Если файл слишком большой, вы можете оставить здесь ссылку на облако</small>
+      <div class="fieldset fieldset-send">
+        <button class="send-ask-btn" type="submit">Отправить</button>
+        <span class="send-ask-label">Отправить</span>
+      </div>
+    </form>
+  </div>
+  <div class="works" id="works">
+    <h2 class="g-title">Мои работы</h2>
+    <section class="works-list">
+      <div class="works-item">
+        <img src="img/preview-portfolio-test-1.jpg" alt="test" width="300px" height="">
+        <div class="works-item-wrapper">
+          <a href="#" class="g-btn--radian">FULL</a>
+        </div>
+      </div>
+      <div class="works-item">
+        <img src="img/preview-portfolio-test-2.jpg" alt="test" width="300px" height="">
+        <div class="works-item-wrapper">
+          <a href="#" class="g-btn--radian">FULL</a>
+        </div>
+      </div>
+      <div class="works-item">
+<!--        <img src="" alt="test" width="300px" height="">-->
+        <div class="works-item-wrapper">
+          <a href="#" class="g-btn--radin g-btn--block">ЗАКАЗАТЬ</a>
+          <a href="#" class="g-btn--radin g-btn--block">СПРОСИТЬ</a>
+        </div>
       </div>
     </section>
+  </div>
   </main>
-  <footer class="page-footer">
-    
-    <div id="find-me" class="find-me">
-      <b class="find-me__title">Свяжитесь со мной</b>
-      <section class="contacts">
-        <p class="contacts__description">Доступные контакты</p>
-        <ul class="contacts__list">
-          <li class="contacts__item">Скайп:<span class="contacts__item-fill">fakesky.com</span></li>
-          <li class="contacts__item">Телефон:<span class="contacts__item-fill">fakephone.com</span></li>
-          <li class="contacts__item">Почта:<span class="contacts__item-fill">fakemail.com</span></li>
+  <div class="contacts" id="contacts">
+    <div class="wrapper">
+      <div class="contacts-links">
+        <h3 class="contacts-title">Все контакты</h3>
+        <ul class="contacts-links-list">
+          <li class="contacts-links-item">Скайп: <span class="value">beast_1337</span></li>
+          <li class="contacts-links-item">Телефон: <span class="value">+38(050)20-56-810</span></li>
+          <li class="contacts-links-item">Почта: <span class="value">beast.loby@gmail.com</span></li>
         </ul>
-      </section>
-      <form class="email-me" action="echo.htmlacademy.ru" method="post">
-        <label for="sender-name">Ваше имя?</label>
-        <input type="text" name="sender-name" placeholder="Ваше имя">
-        <label for="sender-email">Ваша почта?</label>
-        <input type="text" name="sender-email" placeholder="Ваша почта">
-        <textarea name="sender-massege" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+      </div>
+      <form class="massage" action="./post.php" method="post">
+        <h3 class="massage-title">Отправить ворона</h3>
+<!--        <div class="inputs-container">-->
+          <input id="question-name" type="text" name="question-name" placeholder="Ваше имя" required>
+          <label for="question-name">Ваше имя</label>
+          <input id="question-mail" type="text" name="question-mail" placeholder="Ваша почта" required>
+          <label for="question-mail">Ваша почта</label>
+<!--        </div>-->
+        <textarea id="question-massage" name="question-massage" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
+        <label for="question-massage">Ваше сообщение</label>
+        <button class="send-massage-btn" type="submit">Отправить</button>
       </form>
     </div>
-
-<!--
-    <form class="modal-feedback-form" action="#" method="post">
-      <input type="text" name="client" id="fb-name" placeholder="Как вас зовут?" required autofocus>
-      <label for="fb-name">Как вас зовут?</label>
-      <input type="text" name="email" id="fb-email" placeholder="Ваша почта для ответа?" required>
-      <label for="fb-email">Ваша почта для ответа?</label>
-      <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="btn" type="submit" name="feedback-btn">Отправить</button>
-    </form>
--->
-  </footer>
+  </div>
+  <script>
+//    window.scrollBy({ behavior: 'smooth' });
+  </script>
 </body>
 
 </html>
