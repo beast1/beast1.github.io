@@ -1,3 +1,5 @@
+<!--/*СИНХРОНИЗИРУЙ МЕНЯ*/-->
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -14,10 +16,10 @@
     <div class="wrapper">
       <nav class="main-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#about-me">Обо мне</a></li>
-          <li class="nav-item"><a href="#price">Прайс</a></li>
-          <li class="nav-item"><a href="#works">Портфолио</a></li>
-          <li class="nav-item"><a href="#contacts">Связь</a></li>
+          <li class="nav-item"><a href="#about-me"><span>Обо мне</span></a></li>
+          <li class="nav-item"><a href="#price"><span>Прайс</span></a></li>
+          <li class="nav-item"><a href="#works"><span>Портфолио</span></a></li>
+          <li class="nav-item"><a href="#contacts"><span>Связь</span></a></li>
         </ul>
       </nav>
       <div class="short-contacts">
@@ -33,8 +35,8 @@
     </div>
   </header>
   <main class="wrapper">
-  <a name="about-me"></a>
-  <div class="about-me holder"  id="about-me">
+  <div class="about-me holder"  id="about">
+    <div id="about-me"></div>
     <div class="description fill">
       <h2 class="g-title">Обо мне</h2>
       <p>Верстка макета с нуля, редизайн сайта, доработка чужой верстки, совместная работа через GitHub.</p>
@@ -72,7 +74,8 @@
 -->
     </div>
   </div>
-  <div class="price holder" id="price">
+  <div class="price holder">
+    <div id="price"></div>
     <div class="price-list fill fill--black">
       <h2 class="g-title">Услуги</h2>
       <h3>Базовые</h3>
@@ -112,26 +115,33 @@
 <!--      <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>-->
       <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>
     </div>
-    <form class="price-interactive fill" action="echo.htmlacademy.ru" method="post">
+   <!--  <form class="price-interactive fill" action="echo.htmlacademy.ru" method="post">
       <h2 class="g-title">Оценить макет</h2>
-      <div class="fieldset">
-        <input type="text" name="ask-sender-mail" placeholder="Почта для ответа" required>
-        <input type="date" name="deadline" placeholder="Сроки:" required>
+      <div class="fieldset-wrapper">
+        <div class="fields fieldset-inputs">
+          <label class="label-upload" for="deadline">Сроки:</label>
+          <input id="deadline" type="date" name="deadline" required>
+          <input id="ask-sender-mail" type="text" name="ask-sender-mail" placeholder="Почта для ответа" required>
+          <label class="label-move label-move-1" for="ask-sender-mail">Ваша почта</label>
+        </div>
+        <div class="fields fieldset-upload">
+          <span class="label-upload">Архив с макетом и ТЗ:</span>
+          <button class="upload-files" type="button">Загрузить файл</button>
+          <!--<span>Файл не загружен</span>-->
+         <!--  <small class="text-muted">Файл не должен привышать 10МБ</small>
+        </div>
       </div>
-      <div class="fieldset fieldset-upload">
-        <button class="upload-files" type="button">Загрузить файл</button>
-        <span>Файл не загружен</span>
-      </div>
-      <small class="text-muted">Файл не должен привышать 10МБ</small>
-      <textarea name="ask-details" cols="30" rows="10" placeholder="Комментарий (не обязательно)"></textarea>
-      <small class="text-muted">Если файл слишком большой, вы можете оставить здесь ссылку на облако</small>
-      <div class="fieldset fieldset-send">
-        <button class="send-ask-btn" type="submit">Отправить</button>
+      <textarea id="ask-details" name="ask-details" cols="30" rows="10" placeholder="Комментарий (не обязательно)"></textarea>
+      <label class="label-move label-move-2" for="ask-details">Ваш комментарий</label>
+      <small class="text-muted textarea-muted">Если файл слишком большой, вы можете оставить здесь ссылку на облако</small>
+      <div class="fields fieldset-send">
+        <button class="send-ask-btn" type="submit">О</button>
         <span class="send-ask-label">Отправить</span>
       </div>
-    </form>
+    </form>  -->
   </div>
-  <div class="works" id="works">
+  <div class="works">
+    <div id="works"></div>
     <h2 class="g-title">Мои работы</h2>
     <section class="works-list">
       <div class="works-item">
@@ -156,7 +166,8 @@
     </section>
   </div>
   </main>
-  <div class="contacts" id="contacts">
+  <div class="contacts">
+    <div id="contacts"></div>
     <div class="wrapper">
       <div class="contacts-links">
         <h3 class="contacts-title">Все контакты</h3>
@@ -166,18 +177,16 @@
           <li class="contacts-links-item">Почта: <span class="value">beast.loby@gmail.com</span></li>
         </ul>
       </div>
-      <form class="massage" action="./post.php" method="post">
+      <!-- <form class="massage" action="./post.php" method="post">
         <h3 class="massage-title">Отправить ворона</h3>
-<!--        <div class="inputs-container">-->
           <input id="question-name" type="text" name="question-name" placeholder="Ваше имя" required>
           <label for="question-name">Ваше имя</label>
           <input id="question-mail" type="text" name="question-mail" placeholder="Ваша почта" required>
           <label for="question-mail">Ваша почта</label>
-<!--        </div>-->
         <textarea id="question-massage" name="question-massage" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
         <label for="question-massage">Ваше сообщение</label>
         <button class="send-massage-btn" type="submit">Отправить</button>
-      </form>
+      </form> -->
     </div>
   </div>
   <script>
