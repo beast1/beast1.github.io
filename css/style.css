@@ -210,11 +210,53 @@ div[id="contacts"] {
   background-color: #222;
 }
 
+main.wrapper {
+    margin-top: 125px;
+}
+
+.main-title {
+  display: block;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 40px;
+
+  margin-bottom: 65px;
+}
+
+.main-title span {
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 10px;
+  margin-bottom: 65px;
+
+  background-image: linear-gradient(90deg, #222222 50%, white 50%, white 100%);
+}
+
+.features-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-left: 0 1.5%;
+
+  text-align: center;
+}
+
+.features-title {
+  margin: 0;
+}
+
 .about-me {
   display: flex;
   justify-content: space-between;
 /*  padding: 20px 30px 10px;*/
-  margin-top: 125px;
   margin-bottom: 65px;
 /*  margin: 20px 0 10px 30px;
   margin: 20px 10px 0 30px;*/
@@ -1095,17 +1137,20 @@ div[id="contacts"] {
 }*/
 
 /*А этот текст ради другого теста*/
+/*Еще тест/
 
 /*ЗАМЕТКИ*/
 
 /*
 2. Плавный скролл
 5. Промо надпись для портфолио
+5.1. Посмотреть вилео про лендинг
 6. Оживить формы 
 8. Нарезать спрайт
 9. Состояния сошилов
 10. Хцвер нава по скроллу
-11. Сделать футер на весь экран
+12. Исправить сошиал в глейси
+12. Сделать продакш-версию глейси и перенести в портфолио
 */
 
 /*

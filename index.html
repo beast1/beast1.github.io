@@ -16,8 +16,8 @@
     <div class="wrapper">
       <nav class="main-nav">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#about-me"><span>Обо мне</span></a></li>
-          <li class="nav-item"><a href="#price"><span>Прайс</span></a></li>
+          <li class="nav-item"><a href="#about-me"><span>Прайс</span></a></li>
+          <!-- <li class="nav-item"><a href="#price"><span>Прайс</span></a></li> -->
           <li class="nav-item"><a href="#works"><span>Портфолио</span></a></li>
           <li class="nav-item"><a href="#contacts"><span>Связь</span></a></li>
         </ul>
@@ -35,12 +35,62 @@
     </div>
   </header>
   <main class="wrapper">
+  <b class="main-title">
+    Одностраничный статичный сайт за два рабочих дня<br>
+    <span>Если не успеваю, заканчиваю бесплатно!</span>
+  </b>
+  <div class="features-list">
+    <div class="features-item">
+      <h2 class="features-title">Адаптивность</h2>
+      <p class="features-description">Ваш сайт будет оптимизирован для смартфонов, планшетов, мониторов и широкоформатных мониторов</p>
+    </div>
+    <div class="features-item">
+      <h2 class="features-title">Кроссбраузерность</h2>
+      <p class="features-description">Ваш сайт выглядит одиннаково во всех доступных браузерах</p>
+    </div>
+    <div class="features-item">
+      <h2 class="features-title">Безопасность</h2>
+      <p class="features-description">Оплата через безопасную сделку на самой популярной бирже фриланса - FL.ru</p>
+    </div>
+  </div>
   <div class="about-me holder"  id="about">
     <div id="about-me"></div>
-    <div class="description fill">
-      <h2 class="g-title">Обо мне</h2>
-      <p>Верстка макета с нуля, редизайн сайта, доработка чужой верстки, совместная работа через GitHub.</p>
-      <p>Уверенно работаю над проектами с фиксированной разметкой и поддержкой всех актуальных браузеров.</p>
+    <div class="fill fill--black">
+      <div class="description">
+        <h2 class="g-title">Обо мне</h2>
+        <p>Верстка макета с нуля, редизайн сайта, доработка чужой верстки, совместная работа через GitHub.</p>
+        <p>Уверенно работаю над проектами с фиксированной разметкой и поддержкой всех актуальных браузеров.</p>
+      </div>
+      <div class="price-list">
+        <h2 class="g-title">Услуги</h2>
+        <h3>Базовые</h3>
+        <ul class="price-types">
+          <lh class="price-types-title">Помимо базового функционала верстки вы получите:</lh>
+          <li class="price-types-item">Кроссбраузерность</li>
+          <li class="price-types-item">Критическую функциональность</li>
+          <li class="price-types-item">Оптимизированную скорость загрузки</li>
+        </ul>
+        <h3>Дополнительные</h3>
+        <ul class="price-types">
+          <lh class="price-types-title">За отдельную плату вы получите:</lh>
+          <li class="price-types-item">Семантичность</li>
+          <li class="price-types-item">Адаптивность(mobile-first)</li>
+          <li class="price-types-item">Прогрессивное улучшение</li>
+          <li class="price-types-item">Пиксель-перфект</li>
+        </ul>
+        <h3>Тарификация</h3>
+        <table>
+          <tr>
+            <td>Час работы</td>
+            <td>35 руб.</td>
+          </tr>
+          <tr>
+            <td>Месяц работы(160 ч.)</td>
+            <td>5000 руб.</td>
+          </tr>
+        </table>
+        <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>
+      </div>
     </div>
     <div class="education fill">
       <h2 class="g-title">Мои навыки</h2>
@@ -52,93 +102,7 @@
           <div class="certificate-wrapper"><a class="g-btn--radian" href="#">PDF</a></div>
         </div>
       </div>
-<!--
-      <div class="skill-item">
-        <span class="skill-var">HTML</span>
-        <div class="skill-skale">
-          <div class="skill-range"></div>
-        </div>
-      </div>
-      <div class="skill-item">
-        <span class="skill-var">CSS</span>
-        <div class="skill-skale">
-          <div class="skill-range"></div>
-        </div>
-      </div>
-      <div class="skill-item">
-        <span class="skill-var">JS</span>
-        <div class="skill-skale">
-          <div class="skill-range"></div>
-        </div>
-      </div>
--->
     </div>
-  </div>
-  <div class="price holder">
-    <div id="price"></div>
-    <div class="price-list fill fill--black">
-      <h2 class="g-title">Услуги</h2>
-      <h3>Базовые</h3>
-      <ul class="price-types">
-        <lh class="price-types-title">Помимо базового функционала верстки вы получите:</lh>
-        <li class="price-types-item">Кроссбраузерность</li>
-        <li class="price-types-item">Критическую функциональность</li>
-        <li class="price-types-item">Оптимизированную скорость загрузки</li>
-<!--        <li class="price-types-item"></li>-->
-      </ul>
-      <h3>Дополнительные</h3>
-      <ul class="price-types">
-        <lh class="price-types-title">За отдельную плату вы получите:</lh>
-        <li class="price-types-item">Семантичность</li>
-        <li class="price-types-item">Адаптивность(mobile-first)</li>
-        <li class="price-types-item">Прогрессивное улучшение</li>
-        <li class="price-types-item">Пиксель-перфект</li>
-<!--        <li class="price-types-item"></li>-->
-<!--        <li class="price-types-item"></li>-->
-      </ul>
-      <h3>Тарификация</h3>
-      <table>
-<!--
-        <tr>
-          <th>Тарификация</th>
-        </tr>
--->
-        <tr>
-          <td>Час работы</td>
-          <td>35 руб.</td>
-        </tr>
-        <tr>
-          <td>Месяц работы(160 ч.)</td>
-          <td>5000 руб.</td>
-        </tr>
-      </table>
-<!--      <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>-->
-      <small class="text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! Закажите верстку сейчас.</small>
-    </div>
-   <!--  <form class="price-interactive fill" action="echo.htmlacademy.ru" method="post">
-      <h2 class="g-title">Оценить макет</h2>
-      <div class="fieldset-wrapper">
-        <div class="fields fieldset-inputs">
-          <label class="label-upload" for="deadline">Сроки:</label>
-          <input id="deadline" type="date" name="deadline" required>
-          <input id="ask-sender-mail" type="text" name="ask-sender-mail" placeholder="Почта для ответа" required>
-          <label class="label-move label-move-1" for="ask-sender-mail">Ваша почта</label>
-        </div>
-        <div class="fields fieldset-upload">
-          <span class="label-upload">Архив с макетом и ТЗ:</span>
-          <button class="upload-files" type="button">Загрузить файл</button>
-          <!--<span>Файл не загружен</span>-->
-         <!--  <small class="text-muted">Файл не должен привышать 10МБ</small>
-        </div>
-      </div>
-      <textarea id="ask-details" name="ask-details" cols="30" rows="10" placeholder="Комментарий (не обязательно)"></textarea>
-      <label class="label-move label-move-2" for="ask-details">Ваш комментарий</label>
-      <small class="text-muted textarea-muted">Если файл слишком большой, вы можете оставить здесь ссылку на облако</small>
-      <div class="fields fieldset-send">
-        <button class="send-ask-btn" type="submit">О</button>
-        <span class="send-ask-label">Отправить</span>
-      </div>
-    </form>  -->
   </div>
   <div class="works">
     <div id="works"></div>
