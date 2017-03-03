@@ -373,6 +373,18 @@ main.wrapper {
   background-color: #fff;
 }
 
+.a-db {
+  color: #ffffff;
+}
+
+.a-db:hover {
+  color: #dddddd;
+}
+
+.a-db:active {
+  color: #aaaaaa;
+}
+
 .about-me h2 {
   margin: 0;
 }
@@ -385,7 +397,12 @@ main.wrapper {
   
   text-transform: none;
   text-align: left;
+  line-height: 21px;
 /*  padding: 0 30px;*/
+}
+
+.about-me .description a {
+  color: #aaa;
 }
 
 .education {
@@ -855,6 +872,10 @@ main.wrapper {
   font-size: 13px;
   line-height: 20px;
   text-transform: none;
+}
+
+.text-muted a {
+  color: #ffffff;
 }
 
 .price-interactive .text-muted {
