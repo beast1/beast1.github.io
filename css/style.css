@@ -405,6 +405,10 @@ main.wrapper {
   color: #aaa;
 }
 
+.about-me .description a:hover {
+  color: #fff;
+}
+
 .education {
   display: flex;
   flex-direction: column;
@@ -967,11 +971,11 @@ main.wrapper {
 }
 
 .works-item:nth-of-type(1) {
-  height: 605px;
+  height: 585px;
 }
 
 .works-item:nth-of-type(2) {
-  height: 410px;
+  height: 420px;
 }
 
 .works-item:nth-of-type(3) {
