@@ -12,6 +12,16 @@ body {
     background-color: #849d8f;
 }
 
+/*OUTSSIDE ELEMENT*/
+
+/*.page-header {*/
+  padding-top: 55px;
+}
+
+
+
+/*OUTSSIDE ELEMENT*/
+
 .decorate-wrapper {
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 650px, transparent);
 }

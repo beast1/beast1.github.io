@@ -1,0 +1,168 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.fixed-header {
+  position: fixed;
+  z-index: 99;
+}
+
+.fixed-header-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  
+/*  display: flex;*/
+/*  padding: 5px 0;*/
+  
+  color: #ffffff;
+  background-color: #222222;
+}
+
+.fixed-header-content .wrapper {
+  display: flex;
+}
+
+.main-nav {
+/*  min-width: 600px;*/
+/*  margin-right: auto;*/
+/*  margin-left: 5%;*/
+}
+
+.main-nav.short-contacts {
+  margin-right: auto;
+}
+
+.nav-list {
+  display: flex;
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  
+/*  transition: scale 0.3s ease;*/
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1 );
+  
+/*  transform: scale(1.1);*/
+}
+
+.nav-item a {
+/*  position: relative;*/
+  
+  display: inline-block;
+  padding: 15px;
+  
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+/*  transition: all 0.2s ease;*/
+}
+
+.nav-item span {
+  position: relative;
+  
+/*  transition: all 0.2s ease;*/
+}
+
+.short-contacts {
+  display: flex;
+  justify-content: space-between;
+/*  width: 320px;*/
+  margin: 5px 0 5px;
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+.short-contacts-item {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 5px solid #ffffff;
+  margin-left: 15px;
+  
+  font-size: 0;
+  
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.short-contacts-item span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  
+  border-radius: 50%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  
+  filter: grayscale(1);
+  
+  transition: filter 0.2s ease;
+}
+
+.short-contacts-item:hover span {
+  filter: none;
+}
+
+.short-contacts-item:active span {
+  filter: saturate(4);
+}
+
+.short-contacts .vkontakte span {
+  background-image: url("../outside-img/icons/social/vkontakte.png");
+} 
+
+.short-contacts .gmail span {
+  background-image: url("../outside-img/icons/social/email.png");
+} 
+
+.short-contacts .skype span {
+  background-image: url("../outside-img/icons/social/skype.png");
+}
+
+.functions {
+  display: flex;
+  margin-left: 40%;
+}
+
+.functions-basic-list,
+.functions-extended-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.fixed-header-tuggle {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  z-index: 101;
+  
+  width: 50px;
+  height: 50px;
+  
+  background-color: #fff;
+}
+
+.fixed-header-tuggle:nth-of-type(2) {
+  left: 70px;
+}
