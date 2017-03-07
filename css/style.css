@@ -229,6 +229,13 @@ div[id="contacts"] {
   background-image: url("../img/icons/social/skype.png");
 }
 
+.short-contacts .academy span {
+/*  width: 50px;*/
+/*  height: 50px;*/
+  background-image: url("../img/academy-logo.svg");
+/*  background-size: contain;*/
+}
+
 /*
 .short-contacts .vkontakte {
   background-image: url("../img/icons/icon-vk.svg");
@@ -406,6 +413,10 @@ main.wrapper {
 }
 
 .about-me .description a:hover {
+  color: #ddd;
+}
+
+.about-me .description a:active {
   color: #fff;
 }
 
