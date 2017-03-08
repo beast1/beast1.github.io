@@ -1363,7 +1363,7 @@ label[for="rbtn-3"]:active {
     position: relative;
     
     min-width: 1200px;
-    min-height: 430px;
+    height: 430px;
     
     background-color: #fff;
     background-image: url("../img/map-pin-short.jpg");
