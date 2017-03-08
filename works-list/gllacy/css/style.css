@@ -1365,8 +1365,9 @@ label[for="rbtn-3"]:active {
     min-width: 1200px;
     height: 430px;
     
-    background-color: #fff;
+/*    background-color: #fff;*/
     background-image: url("../img/map-pin-short.jpg");
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
