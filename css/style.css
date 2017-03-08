@@ -1077,6 +1077,7 @@ main.wrapper {
 
 .contacts {
   height: 190px;
+/*  height: 240px;*/
   color: #fafafa;
   
   background-color: #222222;
@@ -1320,6 +1321,12 @@ main.wrapper {
 
 .btn--main-action--black:hover {
   background-image: linear-gradient(0deg,rgba(34, 34, 34, 0.1) 0%, rgba(34, 34, 34, 0.1) 100%);
+}
+
+.keks-link {
+  position: absolute;
+  bottom: -42px;
+  right: -10px;
 }
 /*ЗАМЕТКИ*/
 
