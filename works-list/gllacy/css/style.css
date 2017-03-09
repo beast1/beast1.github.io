@@ -1129,7 +1129,7 @@ iframe {
   0% {
     transform: translate(0, -2000px);
   }
-  
+
   70% {
     transform: translate(0, 30px);
   }

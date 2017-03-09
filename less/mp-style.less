@@ -52,6 +52,10 @@
   left: 2%;
   top: 5%;
   
+  z-index: 200;
+  
+  font-weight: normal;
+  
   &__controls {
     display: flex;
   }
@@ -89,19 +93,19 @@
   }
   
   &__btn-exit {
-    background-image: url("../img/icon-back-2(32).png");
+    background-image: url("../img/mp-img/icon-back-2(32).png");
     background-position: 9px center;
     background-repeat: no-repeat;
   }
   
   &__btn-visibility--hidden {
-    background-image: url("../img/icon-hide-b(32).png");
+    background-image: url("../img/mp-img/icon-hide-b(32).png");
     background-position: 12px center;
     background-repeat: no-repeat;
   }
   
   &__btn-visibility--visible {
-    background-image: url("../img/icon-hide-a(32).png");
+    background-image: url("../img/mp-img/icon-hide-a(32).png");
     background-position: 12px center;
     background-repeat: no-repeat;
   }
@@ -160,6 +164,26 @@
     line-height: 17px;
   }
   
+  &__item--line-through {
+    position: relative;
+    
+    opacity: 0.5;
+  }
+  
+  &__item--line-through::before {
+    content: '';
+    
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 50%;
+    
+    height: 1.3px;
+    margin-top: -1.3px;
+    
+    background-color: @c-second;
+  }
+  
   &__range-list {    
     display: flex;
     justify-content: center;
@@ -185,9 +209,11 @@
     text-align: center;
     font-size: 45px;
     line-height: 45px;
+    
+    cursor: default;
   }
   
-  &__range-item-logo.time {
+  &__range-item-logo--time {
     font-size: 40px;
   }
   

@@ -37,6 +37,8 @@
   position: fixed;
   left: 2%;
   top: 5%;
+  z-index: 200;
+  font-weight: normal;
 }
 .beast-branch__controls {
   display: flex;
@@ -65,17 +67,17 @@
   transform: scale(0.97);
 }
 .beast-branch__btn-exit {
-  background-image: url("../img/icon-back-2(32).png");
+  background-image: url("../img/mp-img/icon-back-2(32).png");
   background-position: 9px center;
   background-repeat: no-repeat;
 }
 .beast-branch__btn-visibility--hidden {
-  background-image: url("../img/icon-hide-b(32).png");
+  background-image: url("../img/mp-img/icon-hide-b(32).png");
   background-position: 12px center;
   background-repeat: no-repeat;
 }
 .beast-branch__btn-visibility--visible {
-  background-image: url("../img/icon-hide-a(32).png");
+  background-image: url("../img/mp-img/icon-hide-a(32).png");
   background-position: 12px center;
   background-repeat: no-repeat;
 }
@@ -119,6 +121,20 @@
   font-size: 14px;
   line-height: 17px;
 }
+.modal-price__item--line-through {
+  position: relative;
+  opacity: 0.5;
+}
+.modal-price__item--line-through::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: 50%;
+  height: 1.3px;
+  margin-top: -1.3px;
+  background-color: #ffffff;
+}
 .modal-price__range-list {
   display: flex;
   justify-content: center;
@@ -140,8 +156,9 @@
   text-align: center;
   font-size: 45px;
   line-height: 45px;
+  cursor: default;
 }
-.modal-price__range-item-logo.time {
+.modal-price__range-item-logo--time {
   font-size: 40px;
 }
 .modal-price__range-item-value {
