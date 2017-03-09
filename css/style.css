@@ -51,6 +51,23 @@ body {
   margin-left: 25px;
 }
 
+.g-text-muted {
+  align-self: flex-start;
+  
+  margin-top: 3px;
+  margin-bottom: 20px;
+
+  
+  color: rgb(129, 138, 145);
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: none;
+}
+
+.g-text-muted a {
+  color: #ffffff;
+}
+
 div[id="about-me"],
 div[id="price"], 
 div[id="works"],
@@ -887,42 +904,6 @@ main.wrapper {
   margin-top: 10px;
 /*  margin-bottom: 20px;*/
 }
-
-.text-muted {
-  align-self: flex-start;
-  
-  margin-top: 3px;
-  margin-bottom: 20px;
-
-  
-  color: rgb(129, 138, 145);
-  font-size: 13px;
-  line-height: 20px;
-  text-transform: none;
-}
-
-.text-muted a {
-  color: #ffffff;
-}
-
-.price-interactive .text-muted {
-/*  margin-left: 5px;*/
-}
-
-/*
-.price-interactive .send-ask-btn {
-  width: 60px;
-  height: 60px;
-  border: 6px solid #5b9ddf;
-  margin-bottom: 0;
-  
-  font-size: 0;
-  
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: none;
-}
-*/
 
 .price-interactive .send-ask-btn {
   width: 90px;
