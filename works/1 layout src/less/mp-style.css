@@ -67,17 +67,17 @@
   transform: scale(0.97);
 }
 .beast-branch__btn-exit {
-  background-image: url("../img/mp-img/icon-back-2(32).png");
+  background-image: url("../img/icon-back-2(32).png");
   background-position: 9px center;
   background-repeat: no-repeat;
 }
 .beast-branch__btn-visibility--hidden {
-  background-image: url("../img/mp-img/icon-hide-b(32).png");
+  background-image: url("../img/icon-hide-b(32).png");
   background-position: 12px center;
   background-repeat: no-repeat;
 }
 .beast-branch__btn-visibility--visible {
-  background-image: url("../img/mp-img/icon-hide-a(32).png");
+  background-image: url("../img/icon-hide-a(32).png");
   background-position: 12px center;
   background-repeat: no-repeat;
 }

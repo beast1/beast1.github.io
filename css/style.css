@@ -257,11 +257,9 @@ div[id="contacts"] {
 .short-contacts .vkontakte {
   background-image: url("../img/icons/icon-vk.svg");
 } 
-
 .short-contacts .gmail {
   background-image: url("../img/icons/icon-gm.svg");
 } 
-
 .short-contacts .skype {
   background-image: url("../img/icons/icon-sky.svg");
 }
@@ -863,7 +861,6 @@ main.wrapper {
 }
 
 /*
-
 .fieldset-upload {
   box-sizing: border-box;
   width: 90%;
@@ -959,6 +956,7 @@ main.wrapper {
 
 .works-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: center;
   width: 1100px;
@@ -971,7 +969,6 @@ main.wrapper {
   
   width: 300px;
   
-  background-color: ;
 }
 
 .works-item:nth-of-type(1) {

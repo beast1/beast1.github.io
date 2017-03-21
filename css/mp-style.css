@@ -1,4 +1,4 @@
-.g-hidden {
+.mp-g-hidden {
   visibility: hidden;
   opacity: 0;
 }
@@ -165,5 +165,3 @@
   font-size: 45px;
   line-height: 45px;
 }
-
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */

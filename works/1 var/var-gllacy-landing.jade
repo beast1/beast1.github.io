@@ -1,0 +1,20 @@
+extends /../1 layout/work.layout.jade
+
+block time
+  span.modal-price__range-item-value 18
+  
+block price
+  span.modal-price__range-item-value 630
+
+block features
+  ul.modal-price__list
+    lh.modal-price__sub-title Базовые
+    li(class="modal-price__item") Кроссбраузерность
+    li(class="modal-price__item") Прогрессивное улучшение
+    li(class="modal-price__item") Оптимизированная скорость
+    li(class="modal-price__item  #{cross}") Адаптивность(mobile-first)
+  ul.modal-price__list
+    lh.modal-price__sub-title Дополнительные
+    li(class="modal-price__item  #{cross}") Семантичность
+    li(class="modal-price__item") Пиксель-перфект
+    
