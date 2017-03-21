@@ -1,0 +1,65 @@
+@line: 16px; //Управление только переменной
+
+.set-font(@font-size, @line-height: @line) {
+    font-size: @font-size;
+    line-height: @line-height;
+}
+
+.set-margin(@margin-top: @line, @margin-bottom: @line) {
+    margin-top: @margin-top;
+    margin-bottom: @margin-bottom;
+}
+
+body {
+    font-family: sans-serif;
+    .set-font(@line * 0.6);
+}
+
+h1 {
+    .set-font(@line * 2, @line * 3);
+    .set-margin();
+}
+
+h2 {
+    .set-font(@line * 1.5, @line * 2);
+    .set-margin();
+}
+
+h3 {
+    .set-font(@line * 1.2, @line * 2);
+    .set-margin();
+}
+
+p {
+    .set-font(@line * 0.8);
+}
+
+ul {
+    .set-margin();
+}
+
+li {
+    .set-font(@line * 0.8);
+    .set-margin(@line / 2, @line / 2);
+}
+
+/* Сетка */
+
+//.grid {
+//    background-image:
+//        linear-gradient(
+//            to bottom,
+//            rgba(0, 0, 0, 0.3) 0%,
+//            transparent 5%,
+//            transparent 100%
+//        );
+//    background-size: 100% @line;
+//}
+//
+//.grid h1,
+//.grid h2,
+//.grid h3,
+//.grid li,
+//.grid p {
+//    background: rgba(185, 211, 250, 0.5);
+//}
