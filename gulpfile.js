@@ -13,35 +13,35 @@ var gulp = require('gulp'),
     less = require('gulp-less');
 
 gulp.task('less', function() {
-  return gulp.src('app/less/**/*.less')
+  return gulp.src('less/**/*.less')
     .pipe(less())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-    .pipe(gulp.dest('app/css'))
+    .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('scripts', function() {
   return gulp.src([
-    'app/libs/jquery/dist/jquery.min.js',
-    'app/libs/masonry/dist/masonry.pkgd.min.js',
+    'libs/jquery/dist/jquery.min.js',
+    'libs/masonry/dist/masonry.pkgd.min.js',
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('app/js'));
+    .pipe(gulp.dest('js'));
 });
 
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-      baseDir: 'app'
+      baseDir: '../beast1.github.io'
     },
     notify: false
   });
 });
 
 gulp.task('watch', ['browser-sync'], function() {
-  gulp.watch('app/less/**/*.less', ['less']);
-  gulp.watch('app/css/**/*.css', browserSync.reload);
-  gulp.watch('app/*.html', browserSync.reload);
-  gulp.watch('app/js/**/*.js', browserSync.reload);
+  gulp.watch('less/**/*.less', ['less']);
+  gulp.watch('css/**/*.css', browserSync.reload);
+  gulp.watch('*.html', browserSync.reload);
+  gulp.watch('js/**/*.js', browserSync.reload);
 });
