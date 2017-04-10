@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 //    pngquant = require('imagemin-pngquant'),
 //    cashe = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
-    less = require('gulp-less');
+    less = require('gulp-less'),
+    pug = require('gulp-pug');
 
 gulp.task('less', function() {
   return gulp.src('less/**/*.less')
@@ -28,6 +29,13 @@ gulp.task('scripts', function() {
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('js'));
+});
+
+gulp.task('pug', function () {
+  return gulp
+    .src('pug/*.pug')
+    .pipe(pug({}))
+    .pipe(gulp.dest('html'));
 });
 
 gulp.task('browser-sync', function() {

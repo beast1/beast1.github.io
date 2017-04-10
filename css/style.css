@@ -1,23 +1,15 @@
 body {
   margin: 0;
   font-family: "Roboto", "Arial", sans-serif;
-  color: #000000;
+  color: #000;
   font-size: 18px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: lightgray;
+  background-image: url('../img/bg-swirl.png');
 }
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-}
-.g-title {
-  display: block;
-  padding: 5px 0;
-  text-align: center;
-  font-size: 36px;
-  line-height: 40px;
-  text-transform: uppercase;
 }
 .g-title {
   display: -webkit-box;
@@ -28,6 +20,11 @@ body {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
 }
 .g-title::before,
 .g-title::after {
@@ -82,7 +79,7 @@ div[id="contacts"] {
   /*  display: flex;*/
   /*  padding: 5px 0;*/
   color: #ffffff;
-  background-color: #222222;
+  background-color: #222;
 }
 .fixed-header .wrapper {
   display: -webkit-box;
@@ -171,7 +168,7 @@ div[id="contacts"] {
   display: inline-block;
   width: 35px;
   height: 35px;
-  border: 5px solid #ffffff;
+  border: 5px solid #fff;
   margin-left: 15px;
   font-size: 0;
   -webkit-border-radius: 50%;
@@ -296,9 +293,7 @@ main.wrapper {
           justify-content: space-between;
   padding: 20px 10px 10px;
   margin-bottom: 65px;
-  /*  min-height: 200px;*/
   background-color: #fff;
-  /*  background-image: linear-gradient(90deg, #222222 50%, white 50%, white 100%);*/
 }
 .features-item {
   position: relative;
@@ -526,7 +521,7 @@ main.wrapper {
 .g-btn--radian:hover {
   color: #000000;
   font: inherit;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .g-btn--radian:active {
   -webkit-box-shadow: inset 0 5px 10px 0 rgba(0, 0, 0, 0.8);
@@ -561,7 +556,7 @@ main.wrapper {
 .g-btn--block:hover {
   color: #000000;
   font: inherit;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 .g-btn--block:active {
   -webkit-transform: scale(0.97);
@@ -572,33 +567,6 @@ main.wrapper {
 }
 .education-certificate:hover .certificate-wrapper {
   visibility: visible;
-}
-.skill-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 460px;
-  height: 20px;
-  margin-bottom: 10px;
-}
-.skill-skale {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 400px;
-  height: 20px;
-  border: 2px solid black;
-}
-.skill-range {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 200px;
-  height: 16px;
-  background-color: #000000;
 }
 .price {
   display: -webkit-box;
@@ -778,9 +746,6 @@ main.wrapper {
           box-sizing: border-box;
   width: 90%;
   margin: 0 5%;
-  /*  color: #aaaaaa;*/
-  /*  color: #000;*/
-  /*  text-transform: none;*/
 }
 .price-interactive .label-upload {
   margin-bottom: 3px;
@@ -969,9 +934,6 @@ main.wrapper {
   width: 300px;
   margin-bottom: 25px;
 }
-.works-item:last-of-type {
-  /*  background-color: #000;*/
-}
 .works-item:last-of-type::before {
   content: "Ваш проект может стать следующим !!!";
   top: 0;
@@ -1033,7 +995,7 @@ main.wrapper {
   color: #000000;
   
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: @color-2;
 }
 */
 .works-item:hover .works-item-wrapper {
@@ -1061,7 +1023,7 @@ main.wrapper {
   height: 190px;
   /*  height: 240px;*/
   color: #fafafa;
-  background-color: #222222;
+  background-color: #222;
 }
 .grid-item--height1 {
   height: 713px;
@@ -1129,6 +1091,7 @@ main.wrapper {
 */
 .contacts-links-item {
   margin-bottom: 10px;
+  color: #fff;
 }
 .contacts-links-item .value {
   color: #aaaaaa;
@@ -1140,6 +1103,7 @@ main.wrapper {
   line-height: 34px;
   margin: 0;
   /*  margin-left: 10px;*/
+  color: #fff;
 }
 .massage-title {
   /*  width: 700px;*/
@@ -1341,4 +1305,6 @@ main.wrapper {
 /*
 2. Плавный скролл
 3. Эфект сепии
+4. Ховер
+6. Контроль цветов
 */
