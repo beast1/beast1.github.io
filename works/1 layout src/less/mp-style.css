@@ -37,7 +37,7 @@
   position: fixed;
   left: 2%;
   top: 5%;
-  z-index: 200;
+  z-index: 2000;
   font-weight: normal;
 }
 .beast-branch__controls {
@@ -95,6 +95,9 @@
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   transition: 0.35s ease;
 }
+.modal-price__title {
+  margin: 10px 15px 5px;
+}
 .modal-price__sub-title {
   display: inline-block;
   align-self: center;
@@ -146,9 +149,14 @@
 .modal-price__range-item {
   display: flex;
   height: 40px;
+  margin-right: 10px;
+}
+.modal-price__range-item:last-of-type {
+  margin-right: 0;
 }
 .modal-price__range-item-logo {
   display: inline-block;
+  order: 2;
   width: 40px;
   height: 40px;
   color: #ffffff;
@@ -161,6 +169,7 @@
   font-size: 40px;
 }
 .modal-price__range-item-value {
+  order: 1;
   color: #222222;
   font-size: 45px;
   line-height: 45px;

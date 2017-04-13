@@ -828,10 +828,16 @@ main.wrapper {
   height: 713px;
 }
 .grid-item--height2 {
-  height: 445px;
+  height: 444px;
 }
 .grid-item--height3 {
   height: 788px;
+}
+.grid-item--height4 {
+  height: 523px;
+}
+.grid-item--height5 {
+  height: 408px;
 }
 .grid-item-fill {
   position: absolute;
@@ -1018,7 +1024,7 @@ main.wrapper {
   cursor: pointer;
   outline: none;
   border-radius: 0.4px;
-  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.8);
+  border-box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.8);
   background-color: #ed5b3d;
   background-image: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   /*  transform: scale(1.3);*/
