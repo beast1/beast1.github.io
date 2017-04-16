@@ -13,3 +13,17 @@ btnPriceToggle.addEventListener("click", function(event) {
 //      price.classList.add("ajs-come-left");
 //    };
 });
+
+new Tippy('.tippy-range', {
+    position: 'top',
+    animation: 'shift',
+    duration: 300,
+    arrow: true
+});
+
+new Tippy('.tippy-date', {
+    position: 'bottom',
+    animation: 'shift',
+    duration: 300,
+    arrow: true
+});

@@ -10,3 +10,5 @@ var msnry = new Masonry( elem, {
 var msnry = new Masonry( '.grid', {
   // options
 });
+
+new Tippy(document.querySelector(".tippy"));

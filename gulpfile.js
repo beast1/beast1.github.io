@@ -52,4 +52,8 @@ gulp.task('watch', ['browser-sync'], function() {
   gulp.watch('css/**/*.css', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);
+  gulp.watch('works/1 layout src/less/**/*.less', ['less']);
+  gulp.watch('works/1 layout src/css/*.css', browserSync.reload);
+  gulp.watch('works/1 layout src/*.html', browserSync.reload);
+  gulp.watch('works/1 layout src/js/**/*.js', browserSync.reload);
 });

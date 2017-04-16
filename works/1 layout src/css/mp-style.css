@@ -3,33 +3,71 @@
   opacity: 0;
 }
 .ajs-come-left {
-  animation-name: come-left;
-  animation-duration: 1.5s;
+  -webkit-animation-name: come-left;
+          animation-name: come-left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 .ajs-leave-left {
-  animation-name: leave-left;
-  animation-duration: 1.5s;
+  -webkit-animation-name: leave-left;
+          animation-name: leave-left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes come-left {
+  0% {
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
+  }
+  70% {
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
+  }
+  90% {
+    -webkit-transform: translate(-10px, 0);
+            transform: translate(-10px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
 }
 @keyframes come-left {
   0% {
-    transform: translate(-1000px, 0);
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
   }
   70% {
-    transform: translate(30px, 0);
+    -webkit-transform: translate(30px, 0);
+            transform: translate(30px, 0);
   }
   90% {
-    transform: translate(-10px, 0);
+    -webkit-transform: translate(-10px, 0);
+            transform: translate(-10px, 0);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes leave-left {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
   }
 }
 @keyframes leave-left {
   0% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   100% {
-    transform: translate(-1000px, 0);
+    -webkit-transform: translate(-1000px, 0);
+            transform: translate(-1000px, 0);
   }
 }
 .beast-branch {
@@ -40,6 +78,9 @@
   font-weight: normal;
 }
 .beast-branch__controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .beast-branch__btn {
@@ -57,13 +98,16 @@
   background-color: #222222;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  transition: 0.1 ease;
+  -webkit-transition: 0.1 ease;
+          transition: 0.1 ease;
 }
 .beast-branch__btn:hover {
   background-color: #3c3c3c;
 }
 .beast-branch__btn:active {
-  transform: scale(0.97);
+  -webkit-transform: scale(0.97);
+      -ms-transform: scale(0.97);
+          transform: scale(0.97);
 }
 .beast-branch__btn-exit {
   background-image: url("../img/icon-back-2(32).png");
@@ -81,9 +125,20 @@
   background-repeat: no-repeat;
 }
 .modal-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 280px;
   box-sizing: border-box;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
@@ -92,23 +147,40 @@
   background-color: #222222;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  transition: 0.35s ease;
+  -webkit-transition: 0.35s ease;
+          transition: 0.35s ease;
 }
 .modal-price__title {
   margin: 10px 15px 5px;
+  max-width: 220px;
+  text-align: center;
+  line-height: 1.15em;
+  color: #b3b3b3;
 }
 .modal-price__sub-title {
   display: inline-block;
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   margin: 5px 0;
-  color: #b3b3b3;
-  font-size: 16px;
+  color: #ffffff;
+  font-size: 18px;
   font-weight: bold;
 }
 .modal-price__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   padding: 0 15px;
   margin: 0;
@@ -118,10 +190,11 @@
   padding-bottom: 10px;
 }
 .modal-price__item {
-  color: #ffffff;
+  color: #f2f2f2;
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 20px;
+  text-align: center;
 }
 .modal-price__item--line-through {
   position: relative;
@@ -138,14 +211,23 @@
   background-color: #ffffff;
 }
 .modal-price__range-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   box-sizing: border-box;
   width: 100%;
   padding: 15px 15px 15px;
   background-color: #6f6f6f;
 }
 .modal-price__range-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
   margin-right: 10px;
@@ -155,7 +237,10 @@
 }
 .modal-price__range-item-logo {
   display: inline-block;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
   width: 40px;
   height: 40px;
   color: #ffffff;
@@ -168,8 +253,33 @@
   font-size: 40px;
 }
 .modal-price__range-item-value {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
   color: #222222;
   font-size: 45px;
   line-height: 45px;
+}
+.modal-price__date {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 38px;
+  width: 100%;
+  background-color: #6f6f6f;
+}
+.modal-price__date-value {
+  font-size: 30px;
+  line-height: 30px;
+  color: #222222;
 }
