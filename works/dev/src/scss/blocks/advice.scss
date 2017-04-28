@@ -1,0 +1,15 @@
+.advice {
+  padding: 56px 34px 53px;
+  
+  &__title {
+    @include font-h2($color-second);
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+}

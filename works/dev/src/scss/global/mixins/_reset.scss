@@ -1,0 +1,34 @@
+@mixin un-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin un-btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin un-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@mixin un-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@mixin un-target {
+  border: none;
+  
+  color: inherit;
+  text-decoration: none;
+  
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}

@@ -1,0 +1,230 @@
+.reasons {
+  width: 100%;
+  min-height: 467px;
+  
+  
+  background: url("../img/banner-23.jpg") no-repeat center -310px;
+  background-color: $gray;
+  background-size: cover;
+  
+  @media (max-width: $screen-lg) {
+    background-position: center -160px;
+  }
+  
+  @media (max-width: $screen-mp) {
+    background-position: center -40px;
+  }
+  
+  @media (max-width: $screen-sm) {
+    background-position: center 0;
+  }
+  
+  &__background-mask {
+    background-color: fade-out($color-second, 0.4);
+  }
+  
+  &__wrapper {
+    @include wrapper;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+//    justify-content: center;
+//    height: 389px;
+    @media (max-width: $screen-lg) {
+      padding: 0 50px;
+    }
+  }
+  
+  &__title {
+    @include font-h2($color-main);
+    
+    display: flex;
+    margin: 0 auto;
+    margin-top: 58px;
+    
+    text-align: center;
+//    color: $color-second;//!!!
+    
+    @media (max-width: $screen-sm) {
+      max-width: 277px;
+      margin-top: 70px;
+      
+      line-height: 37px;
+    }    
+  }
+  
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 73px 0 60px;
+    
+    @media (max-width: $screen-sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    @media (max-width: $screen-sm) {
+      margin-bottom: 80px;
+    }
+  }
+  
+  &__item {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+        
+    @media (max-width: $screen-mp) {
+      margin: 0 50px;
+    }
+    
+    @media (max-width: $screen-sm) {
+      padding-top: 57px;
+      
+      &:not(:first-of-type) {
+        margin: 38px 50px 0;
+      }
+      
+//      &:first-of-type .reasons__short,
+//      &:first-of-type .reasons__core {
+//        color: $color-second;
+//        
+//        border-color: $color-second;
+//      }
+    }
+    
+    &::before {
+      content: "";
+
+      display: flex;
+      flex-grow: 1;
+      min-width: 82px;
+      max-width: 107px;
+      height: 2px;
+
+      background: #fff;
+      
+      @media (min-width: $screen-lg) {
+        width: 107px;
+      }
+      
+      @media (max-width: $screen-mp) {
+        display: none;
+      }
+    }
+
+    &::before,
+    &::after {
+      margin: 0 5px;
+    }
+    
+    &--both-deco {
+      &::before,
+      &::after {
+        content: "";
+
+        flex-grow: 1;
+        min-width: 82px;
+        max-width: 107px;
+        height: 2px;
+
+        background: #fff;
+        
+        @media (min-width: $screen-lg) {
+          width: 107px;
+        }
+        @media (max-width: $screen-mp) {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  &__core {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    width: 37px;
+    height: 37px;
+//    marign-top: 56px;
+    border: 2px solid $color-main;
+    
+    border-radius: 50%;
+    background-image: url("../img/icon-plus.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  &__short {
+    @include font($color-main, 15px);
+    
+    position: absolute;
+    top: -56px;
+    left: -40px;
+    right: -40px;
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+    line-height: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  &__main-item {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 257px;
+    height: 257px;
+    
+    border-radius: 50%;
+    background-color: $color-second;
+    
+    &::before {
+      content: "";
+      
+      position: absolute;
+      top: 129px;
+      left: 91px;
+      right: 88px;
+      
+      border-bottom: 1px solid $color-action-main;
+    }
+    
+    @media (max-width: $screen-sm) {
+      margin-top: 43px;
+    }    
+  }
+  
+  &__promo {
+    @include font($color-action-main, 15px);
+    
+    margin: 61px 0 65px;
+    
+    line-height: 18px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  &__descr {
+    @include font($color-main, 15px);
+    
+    max-width: 172px;
+    
+    line-height: 19px;
+    text-align: center;
+    font-weight: 300;
+  }
+}

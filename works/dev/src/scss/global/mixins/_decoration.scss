@@ -1,0 +1,61 @@
+@mixin wrapper {
+//  display: flex;
+//  flex-grow: 1;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  
+  //temporary
+//  background-color: red;
+  
+  @media (max-width: $screen-lg) {
+    padding: 0 130px;
+  }
+  
+  @media (max-width: $screen-mp) {
+    padding: 0 20px;
+  }
+  
+  @media (max-width: $screen-xs) {
+    padding: 0 0;
+  }  
+}
+
+@mixin margin-right($margin-right) {
+  &:not(:last-of-type) {
+    margin-right: $margin-right;
+  }
+}
+
+@mixin margin-bottom($margin-bottom) {
+  &:not(:last-of-type) {
+    margin-bottom: $margin-bottom;
+  }
+}
+
+@mixin radial($size) {
+  width: $size;
+  height: $size;
+  border: 1px solid $gray-light;
+  
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@mixin btn($background, $border-radius) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  
+  color: inherit;
+  text-decoration: none;
+  
+  border-radius: $border-radius;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background: $background;
+}

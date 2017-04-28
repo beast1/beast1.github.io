@@ -1,0 +1,25 @@
+.offer {
+  padding: 56px 50px 100px;
+  
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  &__title {
+    @include font-h2($color-second);
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 34px;
+    
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+  
+  &__form {
+//    width: 42%;
+    width: 270px;
+  }
+}

@@ -1,0 +1,43 @@
+@mixin react--transition($transition) {
+  transition: $transition;
+}
+
+@mixin react--background($background--hover, $background--active) {
+  &:hover {
+    background: $background--hover;
+  }
+  
+  &:active {
+    background: $background--active;
+  }
+}
+
+@mixin react--color($color--hover, $color--active) {
+  &:hover {
+    color: $color--hover;
+  }
+  
+  &:active {
+    color: $color--active;
+  }
+}
+
+@mixin react--border($border--hover, $border--active) {
+  &:hover {
+    border: $border--hover;
+  }
+  
+  &:active {
+    border: $border--active;
+  }
+}
+
+@mixin react--box-shadow($box-shadow--hover, $box-shadow--active) {
+  &:hover {
+    box-shadow: $box-shadow--hover;
+  }
+  
+  &:active {
+    box-shadow: $box-shadow--active;
+  }
+}

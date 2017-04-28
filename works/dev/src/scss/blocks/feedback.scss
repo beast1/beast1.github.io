@@ -1,0 +1,66 @@
+.feedback {
+  @include wrapper;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title {
+    @include font-h2($color-second);
+    
+    margin-bottom: 17px;
+  }
+  
+  &__promo {
+    @include font($color-second, 18px);
+    
+    margin: -9px 0;
+    
+    line-height: 37px;
+    text-align: center;
+  }
+  
+  &__slider {
+    margin: 30px  0 60px;
+  }
+  
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  &__avatar {
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &__avatar-img {
+    width: 110px;
+    height: 110px;
+    
+    border-radius: 50%;
+  }
+  
+  &__name {
+    @include font($color-second, 16px);
+    
+    margin: 20px 0;
+  }
+  
+  &__descr {
+    @include font-p($color-second);
+    max-width: 736px;
+    margin: 0;
+    
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  &__link {
+    margin: 13px 0 30px;
+  }
+}

@@ -1,0 +1,59 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  background-color: fade-out($black, 0.25);
+  
+  &__container {
+    position: absolute;
+    position: relative;
+    top: 50%;
+    left: 50%;
+
+    padding: 11px;
+
+    background-color: $color-main;
+    box-shadow: 
+      inset 0 0 0 10px $color-main,
+      inset 0 0 0 11px $color-action-main;
+
+    &--advice {
+      width: 650px;
+      min-height: 480px;
+      margin-left: -325px;
+      margin-top: -240px;
+    }
+
+    &--offer {
+      width: 650px;
+      min-height: 480px;
+      margin-left: -325px;
+      margin-top: -240px;
+    }
+
+    &--alert {
+      width: 390px;
+      min-height: 270px;
+      margin-left: -190px;
+      margin-top: -135px;
+    }
+  }
+  
+  &__exit {
+    @include un-target;
+    
+    position: absolute;
+    top: 21px;
+    right: 23px;
+    
+    width: 14px;
+    height: 14px;
+    
+    font-size: 0;
+    
+    background-image: url("../img/icon-cross.png");
+  }
+}
