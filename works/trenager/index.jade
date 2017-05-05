@@ -1,0 +1,373 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title trenager.com
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=cyrillic', rel='stylesheet')
+    link(href='css/main.css', rel='stylesheet')
+  body
+    header.page-header
+      .page-header__wrapper
+        .page-header__logo
+          img(src='img/logotype.png', alt='TRENAGER.com', width='135')
+        p.page-header__nav
+          a.page-header__nav-item.page-header__nav-item--target(href='#') Подбор тренажера
+          a.page-header__nav-item(href='#') Почему мы
+          a.page-header__nav-item(href='#') Бестселлеры
+          a.page-header__nav-item(href='#') Отзывы
+          a.page-header__nav-item(href='#') О нас
+          a.page-header__nav-item(href='#') Контакты
+        .page-header__user-block
+          span.page-header__phone (812) 531-58-55
+          a.page-header__target(href='md-advice.html') Заказать звонок
+        button.page-header__menu-btn Меню
+    .banner
+      .banner__put-background
+        .banner__sidebar
+          .banner__wrapper
+            span.banner__title
+              | Подбор эффективного кардио
+              span.banner__title-separator
+              | тренажера
+            span.banner__sub-title Под Ваш бюджет и Ваши цели
+            ul.banner__features
+              li.banner__features-item 17 тренеров-консультантов по подбору тренажеров
+              li.banner__features-item 19 лет на российском рынке
+              li.banner__features-item Кардиотренажеры от 3290 рублей
+            a.btn.banner__btn(href='md-advice.html')
+              span.btn__text Оставить заявку
+    .products
+      span.products__title Подберите эффективный кардиотренажер
+      form.products__controls.form
+        .form__select.products__controls-item
+          label.products__control-label.form__label.form__label--select(for='products-controls__type') Выберите вид тренажера
+          select#products-controls__type.form__select(name='products-controls__type')
+            option(value='products-controls__treadmills') Беговые дорожки
+            option(value='products-controls__exercise-bikes', selected='') Велотренажёры
+            option(value='products-controls__elliptical') Эллиптические тренажёры
+            option(value='products-controls__steppers') Степперы
+            option(value='products-controls__rowing-machines') Гребные тренажёры
+        .form__select.products__controls-item
+          label.products__control-label.form__label.form__label--select(for='products-controls__price') Выберите цену тренажера
+          select#products-controls__price.form__select(name='products-controls__price')
+            option(value='products-controls__cheaps', selected='') Бюджетные модели
+            option(value='products-controls__middle') Модели со средней ценой
+            option(value='products-controls__expesive') Профессиональные модели
+      .products__catalog.products__catalog--first
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price
+            | 7 962 
+            span.card__currency руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+      .question
+        span.question__title Не нашли подходящий тренажер?
+        .question__promo Оставьте заявку на индивидуальный подбор необходимого тренажера!
+        button.btn
+          span.btn__text Оставить заявку
+    .reasons
+      .reasons__background-mask
+        .reasons__wrapper
+          span.reasons__title 5 причин заказать тренажер у нас
+          .reasons__container
+            .reasons__item
+              .reasons__core
+                span.reasons__short
+                  | Большой
+                  br
+                  |  выбор
+            .reasons__item
+              .reasons__core
+                span.reasons__short
+                  | Товар
+                  br
+                  |  с гарантией
+            .reasons__item.reasons__item--both-deco
+              .reasons__core
+                span.reasons__short
+                  | Быстрая
+                  br
+                  |  доставка
+            .reasons__main-item
+              span.reasons__promo
+                | Качественные
+                br
+                |  товары
+              span.reasons__descr Мы закупаем лучшие тренажеры напрямую у поставщиков.
+            .reasons__item.reasons__item--both-deco
+              .reasons__core
+                span.reasons__short
+                  | Низкие
+                  br
+                  |  цены
+    .products
+      span.products__title Бестселлеры среди кардиотренажеров в 2017 году
+      .products__catalog.products__catalog--second
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+        .card
+          .card__preview
+            img.card__preview-img(src='img/product-1.png', alt='Предпросмотр товара')
+          span.card__name Matrix U7XE VA
+          span.card__price 7 962 руб
+          p.card__descr
+            | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          .card__controls
+            button.btn.btn--light.btn--slim
+              span.btn__text Заказать
+            button.btn.btn--second.btn--slim
+              span.btn__text Подробнее
+    .feedback
+      span.feedback__title Отзывы наших клиентов
+      span.feedback__promo
+        | Еще больше отзывов по адресу:
+        a.link(href='#') trenager.com
+      .slider.feedback__slider
+        .slider__item.feedback__item
+          .feedback__avatar
+            .slider__control.slider__control--left
+            img.feedback__avatar-img(src='img/avatar-1.jpg', alt='Аватар автора отзыва')
+            .slider__control.slider__control--right
+          span.feedback__name Павел Васильев
+          p.feedback__descr
+            | Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+          a.link.feedback__link(href='#') Ссылка на отзыв
+        ul.slider__pagination
+          li.slider__pagination-item
+          li.slider__pagination-item.slider__pagination-item--current
+          li.slider__pagination-item
+          li.slider__pagination-item
+    .gallery
+      span.gallery__title Наш магазин в фотографиях
+      .gallery__container
+        .gallery__item
+          img(src='img/gallery-item-1.jpg', alt='Изображение нашего магазина')
+        .gallery__item
+          img(src='img/gallery-item-2.jpg', alt='Изображение нашего магазина')
+        .gallery__item
+          img(src='img/gallery-item-3.jpg', alt='Изображение нашего магазина')
+        .gallery__item
+          img(src='img/gallery-item-4.jpg', alt='Изображение нашего магазина')
+        .gallery__item
+          img(src='img/gallery-item-5.jpg', alt='Изображение нашего магазина')
+    .location
+      span.location__title Мы готовы подобрать тренажер специально для вас
+      span.location__promo Приезжайте к нам в офис!
+      .location__map
+        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.7678053407244!2d30.419430893883455!3d60.03550175893559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963346ef4bc345%3A0x3c95f0e0e213b21a!2z0L_RgC4g0J_RgNC-0YHQstC10YnQtdC90LjRjywgODcsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5NTI2Nw!5e0!3m2!1sru!2sua!4v1493985619581', width='100%', height='513', frameborder='0', allowfullscreen='')
+        .location__adress
+          .location__adress-container
+            .location__adress-fieldset
+              .location__adress-item.location__adress-item--1-of-2
+                span.location__sub-title Мы работаем:
+                p.location__adress-textfield
+                  | С 11:00 до 20:00
+                  br
+                  |                 Без обеда и выходных
+              .location__adress-item.location__adress-item--1-of-2
+                span.location__sub-title Звоните:
+                p.location__adress-textfield
+                  | +7 (812) 531-58-55
+                  br
+                  |                 +7 (911) 218-14-71
+            .location__adress-item
+              span.location__sub-title Наш адрес:
+              p.location__adress-textfield
+                | г. Санкт-Петербург, м. "Гражданский проспект"
+                br
+                |               (300 метров от метро)
+                br
+                |               пр. Просвещения, дом 87, 2 этаж
+            .location__adress-item
+              span.location__sub-title Наши сайты:
+              a.link.link--url(href='#') trenager.com
+              a.link.link--url(href='#') trenager.ucoz.com
+              a.link.link--vk(href='#') vk.com/centr_trenagerov
+    .question
+      span.question__title Остались вопросы?
+      .question__promo Задайте их нашему менеджеру! Мы с радостью поможем подобрать тренажер!
+      button.btn
+        span.btn__text Оставить заявку
+    footer.page-footer
+      .page-footer__wrapper
+        span.page-footer__copyright
+          | Copyright © 2017 Trenager.com.
+          span.page-footer__copyright-inner Все права защищены.
+    .dev-hidden.modal.modal--advice.js-md__advice
+      .modal__container.modal__container--advice.advice
+        button.modal__exit Закрыть
+        span.advice__title
+          | Вы хотите получить бесплатную консультацию тренера по подбору самого эффективного тренажера для Вас?
+        form.advice__form.form(action='', method='post')
+          .form__row
+            .checklist.checklist--advice.form__item.form__item--1-of-2
+              span.checklist__title.checklist__title--advice Цель ваших тренеровок
+              .checklist__item
+                input#advice__goal--slimming.checklist__input(type='checkbox', name='advice__goal--slimming')
+                label.checklist__label(for='advice__goal--slimming') Похудение
+              .checklist__item
+                input#advice__goal--muscle.checklist__input(type='checkbox', name='advice__goal--muscle', checked='')
+                label.checklist__label(for='advice__goal--muscle') Укрепление мышечной массы
+              .checklist__item
+                input#advice__goal--health.checklist__input(type='checkbox', name='advice__goal--health')
+                label.checklist__label(for='advice__goal--health') Общее улучшение здоровья
+            .checklist.checklist--advice.form__item.form__item--1-of-2
+              span.checklist__title.checklist__title--advice Желаемая регулярность занятий
+              .checklist__item
+                input#advice__intensity--1-2.checklist__input(type='radio', name='advice__intensity', value='advice__intensity--1-2')
+                label.checklist__label(for='advice__intensity--1-2') 1-2 раза в неделю
+              .checklist__item
+                input#advice__intensity--3-4.checklist__input(type='radio', name='advice__intensity', value='advice__intensity--3-4', checked='')
+                label.checklist__label(for='advice__intensity--3-4') 3-4 раза в неделю
+              .checklist__item
+                input#advice__intensity--more-then-5.checklist__input(type='radio', name='advice__intensity', value='advice__intensity--more-then-5')
+                label.checklist__label(for='advice__intensity--more-then-5') Более 5 раз в неделю
+          .form__row
+            .form__item.form__item--1-of-2.form__item--advice
+              label.form__label(for='advice__first-name') Ваше имя
+              input#advice__first-name.form__input(type='text', placeholder='Ваше имя')
+            .form__item.form__item--1-of-2.form__item--advice
+              label.form__label(for='advice__phone', type='tel') Номер телефона
+              input#advice__phone.form__input(type='text', placeholder='Номер телефона')
+            .form__item.form__item--advice
+              label.form__label(for='advice__massage') Ваш коментарий
+              input#advice__massage.form__input(type='text', placeholder='Ваш коментарий')
+          button.btn.btn--advice
+            span.btn__text Оставить заявку
+    .dev-hidden.modal.modal--offer.js-md__offer
+      .modal__container.modal__container--offer.offer
+        button.modal__exit Закрыть
+        span.offer__title Вы выбрали: Велоэргометр Matrix U7XE VA 2017
+        .offer__container
+          .card.card--offer
+            .card__preview.card__preview--offer
+              img.card__preview-img.card__preview-img--offer(src='img/product-1.png', alt='Предпросмотр товара')
+            span.card__price 7 962 руб
+            p.card__descr
+              | Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          form.offer__form.form(action='', method='post')
+            .form__item.form__item--offer
+              label.form__label(for='offer__first-name') Имя
+              input#offer__first-name.form__input(type='text', placeholder='Ваше имя')
+            .form__item.form__item--offer
+              label.form__label(for='offer__phone') Телефон
+              input#offer__phone.form__input(type='tel', placeholder='Номер телефона')
+            .form__item.form__item--offer
+              label.form__label(for='offer__massage') Коментарий
+              input#offer__massage.form__input(type='text', placeholder='Ваш коментарий')
+            button.btn.btn--offer
+              span.btn__text Оставить заявку
+    .dev-hidden.modal.modal--alert.js-md__confirm
+      .modal__container.modal__container--alert.alert
+        button.modal__exit Закрыть
+        span.alert__title-descr Ваша заявка
+        span.alert__title Успешно отправлена
+        p.alert__descr
+          | В течении 30 минут наш менеджер свяжется с вами.
+        button.btn
+          span.btn__text Закрыть
+    .dev-hidden.modal.modal--alert.js-md__error
+      .modal__container.modal__container--alert.alert
+        button.modal__exit Закрыть
+        span.alert__title-descr Произошла
+        span.alert__title Ошибка отправки
+        p.alert__descr
+          | По техническим причинам произошел сбой отправки вашей заявки. Позвоните нам лучше напрямую, и мы с радостью вам поможем.
+        button.btn
+          span.btn__text Закрыть
+    script(src='js/libs.min.js')
+    script(src='js/app.js')
+
+
+include /../1 var/var-trenager-landing.jade

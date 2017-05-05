@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>trenager.com</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo">
+        <img src="img/logotype.png" alt="TRENAGER.com" width="135">
+      </div>
+      <p class="page-header__nav">
+        <a class="page-header__nav-item  page-header__nav-item--target" href="#">Подбор тренажера</a>
+        <a class="page-header__nav-item"  href="#">Почему мы</a>
+        <a class="page-header__nav-item"  href="#">Бестселлеры</a>
+        <a class="page-header__nav-item"  href="#">Отзывы</a>
+        <a class="page-header__nav-item"  href="#">О нас</a>
+        <a class="page-header__nav-item"  href="#">Контакты</a>
+      </p>
+      <div class="page-header__user-block">
+        <span class="page-header__phone">(812) 531-58-55</span>
+        <a class="page-header__target" href="md-advice.html">Заказать звонок</a>
+      </div>
+      <button class="page-header__menu-btn">Меню</button>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="banner__put-background">
+      <div class="banner__sidebar">
+        <div class="banner__wrapper">
+          <span class="banner__title">Подбор эффективного кардио<span class="banner__title-separator"></span>тренажера</span>
+          <span class="banner__sub-title">Под Ваш бюджет и Ваши цели</span>
+          <ul class="banner__features">
+            <li class="banner__features-item">17 тренеров-консультантов по подбору тренажеров</li>
+            <li class="banner__features-item">19 лет на российском рынке</li>
+            <li class="banner__features-item">Кардиотренажеры от 3290 рублей</li>
+          </ul>
+          <a class="btn  banner__btn" href="md-advice.html"><span class="btn__text">Оставить заявку</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products">
+    <span class="products__title">Подберите эффективный кардиотренажер</span>
+    <form class="products__controls  form">
+      <div class="form__select  products__controls-item">
+        <label for="products-controls__type" class="products__control-label  form__label  form__label--select">Выберите вид тренажера</label>
+        <select class="form__select" id="products-controls__type" name="products-controls__type">
+          <option value="products-controls__treadmills">Беговые дорожки</option>
+          <option value="products-controls__exercise-bikes" selected>Велотренажёры</option>
+          <option value="products-controls__elliptical">Эллиптические тренажёры</option>
+          <option value="products-controls__steppers">Степперы</option>
+          <option value="products-controls__rowing-machines">Гребные тренажёры</option>
+        </select>
+      </div>
+      <div class="form__select  products__controls-item">
+        <label for="products-controls__price" class="products__control-label  form__label  form__label--select">Выберите цену тренажера</label>
+        <select class="form__select" id="products-controls__price" name="products-controls__price">
+          <option value="products-controls__cheaps" selected>Бюджетные модели</option>
+          <option value="products-controls__middle">Модели со средней ценой</option>
+          <option value="products-controls__expesive">Профессиональные модели</option>
+        </select>
+      </div>
+    </form>
+    <div class="products__catalog  products__catalog--first">
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 <span class="card__currency">руб</span></span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+    </div>
+    <div class="question">
+      <span class="question__title">Не нашли подходящий тренажер?</span>
+      <div class="question__promo">Оставьте заявку на индивидуальный подбор необходимого тренажера!</div>
+      <button class="btn"><span class="btn__text">Оставить заявку</span></button>
+    </div>
+  </div>
+  <div class="reasons">
+    <div class="reasons__background-mask">
+      <div class="reasons__wrapper">
+        <span class="reasons__title">5 причин заказать тренажер у нас</span>
+        <div class="reasons__container">
+          <div class="reasons__item">
+            <div class="reasons__core">
+              <span class="reasons__short">Большой<br> выбор</span>
+            </div>
+          </div>
+          <div class="reasons__item">
+            <div class="reasons__core">
+              <span class="reasons__short">Товар<br> с гарантией</span>
+            </div>
+          </div>
+          <div class="reasons__item  reasons__item--both-deco">
+            <div class="reasons__core">
+              <span class="reasons__short">Быстрая<br> доставка</span>
+            </div>
+          </div>
+          <div class="reasons__main-item">
+            <span class="reasons__promo">Качественные<br> товары</span>
+            <span class="reasons__descr">Мы закупаем лучшие тренажеры напрямую у поставщиков.</span>
+          </div>
+          <div class="reasons__item  reasons__item--both-deco">
+            <div class="reasons__core">
+              <span class="reasons__short">Низкие<br> цены</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="products">
+    <span class="products__title">Бестселлеры среди кардиотренажеров в 2017 году</span>
+    <div class="products__catalog  products__catalog--second">
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+      
+      <div class="card">
+        <div class="card__preview">
+          <img class="card__preview-img" src="img/product-1.png" alt="Предпросмотр товара">
+        </div>
+        <span class="card__name">Matrix U7XE VA</span>
+        <span class="card__price">7 962 руб</span>
+        <p class="card__descr">
+          Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+        </p>
+        <div class="card__controls">
+          <button class="btn  btn--light  btn--slim"><span class="btn__text">Заказать</span></button>
+          <button class="btn  btn--second  btn--slim"><span class="btn__text">Подробнее</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feedback">
+    <span class="feedback__title">Отзывы наших клиентов</span>
+    <span class="feedback__promo">Еще больше отзывов по адресу:<a class="link" href="#">trenager.com</a></span>
+    <div class="slider feedback__slider">
+      <div class="slider__item  feedback__item">
+        <div class="feedback__avatar">
+          <div class="slider__control  slider__control--left"></div>
+          <img class="feedback__avatar-img" src="img/avatar-1.jpg" alt="Аватар автора отзыва">
+          <div class="slider__control  slider__control--right"></div>
+        </div>
+        <span class="feedback__name">Павел Васильев</span>
+        <p class="feedback__descr">
+          Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.
+        </p>
+        <a class="link feedback__link" href="#">Ссылка на отзыв</a>
+      </div>
+      <ul class="slider__pagination">
+        <li class="slider__pagination-item"></li>
+        <li class="slider__pagination-item  slider__pagination-item--current"></li>
+        <li class="slider__pagination-item"></li>
+        <li class="slider__pagination-item"></li>
+      </ul>
+    </div>
+  </div>
+  <div class="gallery">
+    <span class="gallery__title">Наш магазин в фотографиях</span>
+    <div class="gallery__container">
+      <div class="gallery__item">
+        <img src="img/gallery-item-1.jpg" alt="Изображение нашего магазина">
+      </div>
+      
+      <div class="gallery__item">
+        <img src="img/gallery-item-2.jpg" alt="Изображение нашего магазина">
+      </div>
+      
+      <div class="gallery__item">
+        <img src="img/gallery-item-3.jpg" alt="Изображение нашего магазина">
+      </div>
+      
+      <div class="gallery__item">
+        <img src="img/gallery-item-4.jpg" alt="Изображение нашего магазина">
+      </div>
+      
+      <div class="gallery__item">
+        <img src="img/gallery-item-5.jpg" alt="Изображение нашего магазина">
+      </div>
+    </div>
+  </div>
+  <div class="location">
+    <span class="location__title">Мы готовы подобрать тренажер специально для вас</span>
+    <span class="location__promo">Приезжайте к нам в офис!</span>
+    <div class="location__map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1992.7678053407244!2d30.419430893883455!3d60.03550175893559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963346ef4bc345%3A0x3c95f0e0e213b21a!2z0L_RgC4g0J_RgNC-0YHQstC10YnQtdC90LjRjywgODcsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5NTI2Nw!5e0!3m2!1sru!2sua!4v1493985619581" width="100%" height="513" frameborder="0" allowfullscreen></iframe>
+      <div class="location__adress">
+        <div class="location__adress-container">
+          <div class="location__adress-fieldset">
+            <div class="location__adress-item location__adress-item--1-of-2">
+              <span class="location__sub-title">Мы работаем:</span>
+              <p class="location__adress-textfield">
+                С 11:00 до 20:00<br>
+                Без обеда и выходных
+              </p>
+            </div>
+            <div class="location__adress-item location__adress-item--1-of-2">
+              <span class="location__sub-title">Звоните:</span>
+              <p class="location__adress-textfield">
+                +7 (812) 531-58-55<br>
+                +7 (911) 218-14-71
+              </p>
+            </div>
+          </div>
+          <div class="location__adress-item">
+            <span class="location__sub-title">Наш адрес:</span>
+            <p class="location__adress-textfield">
+              г. Санкт-Петербург, м. "Гражданский проспект"<br>
+              (300 метров от метро)<br>
+              пр. Просвещения, дом 87, 2 этаж
+            </p>
+          </div>
+          <div class="location__adress-item">
+            <span class="location__sub-title">Наши сайты:</span>
+            <a class="link  link--url" href="#">trenager.com</a>
+            <a class="link  link--url" href="#">trenager.ucoz.com</a>
+            <a class="link  link--vk" href="#">vk.com/centr_trenagerov</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="question">
+    <span class="question__title">Остались вопросы?</span>
+    <div class="question__promo">Задайте их нашему менеджеру! Мы с радостью поможем подобрать тренажер!</div>
+    <button class="btn"><span class="btn__text">Оставить заявку</span></button>
+  </div>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <span class="page-footer__copyright">Copyright © 2017 Trenager.com.<span class="page-footer__copyright-inner">Все права защищены.</span></span>
+    </div>
+  </footer>
+  <div class="dev-hidden  modal  modal--advice  js-md__advice">
+    <div class="modal__container  modal__container--advice  advice">
+      <button class="modal__exit">Закрыть</button>
+      <span class="advice__title">Вы хотите получить бесплатную консультацию тренера по подбору самого эффективного тренажера для Вас?</span>
+      <form class="advice__form form" action="" method="post">
+        <div class="form__row">
+          <div class="checklist  checklist--advice  form__item  form__item--1-of-2">
+            <span class="checklist__title  checklist__title--advice">Цель ваших тренеровок</span>
+            <div class="checklist__item">
+              <input class="checklist__input" type="checkbox" id="advice__goal--slimming" name="advice__goal--slimming">
+              <label for="advice__goal--slimming" class="checklist__label">Похудение</label>
+            </div>
+            <div class="checklist__item">
+              <input class="checklist__input" type="checkbox" id="advice__goal--muscle" name="advice__goal--muscle" checked>
+              <label for="advice__goal--muscle" class="checklist__label">Укрепление мышечной массы</label>
+            </div>
+            <div class="checklist__item">
+              <input class="checklist__input" type="checkbox" id="advice__goal--health" name="advice__goal--health">
+              <label for="advice__goal--health" class="checklist__label">Общее улучшение здоровья</label>
+            </div>
+          </div>
+          <div class="checklist  checklist--advice  form__item  form__item--1-of-2">
+            <span class="checklist__title  checklist__title--advice">Желаемая регулярность занятий</span>
+            <div class="checklist__item">
+              <input class="checklist__input" type="radio" id="advice__intensity--1-2" name="advice__intensity" value="advice__intensity--1-2">
+              <label for="advice__intensity--1-2" class="checklist__label">1-2 раза в неделю</label>
+            </div>
+            <div class="checklist__item">
+              <input class="checklist__input" type="radio" id="advice__intensity--3-4" name="advice__intensity" value="advice__intensity--3-4" checked>
+              <label for="advice__intensity--3-4" class="checklist__label">3-4 раза в неделю</label>
+            </div>
+            <div class="checklist__item">
+              <input class="checklist__input" type="radio" id="advice__intensity--more-then-5" name="advice__intensity" value="advice__intensity--more-then-5">
+              <label for="advice__intensity--more-then-5" class="checklist__label">Более 5 раз в неделю</label>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__item  form__item--1-of-2  form__item--advice">
+            <label class="form__label" for="advice__first-name">Ваше имя</label>
+            <input class="form__input" id="advice__first-name" type="text" placeholder="Ваше имя">
+          </div>
+
+          <div class="form__item  form__item--1-of-2  form__item--advice">
+            <label class="form__label" for="advice__phone" type="tel">Номер телефона</label>
+            <input class="form__input" id="advice__phone" type="text" placeholder="Номер телефона">
+          </div>
+
+          <div class="form__item  form__item--advice">
+            <label class="form__label" for="advice__massage">Ваш коментарий</label>
+            <input class="form__input" id="advice__massage" type="text" placeholder="Ваш коментарий">
+          </div>        
+        </div>
+        <button class="btn  btn--advice"><span class="btn__text">Оставить заявку</span></button>
+      </form>
+    </div>
+  </div>
+  <div class="dev-hidden  modal  modal--offer  js-md__offer">
+    <div class="modal__container  modal__container--offer  offer">
+      <button class="modal__exit">Закрыть</button>
+      <span class="offer__title">Вы выбрали: Велоэргометр Matrix U7XE VA 2017</span>
+      <div class="offer__container">
+        <div class="card  card--offer">
+          <div class="card__preview  card__preview--offer">
+            <img class="card__preview-img  card__preview-img--offer" src="img/product-1.png" alt="Предпросмотр товара">
+          </div>
+          <span class="card__price">7 962 руб</span>
+          <p class="card__descr">
+            Велоэргометры серий U/R/H. Часть внутренней электроники и программный код существенно доработаны.
+          </p>
+        </div>
+        <form class="offer__form form" action="" method="post">
+            <div class="form__item  form__item--offer">
+              <label class="form__label" for="offer__first-name">Имя</label>
+              <input class="form__input" id="offer__first-name" type="text" placeholder="Ваше имя">
+            </div>
+
+            <div class="form__item  form__item--offer">
+              <label class="form__label" for="offer__phone">Телефон</label>
+              <input class="form__input" id="offer__phone" type="tel" placeholder="Номер телефона">
+            </div>
+
+            <div class="form__item  form__item--offer">
+              <label class="form__label" for="offer__massage">Коментарий</label>
+              <input class="form__input" id="offer__massage" type="text" placeholder="Ваш коментарий">
+            </div>        
+          <button class="btn  btn--offer"><span class="btn__text">Оставить заявку</span></button>
+        </form>
+      </div>
+    </div>
+  </div>      
+  <div class="dev-hidden  modal  modal--alert  js-md__confirm">
+    <div class="modal__container  modal__container--alert  alert">
+      <button class="modal__exit">Закрыть</button>
+      <span class="alert__title-descr">Ваша заявка</span>
+      <span class="alert__title">Успешно отправлена</span>
+      <p class="alert__descr">
+        В течении 30 минут наш менеджер свяжется с вами.
+      </p>
+      <button class="btn"><span class="btn__text">Закрыть</span></button>
+    </div>
+  </div>
+  <div class="dev-hidden  modal  modal--alert  js-md__error">
+    <div class="modal__container  modal__container--alert  alert">
+      <button class="modal__exit">Закрыть</button>
+      <span class="alert__title-descr">Произошла</span>
+      <span class="alert__title">Ошибка отправки</span>
+      <p class="alert__descr">
+        По техническим причинам произошел сбой отправки вашей заявки. Позвоните нам лучше напрямую, и мы с радостью вам поможем.
+      </p>
+      <button class="btn"><span class="btn__text">Закрыть</span></button>
+    </div>
+  </div>
+  <script src="js/libs.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
