@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
-//    cssnano = require('gulp-cssnano'),
+    cssnano = require('gulp-cssnano'),
 //    rename = require('gulp-rename'),
 //    del = require('del'),
 //    imagemin = require('gulp-imagemin'),
@@ -21,10 +21,26 @@ gulp.task('less', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('scripts', function() {
+gulp.task('stylesLib', function() {
+  return gulp.src([
+    'libs/GridLoadingEffects/css/component.css',
+  ])
+    .pipe(cssnano())
+    .pipe(concat('libs.min.css'))
+    .pipe(gulp.dest('css'));
+});
+
+gulp.task('scriptsLib', function() {
   return gulp.src([
     'libs/jquery/dist/jquery.min.js',
     'libs/masonry/dist/masonry.pkgd.min.js',
+    //GridLoadingEffects
+    'libs/GridLoadingEffects/js/modernizr.custom.js',
+    'libs/GridLoadingEffects/js/masonry.pkgd.min.js',
+    'libs/GridLoadingEffects/js/imagesloaded.js',
+    'libs/GridLoadingEffects/js/classie.js',
+    'libs/GridLoadingEffects/js/AnimOnScroll.js',
+    //endGridLoadingEffects
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -47,7 +63,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('watch', ['browser-sync'], function() {
+gulp.task('watch', ['browser-sync', 'scriptsLib', 'stylesLib'], function() {
   gulp.watch('less/**/*.less', ['less']);
   gulp.watch('css/**/*.css', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);

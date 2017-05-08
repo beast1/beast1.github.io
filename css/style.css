@@ -165,6 +165,8 @@ div[id="contacts"] {
   margin-right: 15px;
 }
 .short-contacts-item {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   display: inline-block;
   width: 35px;
   height: 35px;
@@ -1004,6 +1006,12 @@ main.wrapper {
 /* ---- grid ---- */
 .grid {
   max-width: 1200px;
+  -webkit-perspective-origin: 50% 3531px;
+          perspective-origin: 50% 3531px;
+}
+.grid li {
+  width: 300px;
+  padding: 0;
 }
 /* clearfix */
 .grid:after {

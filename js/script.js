@@ -11,4 +11,14 @@ var msnry = new Masonry( '.grid', {
   // options
 });
 
+new AnimOnScroll(document.getElementById("grid"), {
+  minDuration : 0.4,
+  maxDuration : 0.7,
+  viewportFactor : 0.2
+});
+
+console.log("Hi");
+
 new Tippy(document.querySelector(".tippy"));
+
+console.log("Hi, again");
