@@ -7,7 +7,8 @@
   <link href="https://fonts.googleapis.com/css?family=Muli|Open+Sans:700&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/libs.min.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/6406f4c456.js"></script>
 </head>
 
 <body>
@@ -17,43 +18,47 @@
         <ul class="nav-list">
           <li class="nav-item"><a href="#about-me"><span>Прайс</span></a></li>
           <li class="nav-item"><a href="#works"><span>Портфолио</span></a></li>
-          <li class="nav-item"><a href="#contacts"><span>Связь</span></a></li>
         </ul>
       </nav>
-      <div class="short-contacts">
-        <a class="short-contacts-item vkontakte" href="https://vk.com/a_beast" target="_blank"><span>Вконтакте</span></a>
-        <a class="short-contacts-item gmail" href="https://beast.loby@gmail.com" target="_blank"><span>Почта гугл</span></a>
-        <a class="short-contacts-item skype" href="skype:live:de87e91f51ed96dd?chat" target="_blank"><span>Скайп</span></a>
+      <div class="social">
+        <a class="social__item social__item--vk" href="https://vk.com/a_beast" target="_blank"><span>Вконтакте</span></a>
+        <a class="social__item social__item--gmail" href="https://beast.loby@gmail.com" target="_blank"><span>Почта гугл</span></a>
+        <a class="social__item social__item--skype" href="skype:live:de87e91f51ed96dd?chat" target="_blank"><span>Скайп</span></a>
       </div>
     </div>
   </header>
   <main class="wrapper">
+<!--
   <div class="promo">
-    <b class="main-title">
+    <h1 class="main-title">
       Одностраничный статичный сайт за два рабочих дня<br>
       <span>Если не успеваю, заканчиваю бесплатно!</span>
-    </b>
+    </h1>
     <a href="skype:live:de87e91f51ed96dd?chat" class="btn--main-action  btn--main-action--black">Сделать заказ</a>
   </div>
-  <div class="features-list">
-    <div class="features-item">
-      <h2 class="features-title">Адаптивность</h2>
-      <p class="features-description">Ваш сайт будет оптимизирован для смартфонов, планшетов, мониторов и широкоформатных мониторов</p>
+-->
+  <div class="features">
+    <div class="features__item">
+      <i class="fa fa-tablet" aria-hidden="true"></i>
+      <h2 class="features__title">Адаптивность</h2>
+      <p class="features__descr">Ваш сайт будет оптимизирован для смартфонов, планшетов, мониторов и широкоформатных мониторов</p>
     </div>
-    <div class="features-item">
-      <h2 class="features-title">Кроссбраузерность</h2>
-      <p class="features-description">Ваш сайт выглядит одинаково во всех браузерах с аудиторией >2%</p>
+    <div class="features__item">
+      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+      <h2 class="features__title">Кроссбраузерность</h2>
+      <p class="features__descr">Ваш сайт выглядит одинаково во всех браузерах с аудиторией >2%</p>
     </div>
-    <div class="features-item">
-      <h2 class="features-title">Безопасность</h2>
-      <p class="features-description">Оплата через безопасную сделку на weblancer.net</p>
+    <div class="features__item">
+      <i class="fa fa-lock" aria-hidden="true"></i>
+      <h2 class="features__title">Безопасность</h2>
+      <p class="features__descr">Оплата через безопасную сделку на weblancer.net</p>
     </div>
   </div>
   <div class="about-me holder"  id="about">
     <div id="about-me"></div>
     <div class="fill fill--black">
       <div class="description">
-        <h2 class="g-title">Обо мне</h2>
+        <h2 class="h2  h2--light">Обо мне</h2>
         <p>
           Привет, я занимаюсь версткой всего лишь с декабря прошлого года. Однако за последние шесть месяцев я успел пройти 45 онлайн-курсов на крупнейшем <a class="a-db" href="https://htmlacademy.ru/" target="_blank">образовательном ресурсе</a> в сфере web-разработки, где получил самые актуальные знания HTML, CSS и JS. А после закончил <a class="a-db" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">интенсивный курс</a>, где защитил второй по сложности проект в потоке на 100%.
         </p>
@@ -63,10 +68,9 @@
         </p>
       </div>
       <div class="price-list">
-        <h2 class="g-title">Услуги</h2>
+        <h2 class="h2  h2--light">Услуги</h2>
         <h3>Базовые</h3>
         <ul class="price-types">
-          <lh class="price-types-title">Помимо базового функционала верстки вы получите:</lh>
           <li class="price-types-item">Кроссбраузерность</li>
           <li class="price-types-item">Прогрессивное улучшение</li>
           <li class="price-types-item">Оптимизированную скорость загрузки</li>
@@ -74,7 +78,6 @@
         </ul>
         <h3>Дополнительные</h3>
         <ul class="price-types">
-          <lh class="price-types-title">За отдельную плату вы получите:</lh>
           <li class="price-types-item">Семантичность</li>
           <li class="price-types-item">Пиксель-перфект</li>
         </ul>
@@ -95,13 +98,17 @@
       </div>
     </div>
     <div class="education fill">
-      <h2 class="g-title">Мои навыки</h2>
-      <div class="education-item">
-        <b class="education-title">Интенсивный курс «Базовый HTML и CSS»</b>
-        <span class="education-description">HTML Academy / 17 января – 22 февраля 2017</span>
-        <div class="education-certificate">
+      <h2 class="h2  h2--dark">Мои навыки</h2>
+      <div class="education__item">
+        <p>
+          <b class="education__title">Интенсивный курс «Базовый HTML и CSS»</b><br>
+          <span class="education__description">HTML Academy / 17 января – 22 февраля 2017</span>
+        </p>
+        <div class="education__certificate  interactive-img">
           <img src="img/preview-certificate-15(384x540).jpg" alt="Сертификат Интенсивный курс «Базовый HTML и CSS»" width="384" height="540px">
-          <div class="certificate-wrapper"><a class="g-btn--radian" href="certificate.pdf" target="_blank">PDF</a></div>
+          <div class="education__certificate-inner  interactive-img__holder">
+            <a class="interactive-img__target" href="certificate.pdf" target="_blank">Pdf</a>
+          </div>
         </div>
         <a class="keks-link" href="https://htmlacademy.ru/profile/beast" title="Мой профиль в HTML Academy" target="_blank">
           <img src="img/keks-logo.svg" alt="Ссылка на мой профиль HTML Academy" width="207.24" height="207.24">
@@ -111,66 +118,62 @@
   </div>
   <div class="works">
     <div id="works"></div>
-    <h2 class="g-title">Мои работы</h2>
-    <ul class="js-masonry  grid  clearfix effect-2" id="grid">
-      <li class="grid-item grid-item--height1">
+    <h2 class="h2  h2--dark">Мои работы</h2>
+    <ul class="js-masonry  grid  clearfix  effect-2  works__list" id="grid">
+      <li class="grid-item  grid-item--height1  interactive-img">
         <img src="img/work-preview-1.jpeg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/gllacy/page-gllacy-landing.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/gllacy/page-gllacy-landing.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height2">
+      <li class="grid-item grid-item--height2  interactive-img">
         <img src="img/work-preview-2.jpeg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/gllacy/page-gllacy-catalog.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/gllacy/page-gllacy-catalog.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height3">
+      <li class="grid-item grid-item--height3  interactive-img">
         <img src="img/work-preview-3.jpeg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/technomart/page-technomart-landing.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/technomart/page-technomart-landing.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height4">
+      <li class="grid-item grid-item--height4  interactive-img">
         <img src="img/work-preview-5.jpg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/wadge/page-wadge-catalog.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/wadge/page-wadge-catalog.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height5">
+      <li class="grid-item grid-item--height5  interactive-img">
         <img src="img/work-preview-4.jpg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/wadge/page-wadge-landing.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/wadge/page-wadge-landing.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height6">
+      <li class="grid-item grid-item--height6  interactive-img">
         <img src="img/work-preview-6.jpg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/sedona-adaptive/page-sedona-adaptive-landing.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/sedona-adaptive/page-sedona-adaptive-landing.html">FULL</a>
         </div>
       </li>
-      <li class="grid-item grid-item--height7">
+      <li class="grid-item grid-item--height7  interactive-img">
         <img src="img/work-preview-7.jpg" alt="product-preview" width="300px">
-        <div class="grid-item-fill">
-          <a class="g-btn--radian" href="works/trenager/page-trenager-landing.html">FULL</a>
+        <div class="interactive-img__holder">
+          <a class="interactive-img__target" href="works/trenager/page-trenager-landing.html">FULL</a>
         </div>
       </li>
     </ul>
     <small class="g-text-muted">*Мини-версии могут иметь мелкие отличия от полных из-за разрешения/контрастности вашего монитора, интерактивных элементов и т.д.</small>
   </div>
   </main>
-  <div class="contacts">
-    <div id="contacts"></div>
+  <div class="page-footer">
     <div class="wrapper">
-      <div class="contacts-links">
-        <h3 class="contacts-title">Все контакты</h3>
-        <ul class="contacts-links-list">
-          <li class="contacts-links-item">Телефон: <span class="value">+38(050)20-56-810</span></li>
-          <li class="contacts-links-item">Почта: <span class="value">beast.loby@gmail.com</span></li>
-        </ul>
-        <small class="g-text-muted"><a class="a-db" href="skype:live:de87e91f51ed96dd?chat" target="_blank">Скайп</a> - самый быстрый способ связи со мной.</small>
-      </div>
-      <a class="btn--main-action" href="skype:live:de87e91f51ed96dd?chat">Сделать заказ</a>
+      <p class="page-footer__contacts">
+        +38(050)20-56-810
+      </p>
+      <p class="page-footer__contacts">
+        beast.loby@gmail.com
+      </p>
     </div>
   </div>
   <script src="js/libs.min.js"></script>

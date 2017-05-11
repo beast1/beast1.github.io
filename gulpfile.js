@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-    //sass = require('gulp-sass'),
+    scss = require('gulp-sass'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglifyjs'),
@@ -16,6 +16,14 @@ var gulp = require('gulp'),
 gulp.task('less', function() {
   return gulp.src('less/**/*.less')
     .pipe(less())
+    .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(gulp.dest('css'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+gulp.task('scss', function() {
+  return gulp.src('scss/*.scss')
+    .pipe(scss())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream: true}))
@@ -65,6 +73,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('watch', ['browser-sync', 'scriptsLib', 'stylesLib'], function() {
   gulp.watch('less/**/*.less', ['less']);
+  gulp.watch('scss/**/*.scss', ['scss']);
   gulp.watch('css/**/*.css', browserSync.reload);
   gulp.watch('*.html', browserSync.reload);
   gulp.watch('js/**/*.js', browserSync.reload);

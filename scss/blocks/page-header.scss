@@ -1,0 +1,108 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  
+/*  display: flex;*/
+/*  padding: 5px 0;*/
+  
+  color: $color-main;
+  background-color: $color-second;
+}
+
+.fixed-header .wrapper {
+  display: flex;
+}
+
+.main-nav {
+  min-width: 600px;
+  margin-right: auto;
+/*  margin-left: 5%;*/
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1 );
+  
+/*  transform: scale(1.1);*/
+}
+
+.nav-item a {
+/*  position: relative;*/
+  
+  display: inline-block;
+  padding: 15px;
+  
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+/*  transition: all 0.2s ease;*/
+}
+
+.nav-item span {
+  position: relative;
+  
+/*  transition: all 0.2s ease;*/
+}
+
+/*
+.nav-item:hover span {
+  text-shadow: 10px 10px 10px white;
+}
+*/
+
+/*
+.nav-item:hover a {
+  padding: 0;
+  margin: 0;
+  text-shadow: 10px 10px 10px white;
+}
+*/
+
+/*
+.nav-item a::before {
+  content: "";
+  
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  border-bottom: 4px solid #ffffff;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+*/
+
+
+
+/*
+.short-contacts .vkontakte {
+  background-image: url("../img/icons/icon-vk.svg");
+} 
+.short-contacts .gmail {
+  background-image: url("../img/icons/icon-gm.svg");
+} 
+.short-contacts .skype {
+  background-image: url("../img/icons/icon-sky.svg");
+}
+*/

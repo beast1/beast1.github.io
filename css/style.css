@@ -42,7 +42,7 @@ body {
   margin-right: 25px;
 }
 .g-title::after {
-  margin-left: 25px;
+  margin-left: 200px;
 }
 .g-text-muted {
   -webkit-align-self: flex-start;
