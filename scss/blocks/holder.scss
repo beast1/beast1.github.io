@@ -1,0 +1,35 @@
+.holder {
+  &__slider {
+    max-width: 50%;
+  }
+  
+  &__slider-item {
+    
+  }
+  
+  &__fill {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    
+    &--1-of-2 {
+      max-width: 50%;
+      width: 100%;
+    }
+    
+    &--black {
+      color: $color-main;
+      background-color: $color-second;
+    }
+    
+    &--white {
+      color: $color-second;
+      background-color: $color-main;
+    }
+  }
+}
+
+.holder .slick-dotted.slick-slider {
+  margin-bottom: 0;
+} 

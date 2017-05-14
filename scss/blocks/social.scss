@@ -56,5 +56,10 @@
     &--academy span {
       background-image: url("../img/academy-logo.svg");
     }
+    
+    &--github span {
+      font-size: 35px;
+      line-height: 35px;
+    }
   }
 }

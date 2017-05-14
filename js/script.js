@@ -1,24 +1,22 @@
+console.log("JS is connected");
+
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
   itemSelector: '.grid-item',
   columnWidth: 200
 });
-
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-  // options
-});
+console.log("Msnry is connected");
 
 new AnimOnScroll(document.getElementById("grid"), {
   minDuration : 0.4,
   maxDuration : 0.7,
   viewportFactor : 0.2
 });
+console.log("AnimOnScroll is connected");
 
-console.log("Hi");
-
-new Tippy(document.querySelector(".tippy"));
-
-console.log("Hi, again");
+$('.holder__slider').slick({
+  dots: true,
+  arrows: false
+});
+console.log("Slick is connected");

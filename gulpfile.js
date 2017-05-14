@@ -40,7 +40,8 @@ gulp.task('stylesLib', function() {
 
 gulp.task('scriptsLib', function() {
   return gulp.src([
-    'libs/jquery/dist/jquery.min.js',
+//    'libs/jquery/dist/jquery.min.js',
+    'libs/slick-carousel/slick/slick.min.js',
     'libs/masonry/dist/masonry.pkgd.min.js',
     //GridLoadingEffects
     'libs/GridLoadingEffects/js/modernizr.custom.js',
