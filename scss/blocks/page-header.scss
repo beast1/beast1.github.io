@@ -45,10 +45,11 @@
 }
 
 .nav-item a {
-/*  position: relative;*/
-  
-  display: inline-block;
-  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
   
   color: #ffffff;
   text-decoration: none;
