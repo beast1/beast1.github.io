@@ -1,17 +1,18 @@
-var gulp = require('gulp'),
-    scss = require('gulp-sass'),
-    browserSync = require('browser-sync'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglifyjs'),
-    cssnano = require('gulp-cssnano'),
-//    rename = require('gulp-rename'),
-//    del = require('del'),
-//    imagemin = require('gulp-imagemin'),
-//    pngquant = require('imagemin-pngquant'),
-//    cashe = require('gulp-cache'),
+var gulp         = require('gulp'),
+    scss         = require('gulp-sass'),
+    browserSync  = require('browser-sync'),
+    concat       = require('gulp-concat'),
+    uglify       = require('gulp-uglifyjs'),
+    cssnano      = require('gulp-cssnano'),
+//    rename       = require('gulp-rename'),
+//    del          = require('del'),
+//    imagemin     = require('gulp-imagemin'),
+//    pngquant     = require('imagemin-pngquant'),
+//    cashe        = require('gulp-cache'),
     autoprefixer = require('gulp-autoprefixer'),
-    less = require('gulp-less'),
-    pug = require('gulp-pug');
+    sourcemaps   = require('gulp-sourcemaps'),
+    less         = require('gulp-less'),
+    pug          = require('gulp-pug');
 
 gulp.task('less', function() {
   return gulp.src('less/**/*.less')
@@ -23,8 +24,10 @@ gulp.task('less', function() {
 
 gulp.task('scss', function() {
   return gulp.src('scss/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(scss())
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'))
     .pipe(browserSync.reload({stream: true}))
 });
