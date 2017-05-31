@@ -1,0 +1,37 @@
+.link {
+  @include un-target;
+  @include font($color-action-second, inherit);
+  
+  text-decoration: underline;
+  
+  &--url {
+    &::before {
+      content: "";
+      
+      display: inline-block;
+      width: 16px;
+      height: 9px;
+      margin-right: 2px;
+      
+      background-image: url("../img/icon-finger.png");
+    }
+  }
+  
+  &--vk {
+    &::before {
+      content: "";
+      
+      display: inline-block;
+      width: 15px;
+      height: 8px;
+      margin-right: 3px;
+      
+      background-image: url("../img/icon-vk.png");
+    }
+  }
+}
+
+p .link,
+span .link {
+  margin: 0 5px;
+}

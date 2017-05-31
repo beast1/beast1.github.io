@@ -1,0 +1,122 @@
+.page-header {
+  background-color: $color-second;
+  
+  &__wrapper {
+    @include wrapper;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80px;
+    
+    @media (max-width: $screen-lg) {
+      justify-content: flex-start;
+    }
+    
+    @media (max-width: $screen-mp) {
+      position: relative;
+      
+      justify-content: space-between;
+      padding: 60px 20px 30px;
+    }
+    
+    @media (max-width: $screen-sm) {
+      padding: 30px 20px 64px;
+    }    
+  }
+  
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
+  }
+  
+  &__nav-item {
+    @include un-target;
+    @include font($color-main, 12px);
+    
+    margin: 0 16px;
+    
+    text-transform: uppercase;
+    font-weight: 700;
+    
+    &--target {
+      color: $color-action-main;
+    }
+    
+    &:first-of-type {
+      margin-left: 0;
+    }
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  &__user-block {
+    @media (max-width: $screen-lg) {
+      margin-left: auto;
+    }
+    
+    @media (max-width: $screen-mp) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      
+      display: flex;
+      justify-content: center;
+    }
+    
+    @media (max-width: $screen-sm) {
+      bottom: 27px;
+    }
+  }
+  
+  &__phone {
+    @include font($color-main, 14px);
+    
+    margin-right: 15px;
+    
+    font-weight: 700;
+  }
+  
+  &__target {
+    @include un-target;
+    @include font($color-action-main, 12px);
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+  
+  &__menu-btn {
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
+    
+    @media (max-width: $screen-lg) {
+      @include un-target;
+      
+      display: flex;
+      width: 42px;
+      height: 16px;
+      margin-left: 100px;
+      
+      font-size: 0;
+      
+      background-image: url("../img/icon__burger.png");
+    }
+    
+    @media (max-width: $screen-mp) {
+      margin-left: 0;
+    }
+    
+    @media (max-width: $screen-sm) {
+      margin-left: auto;
+    } 
+  }
+}

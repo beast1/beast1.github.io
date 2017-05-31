@@ -1,0 +1,36 @@
+.alert {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 48px 46px 38px;
+  
+  text-align: center;
+  
+  &__title-descr {
+    @include font($color-second, 14px);
+    
+    margin-bottom: 18px;
+    
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  &__title {
+    @include font($color-second, 18px);
+    
+    margin-bottom: 23px;
+    
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  &__descr {
+    @include font($color-second, 15px);
+    
+    margin-bottom: 45px;
+    
+    line-height: 22px;
+    font-weight: 300;
+  }
+}

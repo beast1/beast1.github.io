@@ -1,0 +1,55 @@
+//colors
+
+$color-main: #ffffff;
+
+$color-second: #000000;
+
+$color-action-main: #c4d700;
+
+$color-action-second: #1175d2;
+
+$gray-darken: #858383;
+$gray-dark: #a2a2a2;
+$gray: #b7b7b7;
+
+$black: #000000; //Использовать, если нужно быть уверенным, что цвет останется черным
+
+//media
+
+$screen-lg: 1170px;
+$screen-mp: 992px;
+$screen-sm: 764px;
+$screen-xs: 345px;
+
+//fonts
+
+$font-family: "Open Sans", sans-serif;
+$font-family--h1: $font-family;
+$font-family--h2: $font-family;
+$font-family--h3: $font-family;
+$font-family--p: $font-family;
+
+$font-size: 16px;
+$font-size--h1: 36px;
+$font-size--h2: 26px;
+$font-size--h3: 18px;
+$font-size--p: 14px;
+
+$line-height: 16px;
+$line-height--h1: 38px;
+$line-height--h2: 37px;
+$line-height--h3: 20px;
+$line-height--p: 18px;
+
+$font-weight: 400;
+$font-weight--h1: 700;
+$font-weight--h2: 600;
+$font-weight--h3: 300;
+$font-weight--p: 300;
+
+//animation
+$trs-default: (
+	duration: 0.2s,
+	rhytm: ease-out
+)
+

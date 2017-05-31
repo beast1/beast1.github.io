@@ -1,0 +1,83 @@
+.checklist {
+  &--advice {
+    margin-bottom: 46px;
+  }
+  
+  &__title {
+    @include font($color-action-main, 14px);
+    
+    display: flex;
+        
+    font-weight: 700;
+    text-transform: uppercase;
+    
+    &--advice {
+      margin-bottom: 19px;
+    }
+  }
+  
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    min-height: 19px;
+  }
+  
+  &__label {
+    @include font($color-second, 15px);
+    
+    position: relative;
+    
+    margin-left: 21px;
+    
+    font-weight: 300;
+    
+    &::before {
+      content: "";
+      
+      position: absolute;
+      top: 50%;
+      left: -21px;
+      
+      width: 12px;
+      height: 12px;
+      
+      margin-top: -6px;
+      
+      border-radius: 2px;
+      box-shadow: inset 0 0 0 1px $gray;
+    }
+    
+    &::after {
+      content: "";
+      
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      
+      display: none;
+      width: 9px;
+      height: 4px;
+      border-bottom: 1.5px solid $color-main;
+      border-left: 1.5px solid $color-main;
+      margin-top: -3px;
+      
+      transform: rotate(-45deg);
+    }    
+  }
+  
+  &__input {
+    display: none;
+  }
+}
+
+input[type="checkbox"]:checked + label::before,
+input[type="radio"]:checked + label::before {
+  background-color: $color-action-main;
+  box-shadow: none;
+}
+
+input[type="checkbox"]:checked + label::after,
+input[type="radio"]:checked + label::after {
+  display: flex;
+}
