@@ -1,0 +1,105 @@
+.select-group {
+  @include font($gray, 12px);
+  
+  display: flex;	
+  align-items: center;	
+
+  text-transform: uppercase;
+
+  &__label {
+    display: inline;
+    
+    // @include font($gray, 12px);
+    @include font($color-second, 12px);
+    
+    margin-right: 14px;
+    
+    text-transform: uppercase;
+    text-align: right;
+  }
+
+  &__options {
+		display: flex;	
+		flex-direction: column;	
+
+		width: 100px;
+  }
+
+  &__option {
+  	@include un-target;
+  }
+}
+
+	.select-group .select {
+	  display:flex;
+	  flex-direction: column;
+	  position:relative;
+	  width:250px;
+	  height:30px;
+	}
+
+	.select-group .option {
+	  padding:0 30px 0 10px;
+	  min-height: 30px;
+	  display:flex;
+	  align-items:center;
+	  background:#333;
+	  border-top:#222 solid 1px;
+	  position:absolute;
+	  top:0;
+	  width: 100%;
+	  pointer-events:none;
+	  order:2;
+	  z-index:1;
+	  transition:background .4s ease-in-out;
+	  box-sizing:border-box;
+	  overflow:hidden;
+	  white-space:nowrap;
+	  color: $color-main;
+	}
+
+	.select-group .option:hover {
+	  background:#666;
+	}
+
+	.select-group .select:focus .option {
+	  position:relative;
+	  pointer-events:all;
+	}
+
+	.select-group input {
+	  opacity:0;
+	  position:absolute;
+	  left:-99999px;
+	}
+
+	.select-group input:checked + label {
+	  order: 1;
+	  z-index:2;
+	  background:#666;
+	  border-top:none;
+	  position:relative;
+	}
+
+	.select-group input:checked + label:after {
+	  content:'';
+	  width: 0; 
+		height: 0; 
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-top: 5px solid white;
+	  position:absolute;
+	  right:10px;
+	  top:calc(50% - 2.5px);
+	  pointer-events:none;
+	  z-index:3;
+	}
+
+	.select-group input:checked + label:before {
+	  position:absolute;
+	  right:0;
+	  height: 40px;
+	  width: 40px;
+	  content: '';
+	  background:#666;
+	}
