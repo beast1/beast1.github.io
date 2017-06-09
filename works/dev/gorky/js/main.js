@@ -1,0 +1,9 @@
+"use strict";
+
+//blocks
+$(document).ready(function () {
+  $(".masters__list").owlCarousel();
+});
+
+console.log("Hi");
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOlsiJCIsImRvY3VtZW50IiwicmVhZHkiLCJvd2xDYXJvdXNlbCIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQUE7QUFDQUEsRUFBRUMsUUFBRixFQUFZQyxLQUFaLENBQWtCLFlBQVU7QUFDMUJGLElBQUUsZ0JBQUYsRUFBb0JHLFdBQXBCO0FBQ0QsQ0FGRDs7QUFJQUMsUUFBUUMsR0FBUixDQUFZLElBQVoiLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vYmxvY2tzXHJcbiQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCl7XHJcbiAgJChcIi5tYXN0ZXJzX19saXN0XCIpLm93bENhcm91c2VsKCk7XHJcbn0pO1xyXG5cclxuY29uc29sZS5sb2coXCJIaVwiKTsiXX0=
