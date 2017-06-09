@@ -22,6 +22,4 @@ ExpiresByType image/jpeg "access plus 1 years"
 
 ExpiresByType image/bmp "access plus 1 years"
 
-ExpiresByType image/png "access plus 1 years"
-
 </IfModule>
