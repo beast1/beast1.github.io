@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Mountain Travel</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <link href="css/style.min.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+  <!-- Шрифты -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+ 
+  <div class="js-scrollspy  page__inner">
+
+    <div class="page__content">
+      <header class="page-header" role="banner">
+      	<div class="page-header__container">
+      	  <div class="page-header__logo">
+      	  	<img src="img/logo-page-header.png" alt="Mountains">
+      	  </div>
+      	  <nav class="page-nav  page-header__page-nav">
+      	  	<a class="page-nav__item" href="#about-us">О нас</a>
+      	  	<a class="page-nav__item" href="#journal">Журнал</a>
+      	  	<a class="page-nav__item" href="#callback">Заказать</a>
+      	  	<a class="page-nav__item" href="#steps">Как мы работаем</a>
+      	  	<a class="page-nav__item" href="#showcase">Путешествия</a>
+      	  	<a class="page-nav__item" href="#gallery">Галерея</a>
+      	  	<a class="page-nav__item" href="#reviews">Отзывы</a>
+      	  </nav>
+      	  <button class="target  target_background_empty  page-header__target"><span class="target__text">Заказать</span></button>
+      	</div>
+      </header>
+
+      <div class="banner">
+      	<div class="banner__content">
+      		<img class="banner__slogan" src="img/img-banner__slogan.png" alt="Отправляйтесь в горы">
+      		<p class="banner__descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eius modi sint iste.</p>
+      		<a class="target  banner__target" href="#"><span class="target__text">Заказать</span></a>
+      	</div>
+      </div>
+
+
+      <main role="main">
+
+        <div class="about-us" id="about-us">
+        	<div class="about-us__container">
+        		<div class="about-us__content">
+        			<h2 class="block-title  block-title_h3  about-us__title">О нас</h2>
+        			<p class="about-us__descr">Aliquam sed posuere urna, et gravida nisl. Praesent interdum nisl libero, pretium egestas purus eleifend vitae. Mauris suscipit vel lectus at luctus.</p>
+        			<button class="target  about-us__target"><span class="target__text">Читать далее</span></button>
+        		</div>
+        		<div class="about-us__gallery">
+        			<div class="about-us__gallery-item  about-us__gallery-item_size_large">
+        				<img src="img/img-about-us__gallery-1.jpg" alt="Фотография из похода" class="about-us__gallery-img">
+        			</div>
+        			<div class="about-us__gallery-item  about-us__gallery-item_size_small">
+        				<img src="img/img-about-us__gallery-2.jpg" alt="Фотография из похода" class="about-us__gallery-img">
+        			</div>
+        		</div>
+        	</div>
+        </div>
+
+        <section class="journal" id="journal">
+        	<h2 class="block-title  block-title_h2  journal__title">Наш журнал</h2>
+        	<div class="journal__notes">
+        		<div class="journal__notes-group">
+        			<section class="journal__note">
+        				<div class="journal__note-preview">
+        					<svg class="journal__note-icon  journal__note-icon_heart"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-journal__heart"></use></svg>
+        					<img class="journal__note-preview-img" src="img/img-journal__love.jpg" alt="Изображение гор" width="380" height="380">
+        				</div>
+        				<div class="journal__note-content  journal__note-content_side_right">
+        					<span class="journal__note-theme">Любовь</span>
+        					<h3 class="journal__note-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h3>
+        					<p class="journal__note-descr">
+        						You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+        					</p>
+        					<span class="journal__note-page">01</span>
+        				</div>
+        			</section>
+        			<section class="journal__note">
+        				<div class="journal__note-preview">
+        					<svg class="journal__note-icon  journal__note-icon_plant" ><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-journal__plant"></use></svg>
+        					<img class="journal__note-preview-img" src="img/img-journal__plant.jpg" alt="Изображение леса" width="380" height="380">
+        				</div>
+        				<div class="journal__note-content  journal__note-content_side_left">
+        					<span class="journal__note-theme">Природа</span>
+        					<h3 class="journal__note-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h3>
+        					<p class="journal__note-descr">
+        						You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+        					</p>
+        					<span class="journal__note-page">02</span>
+        				</div>
+        			</section>
+        		</div>
+        		<section class="journal__note  journal__note_vertical">
+        			<div class="journal__note-preview">
+        				<svg class="journal__note-icon  journal__note-icon_water"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-journal__water"></use></svg>
+        				<img class="journal__note-preview-img" src="img/img-journal__water.jpg" alt="Изображение озера" width="380" height="380">
+        			</div>
+        			<div class="journal__note-content  journal__note-content_side_bottom">
+        				<span class="journal__note-theme">Вода</span>
+        				<h3 class="journal__note-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</h3>
+        				<p class="journal__note-descr">
+        					You know how to make best coffee in the universe? Or, maybe you’re very good in designing gloves? Tell everyone about your experience and skills.
+        				</p>
+        				<span class="journal__note-page">03</span>
+        			</div>
+        		</section>
+        	</div>
+        </section>
+
+        <div class="callback" id="callback">
+        	<div class="callback__container">
+        		<h3 class="block-title  block-title_h3  callback__title">Хотите присоеденится?</h3>
+        		<p class="callback__descr">Оставьте заявку, чтобы мы записали вашу завку в очередь на следующий подъем!</p>
+
+        		<form class="form  callback__form">
+        			<div class="callback__input-wrap">
+        				<input class="form__input  callback__input" id="callback__name" type="text" placeholder="Беар Гриллс">
+        				<label for="callback__name" class="form__label  visualy-hidden">Ваше имя:</label>
+        			</div>
+
+        				<input class="form__input  callback__input" id="callback__phone" type="tel" placeholder="">
+        				<label for="callback__phone" class="form__label  visualy-hidden">Ваш номер:</label>
+
+        			<button class="target  form__submit  callback__submit"><span class="target__text">Заказать сейчас</span></button>
+        		</form>
+
+        		<small class="callback__small">
+        			<svg class="callback__small-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-callback__safe"></use></svg>
+        			Ваши данные под защитой
+        		</small>
+        	</div>
+        </div>
+
+        <section class="steps" id="steps">
+        	<div class="steps__container">
+        		<h2 class="block-title  block-title_h2  steps__title">Как мы работаем</h2>
+        		<div class="steps__items">
+        			<section class="steps__item">
+        				<span class="steps__number">1</span>
+        				<div class="steps__icon-wrap">
+        					<svg class="steps__icon  steps__icon_document"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-steps__document"></use></svg>
+        				</div>
+        				<h3 class="steps__item-title">Lorem ipsum dolor sit amet</h3>
+        				<p class="steps__item-descr">consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        			</section>
+
+        			<section class="steps__item">
+        				<span class="steps__number">2</span>
+        				<div class="steps__icon-wrap">
+        					<svg class="steps__icon  steps__icon_person"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-steps__person"></use></svg>
+        				</div>
+        				<h3 class="steps__item-title">Lorem ipsum dolor sit amet</h3>
+        				<p class="steps__item-descr">consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        			</section>
+
+        			<section class="steps__item">
+        				<span class="steps__number">3</span>
+        				<div class="steps__icon-wrap">
+        					<svg class="steps__icon  steps__icon_book"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-steps__book"></use></svg>
+        				</div>
+        				<h3 class="steps__item-title">Lorem ipsum dolor sit amet</h3>
+        				<p class="steps__item-descr">consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        			</section>
+
+        			<section class="steps__item">
+        				<span class="steps__number">4</span>
+        				<div class="steps__icon-wrap">
+        					<svg class="steps__icon  steps__icon_check"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-steps__check"></use></svg>
+        				</div>
+        				<h3 class="steps__item-title">Lorem ipsum dolor sit amet</h3>
+        				<p class="steps__item-descr">consectetur adipisicing elit, sed do eiusmod tempor incididunt</p>
+        			</section>
+        		</div>
+        	</div>
+        </section>
+
+        <section class="showcase" id="showcase">
+        	<div class="showcase__container">
+        		<h2 class="block-title  block-title_h2  showcase__title">Путешествуйте с нами</h2>
+        		<div class="showcase__items">
+        			<section class="card  card_carpatian">
+        				<div class="card__score">
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        				</div>
+        				<h3 class="block-title  block-title_h3  card__title">Карпаты</h3>
+        				<p class="card__short-descr">Путешествие по горам Карпат</p>
+        				<div class="card__prices">
+        					<span class="card__price  card__price_type_old">
+        						<span class="card__price-value">1000</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        					<span class="card__price  card__price_type_current">
+        						<span class="card__price-value">1000</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        				</div>
+        			</section>
+
+        			<section class="card  card_alps">
+        				<div class="card__score">
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        				</div>
+        				<h3 class="block-title  block-title_h3  card__title">Альпы</h3>
+        				<p class="card__short-descr">Путешествие по горам Альп</p>
+        				<div class="card__prices">
+        					<span class="card__price  card__price_type_old">
+        						<span class="card__price-value">700</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        					<span class="card__price  card__price_type_current">
+        						<span class="card__price-value">477</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        				</div>
+        			</section>
+
+        			<section class="card  card_kavkaz">
+        				<div class="card__score">
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        				</div>
+        				<h3 class="block-title  block-title_h3  card__title">Кавказ</h3>
+        				<p class="card__short-descr">Путешествие по горам Кавказа</p>
+        				<div class="card__prices">
+        					<span class="card__price  card__price_type_old">
+        						<span class="card__price-value">900</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        					<span class="card__price  card__price_type_current">
+        						<span class="card__price-value">599</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        				</div>
+        			</section>
+
+        			<section class="card  card_pyrenes">
+        				<div class="card__score">
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        				</div>
+        				<h3 class="block-title  block-title_h3  card__title">Перу</h3>
+        				<p class="card__short-descr">Путешествие по горам Перу</p>
+        				<div class="card__prices">
+        					<span class="card__price  card__price_type_old">
+        						<span class="card__price-value">400</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        					<span class="card__price  card__price_type_current">
+        						<span class="card__price-value">299</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        				</div>
+        			</section>
+
+        			<section class="card  card_rocky">
+        				<div class="card__score">
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        					<svg class="icon  card__score-item"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-card__star"></use></svg>
+        				</div>
+        				<h3 class="block-title  block-title_h3  card__title">Рок</h3>
+        				<p class="card__short-descr">Путешествие по горам Рока</p>
+        				<div class="card__prices">
+        					<span class="card__price  card__price_type_old">
+        						<span class="card__price-value">1200</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        					<span class="card__price  card__price_type_current">
+        						<span class="card__price-value">1999</span>
+        						<span class="card__price-currency">$</span>
+        					</span>
+        				</div>
+        			</section>
+        		</div>
+        	</div>
+        </section>
+
+        <div class="gallery" id="gallery">
+        	<div class="gallery__container">
+        		<h2 class="block-title  block-title_h2  gallery__title">Галерея</h2>
+        		<div class="gallery__items">
+        			<div class="gallery__item  gallery__item_width_small"><img class="gallery__item-img" src="img/img-gallery-1.jpg" alt="Фото из путешествий"></div>
+        			<div class="gallery__item  gallery__item_width_small"><img class="gallery__item-img" src="img/img-gallery-2.jpg" alt="Фото из путешествий"></div>
+        			<div class="gallery__item  gallery__item_width_middle"><img class="gallery__item-img" src="img/img-gallery-3.jpg" alt="Фото из путешествий"></div>
+        			<div class="gallery__item  gallery__item_width_middle"><img class="gallery__item-img" src="img/img-gallery-4.jpg" alt="Фото из путешествий"></div>
+        			<div class="gallery__item  gallery__item_width_big"><img class="gallery__item-img" src="img/img-gallery-5.jpg" alt="Фото из путешествий"></div>
+        			<div class="gallery__item  gallery__item_width_big"><img class="gallery__item-img" src="img/img-gallery-6.jpg" alt="Фото из путешествий"></div>
+        		</div>
+        	</div>
+        </div>
+
+        <section class="brands">
+        	<div class="brands__container">
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-1.png" alt="Логотип известного бренда">
+        		</div>
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-2.png" alt="Логотип известного бренда">
+        		</div>
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-3.png" alt="Логотип известного бренда">
+        		</div>
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-4.png" alt="Логотип известного бренда">
+        		</div>
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-5.png" alt="Логотип известного бренда">
+        		</div>
+        		<div class="brands__item">
+        			<img class="brands__item-img" src="img/img-brands__item-6.png" alt="Логотип известного бренда">
+        		</div>
+        	</div>
+        </section>
+
+
+      </main>
+
+      <div class="page-bottom-group">
+
+        <section class="reviews" id="reviews">
+        	<h2 class="block-title  block-title_h2  reviews__title">Наши клиенты говорят</h2>
+        	<div class="reviews__items">
+        		<blockquote class="reviews__item">
+        			<div class="reviews__quote-icon">
+        				<div class="icon  icon-reviews__quote"></div>
+        			</div>
+        			<p class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit, ex error soluta magni odit, nam consequuntur quas corporis eos provident voluptate labore officiis fuga natus accusamus quia et quae.</p>
+        			<div class="reviews__author">
+        				<div class="reviews__author-avatar"></div>
+        				<cite class="reviews__author-text">
+        					<span class="reviews__author-name">Вадим Макеев</span>
+        					<span class="reviews__author-profession">Веб-евангелист</span>
+        				</cite>
+        			</div>
+        		</blockquote>
+
+        		<blockquote class="reviews__item">
+        			<div class="reviews__quote-icon">
+        				<div class="icon  icon-reviews__quote"></div>
+        			</div>
+        			<p class="reviews__quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fugit, ex error soluta magni odit, nam consequuntur quas corporis eos provident voluptate labore officiis fuga natus accusamus quia et quae.</p>
+        			<div class="reviews__author">
+        				<div class="reviews__author-avatar"></div>
+        				<cite class="reviews__author-text">
+        					<span class="reviews__author-name">Вадим Макеев</span>
+        					<span class="reviews__author-profession">Веб-евангелист</span>
+        				</cite>
+        			</div>
+        		</blockquote>
+        	</div>
+        </section>
+
+        <section class="newsletter">
+        	<div class="newsletter__background">
+        		<div class="newsletter__background-layer-1"></div>
+        		<div class="newsletter__background-layer-2"></div>
+        	</div>
+        	<div class="newsletter__container">
+        		<h2 class="newsletter__title">Подписка</h2>
+        		<p class="newsletter__descr">Нехотите вылазить из теплой кровати? Путешествуйте с нами по незабываемым местам, изучая фото и видео из ежемесячной рассылки.</p>
+        		<form class="form  newsletter__form">
+        			<div class="form__item  newsletter__form-item">
+        				<input class="form__input" id="newsletter__name" type="text" placeholder="Гейдрих Гимлер">
+        				<label for="newsletter__name" class="visualy-hidden  form__label">Ваше имя:</label>
+        			</div>
+
+        			<div class="form__item  newsletter__form-item">
+        				<input class="form__input" id="newsletter__phone" type="text">
+        				<label for="newsletter__phone" class="visualy-hidden  form__label">Ваш телефон:</label>
+        			</div>
+
+        			<div class="form__item  newsletter__form-item">
+        				<input class="form__input" id="newsletter__email" type="text" placeholder="email@email.com">
+        				<label for="newsletter__email" class="visualy-hidden  form__label">Ваша почта:</label>
+        			</div>
+
+        			<button class="form__submit  target  newsletter__target"><span class="target__text">Отравить</span></button>
+        		</form>
+        	</div>
+        </section>
+        <footer class="page-footer" role="contentinfo">
+        	<div class="page-footer__container">
+        		<div class="page-footer__side  page-footer__side_left">
+        			<span class="page-footer__copyright">Все права защищены</span>
+        		</div>
+        	  <p class="social">
+        	  	<a class="social__item  social__item_twitter" href="#">
+        	  		<svg class="icon  social__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-social__twitter"></use></svg>
+        				Твиттер
+        	  	</a>
+        	  	<a class="social__item  social__item_facebook" href="#">
+        	  		<svg class="icon  social__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-social__facebook"></use></svg>
+        				Фейсбук
+        	  	</a>
+        	  	<a class="social__item  social__item_vk" href="#">
+        	  		<svg class="icon  social__icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-social__vk"></use></svg>
+        				Вконтакте
+        	  	</a>
+        	  </p>
+        	  <div class="page-footer__side  page-footer__side_right">
+        	  	<a class="page-footer__phone" href="tel:74565635664">+7(456)563-56-64</a>
+        	  </div>
+        	</div>
+        </footer>
+
+      </div>
+
+    </div>
+
+  </div>
+  <script src="js/script.min.js"></script>
+
+</body>
+</html>
