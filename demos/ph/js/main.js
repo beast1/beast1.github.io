@@ -1,6 +1,45 @@
 (function () {
 'use strict';
 
+const initialState = {
+  level: 0,
+  lives: 3,
+  points: 0
+};
+
+const getLevels = () => {
+  const levelTypes = [{
+    levelType: 0,
+    task: `Угадайте для каждого изображения фото или рисунок?`,
+    options: [{
+      image: `http://placehold.it/468x458`,
+      type: `photo`,
+      answers: {
+        photo: true,
+        paint: false
+      }
+    }, {
+      image: `http://placehold.it/468x458`,
+      type: `paint`,
+      answers: {
+        photo: false,
+        paint: true
+      }
+    }]
+  }];
+  let levels = [];
+  const getRandomInt = (min, max) => {
+    return Math.floor(Math.random() * (max - min)) + min;
+  };
+  for (let i = 0; i < 10; i++) {
+    levels.push(levelTypes[getRandomInt(0, 1)]);
+  }
+  return levels;
+};
+
+// в проде будет запрос к БД
+const levels = getLevels();
+
 const updateWindow = (element) => {
   const parent = document.querySelector(`main.central`);
   parent.innerHTML = ``;
@@ -16,7 +55,81 @@ const getElement = (html) => {
   return template;
 };
 
-const html$5 = `
+const html$4 = `
+    <header class="header">
+      <div class="header__back">
+        <button class="back">
+          <img src="img/arrow_left.svg" width="45" height="45" alt="Back">
+          <img src="img/logo_small.svg" width="101" height="44">
+        </button>
+      </div>
+    </header>
+    <div class="rules">
+      <h1 class="rules__title">Правила</h1>
+      <p class="rules__description">Угадай 10 раз для каждого изображения фото <img
+        src="img/photo_icon.png" width="16" height="16"> или рисунок <img
+        src="img/paint_icon.png" width="16" height="16" alt="">.<br>
+        Фотографиями или рисунками могут быть оба изображения.<br>
+        На каждую попытку отводится 30 секунд.<br>
+        Ошибиться можно не более 3 раз.<br>
+        <br>
+        Готовы?
+      </p>
+      <form class="rules__form">
+        <input class="rules__input" type="text" placeholder="Ваше Имя">
+        <button class="rules__button  continue" type="submit">Go!</button><!--disabled-->
+      </form>
+    </div>
+    <footer class="footer">
+      <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
+      <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
+      <div class="footer__social-links">
+        <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
+        <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
+        <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
+      </div>
+    </footer>
+  `;
+
+const rulesElem = getElement(html$4);
+const btnBack$3 = rulesElem.querySelector(`.back`);
+const btnContinue$1 = rulesElem.querySelector(`.rules__button.continue`);
+
+btnBack$3.addEventListener(`click`, () => updateWindow(greetingElem));
+btnContinue$1.addEventListener(`click`, () => updateWindow(game(initialState)));
+
+const html$3 = `
+    <div class="greeting central--blur">
+      <div class="greeting__logo"><img src="img/logo_big.png" width="201" height="89" alt="Pixel Hunter"></div>
+      <h1 class="greeting__asterisk">*</h1>
+      <div class="greeting__challenge">
+        <h3>Лучшие художники-фотореалисты бросают&nbsp;тебе&nbsp;вызов!</h3>
+        <p>Правила игры просты.<br>
+          Нужно отличить рисунок&nbsp;от фотографии и сделать выбор.<br>
+          Задача кажется тривиальной, но не думай, что все так просто.<br>
+          Фотореализм обманчив и коварен.<br>
+          Помни, главное — смотреть очень внимательно.</p>
+      </div>
+      <div class="greeting__continue"><span><img src="img/arrow_right.svg" width="64" height="64" alt="Next"></span></div>
+    </div>
+    <footer class="footer">
+      <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
+      <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
+      <div class="footer__social-links">
+        <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
+        <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
+        <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
+        <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
+      </div>
+    </footer>
+  `;
+
+const greetingElem = getElement(html$3);
+const btnContinue = greetingElem.querySelector(`.greeting__continue`);
+btnContinue.addEventListener(`click`, () => updateWindow(rulesElem));
+
+const html$2 = `
     <header class="header">
       <div class="header__back">
         <button class="back">
@@ -137,12 +250,12 @@ const html$5 = `
     </footer>
   `;
 
-const statsElem = getElement(html$5);
-const btnBack$3 = statsElem.querySelector(`.back`);
+const statsElem = getElement(html$2);
+const btnBack$2 = statsElem.querySelector(`.back`);
 
-btnBack$3.addEventListener(`click`, () => updateWindow(greetingElem));
+btnBack$2.addEventListener(`click`, () => updateWindow(greetingElem));
 
-const html$4 = `
+const html$1 = `
     <header class="header">
       <div class="header__back">
         <button class="back">
@@ -197,14 +310,14 @@ const html$4 = `
     </footer>
   `;
 
-const gameThirdElem = getElement(html$4);
-const btnBack$2 = gameThirdElem.querySelector(`.back`);
+const gameThirdElem = getElement(html$1);
+const btnBack$1 = gameThirdElem.querySelector(`.back`);
 const btnsContinue$1  = gameThirdElem.querySelectorAll(`.game__option`);
 
-btnBack$2.addEventListener(`click`, () => updateWindow(greetingElem));
+btnBack$1.addEventListener(`click`, () => updateWindow(greetingElem));
 btnsContinue$1.forEach((item) => item.addEventListener(`click`, () => updateWindow(statsElem)));
 
-const html$3 = `
+const html = `
     <header class="header">
       <div class="header__back">
         <button class="back">
@@ -261,51 +374,12 @@ const html$3 = `
     </footer>
   `;
 
-const gameSecondElem = getElement(html$3);
-const btnBack$1 = gameSecondElem.querySelector(`.back`);
+const gameSecondElem = getElement(html);
+const btnBack = gameSecondElem.querySelector(`.back`);
 const btnsContinue   = gameSecondElem.querySelectorAll(`.game__answer`);
 
 btnsContinue.forEach((item) => item.addEventListener(`click`, () => updateWindow(gameThirdElem)));
-btnBack$1.addEventListener(`click`, () => updateWindow(greetingElem));
-
-const initialState = {
-  level: 0,
-  lives: 3,
-  points: 0
-};
-
-const getLevels = () => {
-  const levelTypes = [{
-    levelType: 0,
-    task: `Угадайте для каждого изображения фото или рисунок?`,
-    options: [{
-      image: `http://placehold.it/468x458`,
-      type: `photo`,
-      answers: {
-        photo: true,
-        paint: false
-      }
-    }, {
-      image: `http://placehold.it/468x458`,
-      type: `paint`,
-      answers: {
-        photo: false,
-        paint: true
-      }
-    }]
-  }];
-  let levels = [];
-  const getRandomInt = (min, max) => {
-    return Math.floor(Math.random() * (max - min)) + min;
-  };
-  for (let i = 0; i < 10; i++) {
-    levels.push(levelTypes[getRandomInt(0, 1)]);
-  }
-  return levels;
-};
-
-// в проде будет запрос к БД
-const levels = getLevels();
+btnBack.addEventListener(`click`, () => updateWindow(greetingElem));
 
 const game = (state) => {
   const level = levels[state.level];
@@ -390,106 +464,12 @@ const game = (state) => {
   return gameFirstElem;
 };
 
-const html$2 = `
-    <header class="header">
-      <div class="header__back">
-        <button class="back">
-          <img src="img/arrow_left.svg" width="45" height="45" alt="Back">
-          <img src="img/logo_small.svg" width="101" height="44">
-        </button>
-      </div>
-    </header>
-    <div class="rules">
-      <h1 class="rules__title">Правила</h1>
-      <p class="rules__description">Угадай 10 раз для каждого изображения фото <img
-        src="img/photo_icon.png" width="16" height="16"> или рисунок <img
-        src="img/paint_icon.png" width="16" height="16" alt="">.<br>
-        Фотографиями или рисунками могут быть оба изображения.<br>
-        На каждую попытку отводится 30 секунд.<br>
-        Ошибиться можно не более 3 раз.<br>
-        <br>
-        Готовы?
-      </p>
-      <form class="rules__form">
-        <input class="rules__input" type="text" placeholder="Ваше Имя">
-        <button class="rules__button  continue" type="submit">Go!</button><!--disabled-->
-      </form>
-    </div>
-    <footer class="footer">
-      <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
-      <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
-      <div class="footer__social-links">
-        <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
-        <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
-        <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
-      </div>
-    </footer>
-  `;
+//import updateWindow from "./updateWindow";
+//import introElem from "./intro";
+//
+//updateWindow(introElem);
 
-const rulesElem = getElement(html$2);
-const btnBack = rulesElem.querySelector(`.back`);
-const btnContinue$2 = rulesElem.querySelector(`.rules__button.continue`);
-
-btnBack.addEventListener(`click`, () => updateWindow(greetingElem));
-btnContinue$2.addEventListener(`click`, () => updateWindow(game(initialState)));
-
-const html$1 = `
-    <div class="greeting central--blur">
-      <div class="greeting__logo"><img src="img/logo_big.png" width="201" height="89" alt="Pixel Hunter"></div>
-      <h1 class="greeting__asterisk">*</h1>
-      <div class="greeting__challenge">
-        <h3>Лучшие художники-фотореалисты бросают&nbsp;тебе&nbsp;вызов!</h3>
-        <p>Правила игры просты.<br>
-          Нужно отличить рисунок&nbsp;от фотографии и сделать выбор.<br>
-          Задача кажется тривиальной, но не думай, что все так просто.<br>
-          Фотореализм обманчив и коварен.<br>
-          Помни, главное — смотреть очень внимательно.</p>
-      </div>
-      <div class="greeting__continue"><span><img src="img/arrow_right.svg" width="64" height="64" alt="Next"></span></div>
-    </div>
-    <footer class="footer">
-      <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
-      <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
-      <div class="footer__social-links">
-        <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
-        <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
-        <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
-        <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
-      </div>
-    </footer>
-  `;
-
-const greetingElem = getElement(html$1);
-const btnContinue$1 = greetingElem.querySelector(`.greeting__continue`);
-btnContinue$1.addEventListener(`click`, () => updateWindow(rulesElem));
-
-const html = `
-    <div id="main" class="central__content">
-    <div id="intro" class="intro">
-      <h1 class="intro__asterisk">*</h1>
-      <p class="intro__motto"><sup>*</sup> Это не фото. Это рисунок маслом нидерландского художника-фотореалиста Tjalf Sparnaay.</p>
-    </div>
-  </div>
-  <footer class="footer">
-    <a href="https://htmlacademy.ru" class="social-link social-link--academy">HTML Academy</a>
-    <span class="footer__made-in">Сделано в <a href="https://htmlacademy.ru" class="footer__link">HTML Academy</a> &copy; 2016</span>
-    <div class="footer__social-links">
-      <a href="https://twitter.com/htmlacademy_ru" class="social-link  social-link--tw">Твиттер</a>
-      <a href="https://www.instagram.com/htmlacademy/" class="social-link  social-link--ins">Инстаграм</a>
-      <a href="https://www.facebook.com/htmlacademy" class="social-link  social-link--fb">Фэйсбук</a>
-      <a href="https://vk.com/htmlacademy" class="social-link  social-link--vk">Вконтакте</a>
-    </div>
-  </footer>
-  `;
-
-const introElem   = getElement(html);
-const btnContinue = introElem.querySelector(`.intro__asterisk`);
-btnContinue.addEventListener(`click`, () => {
-  updateWindow(greetingElem);
-});
-
-updateWindow(introElem);
+updateWindow(game(initialState));
 
 }());
 
