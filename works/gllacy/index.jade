@@ -1,0 +1,226 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='utf-8')
+    title HTML Academy: Глейси
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic', rel='stylesheet')
+    link(href='css/normalize.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/mp-style.css', rel='stylesheet')
+  body
+    input#rbtn-1(type='radio', name='slider-toggle', checked='')
+    input#rbtn-2(type='radio', name='slider-toggle')
+    input#rbtn-3(type='radio', name='slider-toggle')
+    .site-wrapper
+      .content-wrapper
+        header.page-header
+          .container
+            .page-header-top
+              .logo
+                img(src='img/logo.png', alt='GllacyShop', width='154', height='64')
+              nav.page-header-menu
+                ul.menu
+                  li.sub-menu-tuggle
+                    a.header-btn-1(href='page-gllacy-catalog.html') Каталог
+                    ul.sub-menu.hidden-container
+                      li
+                        a(href='#') Новинки
+                      li
+                        a(href='page-gllacy-catalog.html') Сливочное
+                      li
+                        a(href='#') Щербеты
+                      li
+                        a(href='#') Фруктовый лед
+                      li
+                        a(href='#') Мелорин
+                  li
+                    a.header-btn-1(href='#') Доставка и оплата
+                  li
+                    a.header-btn-1(href='#') О Компании
+              .user-block
+                .user-block-controls
+                  .search
+                    button.search-btn.header-btn-2(type='button') Поиск
+                    form.search-pop-up.hidden-container(action='#', method='get')
+                      input#search(type='text', name='search', placeholder='Что ищем?', required='')
+                      label(for='search') Что ищем?
+                  .login
+                    button.login-btn.header-btn-2(type='button') Вход
+                    form.login-pop-up.hidden-container(action='#', method='post')
+                      input#login-email(type='text', name='login-email', placeholder='Электронная почта', required='')
+                      label(for='login-email') Электронная почта
+                      input#login-password(type='password', name='login-password', placeholder='Пароль', required='')
+                      label(for='login-password') Пароль
+                      button.btn(type='submit', name='login-btn') Войти
+                      a.a-lb(href='#') Забыли пароль?
+                      a.a-lb(href='#') Новая регистрация
+                  .basket
+                    button.basket-btn.header-btn-2(type='button') Пусто
+                .user-block-contacts
+                  p С 10 до 20, ежедневно
+                  span 8 812 450-25-25
+            .page-header-slider
+              .slider-controls
+                label(for='rbtn-1')
+                label(for='rbtn-2')
+                label(for='rbtn-3')
+              #slide-1
+                span.slide-title
+                  | Крем-брюле и пломбир
+                  br
+                  |                                 с малиновым джемом
+                a.btn(href='#') Давайте оба!
+              #slide-2
+                span.slide-title
+                  | Шоколадный пломбир
+                  br
+                  |                                 и лимонный сорбет
+                a.btn(href='#') Давайте оба!
+              #slide-3
+                span.slide-title
+                  | Пломбир с помадкой
+                  br
+                  |                                 и клубничный щербет
+                a.btn(href='#') Давайте оба!
+        main
+          .container
+            .holder.holder-1
+              .fill
+                h2.h2 Малинка даром!
+                span
+                  | При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
+                a.btn(href='#') Хочу варенье!
+              .fill
+                h2.h2 Шоколадки даром!
+                span
+                  | При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+                a.btn(href='#') Хочу шоколадки!
+            .popular
+              .popular-item
+                img(src='img/preview-1.jpg', alt='Сливочное с апельсиновым джемом и цитрусовой стружкой', width='267', height='267')
+                .index Хит
+                b.price
+                  | 310₽
+                  span /кг
+                h3.h3.a-db
+                  a(href='#') Сливочное с апельсиновым джемом и цитрусовой стружкой
+                .popular-item-hidden-btn
+                  a.btn(href='#') Быстрый просмотр
+              .popular-item
+                img(src='img/preview-2.jpg', alt='Сливочно-кофейное с кусочками шоколада', width='267', height='267')
+                .index Хит
+                b.price
+                  | 380₽
+                  span /кг
+                h3.h3.a-db
+                  a(href='#') Сливочно-кофейное с кусочками шоколада
+                .popular-item-hidden-btn
+                  a.btn(href='#') Быстрый просмотр
+              .popular-item
+                img(src='img/preview-3.jpg', alt='Сливочно-клубничное с присыпкой из белого шоколада', width='267', height='267')
+                .index Хит
+                b.price
+                  | 355₽
+                  span /кг
+                h3.h3.a-db
+                  a(href='#') Сливочно-клубничное с присыпкой из белого шоколада
+                .popular-item-hidden-btn
+                  a.btn(href='#') Быстрый просмотр
+              .popular-item
+                img(src='img/preview-4.jpg', alt='Сливочное крем-брюле с карамельной подливкой', width='267', height='267')
+                .index Хит
+                b.price
+                  | 415₽
+                  span /кг
+                h3.h3.a-db
+                  a(href='#') Сливочное крем-брюле с карамельной подливкой
+                .popular-item-hidden-btn
+                  a.btn(href='#') Быстрый просмотр
+            .features
+              span.features-promo
+                | Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес
+              .features-container
+                .features-item
+                  p
+                    | Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+                .features-item
+                  p
+                    | Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+                .features-item
+                  p
+                    | Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+                .features-item
+                  p
+                    | Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+            .holder.holder-2
+              .fill
+                b Новое в нашем блоге
+                a(href='#')
+                  | 10  способов сервировки
+                  br
+                  |                               фруктовых щербетов к
+                  br
+                  |                               столу
+              .fill
+                .fill-content
+                  p
+                    | Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+                  form.form-spam(action='#', method='post')
+                    input#subscribe(type='text', name='email', placeholder='Электронная почта', required='')
+                    label(for='subscribe') Электронная почта
+                    button.btn(type='submit', name='subscribe-btn') Отправить
+            .contacts-wp
+              .contacts
+                p
+                  | Адрес главного офиса
+                  br
+                  |  и офлайн магазина:
+                  br
+                  strong ул. Большая Конюшенная 19/8, Санкт-Петербург
+                p Для заказов по телефону:
+                strong.phone 8 812 450-25-25
+                p (с 10 до 20 ежедневно)
+                a.btn(href='fb-form.html') Форма обратной связи
+          .location
+            #location-map.location-map
+              // <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tTNJgFITG8HFnIsWgZ_jAg5FwiUjMSPO&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        footer.page-footer
+          .container
+            .footer-social
+              a.social-btn.social-btn-twitter(href='#') Твиттер
+              a.social-btn.social-btn-instagram(href='#') Инстаграмм
+              a.social-btn.social-btn-facebook(href='#') Фейсбук
+              a.social-btn.social-btn-vk(href='#') Вконтакте
+            nav.footer-menu
+              ul
+                li.love
+                  a.a-db(href='#') Для поставщиков
+                li
+                  a.a-db(href='#') О производстве
+              ul
+                li
+                  a.a-db(href='#') Наши документы
+                li
+                  a.a-db(href='#') Экологические стандарты
+            .footer-copyright
+              a(href='htmlacademy.ru')
+                img(src='img/logo-academy.png', alt='Логотип академии', width='108', height='38')
+              p
+                | Сделано в 
+                a.a-db(href='#') HTML Academy
+                |  © 2017
+    .modal-feedback-wrapper
+      .modal-feedback
+        button.modal-exit(type='button') Закрыть
+        span Мы обязательно вам ответим!
+        form.modal-feedback-form(action='#', method='post')
+          input#fb-name(type='text', name='client', placeholder='Как вас зовут?', required='', autofocus='')
+          label(for='fb-name') Как вас зовут?
+          input#fb-email(type='text', name='email', placeholder='Ваша почта для ответа?', required='')
+          label(for='fb-email') Ваша почта для ответа?
+          textarea(rows='6', cols='40', placeholder='Напишите что-нибудь...')
+          button.btn(type='submit', name='feedback-btn') Отправить
+    script(src='js/mp-script.js', async='')
+    script(src='js/script.js', async='')
+
+include /../1 var/var-gllacy-landing.jade

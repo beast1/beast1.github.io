@@ -1,0 +1,135 @@
+@mixin wrapper {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin margin-right($margin-right) {
+  &:not(:last-of-type) {
+    margin-right: $margin-right;
+  }
+}
+
+@mixin margin-bottom($margin-bottom) {
+  &:not(:last-of-type) {
+    margin-bottom: $margin-bottom;
+  }
+}
+
+@mixin h2($color: $color-second) {  
+  position: relative;
+  
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  
+  color: $color;
+  font-weight: 700;
+  
+  &::before {
+    content: "";
+    
+    position: absolute;
+    bottom: -0.4em;
+    left: 0;
+    right: 0;
+    
+    border-bottom: 2px solid $color;
+  }
+}
+
+//@mixin separator($top, $bottom) {
+//  position: relative;
+//    
+//  &::after {
+//    content: "";
+//    
+//    position: absolute;
+//    top: $top;
+//    bottom: $bottom;
+//    left: 0;
+//    right: 0;
+//    
+//    height: 1px;
+//    min-width: 5px;
+//    
+//    background-image: repeating-linear-gradient(to left, $gray 0px, $gray 3px, transparent 3px, transparent 6px, $gray 6px, $gray 9px);
+//  }
+//}
+//
+//@mixin title-cross($line-margin) {
+//  text-align: center;
+//  
+//  display: flex;
+//  align-items: center;
+//  
+//  &::before,
+//  &::after {
+//    content: "";
+//   
+//    position: relative;
+//    top: -5px;
+//
+//    flex-grow: 1;
+//
+//    width: 20px;
+////    height: 3px;
+//    border-bottom: 3px dashed $gray-lighten;
+//
+////    background: repeating-linear-gradient(to left, $gray-lighten 0px, $gray-lighten 3px, transparent 3px, transparent 6px, $gray-lighten 6px, $gray-lighten 9px);
+//  }
+//  
+//  
+//  &::before {
+//    margin-right: $line-margin;
+//  }
+//
+//  &::after {
+//    margin-left: $line-margin;
+//  }
+//}
+
+@mixin radial($size) {
+  width: $size;
+  height: $size;
+  border: 1px solid $gray-light;
+  
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+@mixin label($background) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  
+  color: inherit;
+  text-decoration: none;
+  
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background: $background;
+}
+
+@mixin btn($background, $border-radius) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  
+  color: inherit;
+  text-decoration: none;
+  
+  border-radius: $border-radius;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background: $background;
+}

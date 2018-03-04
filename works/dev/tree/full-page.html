@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>filesTree</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="page">
+
+		<div class="page-header">
+			<!-- <img class="page-header__img" src="img/group-filesTree.png" alt="logo"> -->
+			<img class="page-header__icon" src="img/icon-filesTree.png" alt="logo">
+			<div class="page-header__right">
+				<span class="page-header__logo">
+					<img class="page-header__img" src="img/logo-filesTree.png" alt="FilesTree">
+					<span class="page-header__adult">18+</span>
+				</span>
+				<span class="page-header__slogan">
+					Портал файлов для скачивания <br>
+					без ограничений и рекламы
+				</span>
+			</div>
+		</div>
+<!-- CONTENT(START) -->
+<h1 id="subscr-name">Доступ к подписке «<span>http://getfiles.pro</span>»</h1>
+<div id="subscr-price">
+	Стоимость: <span> 20.32  руб. c НДС в день</span>. <br>Оказывается МТС с привлечением: <span>СДСП - Групп, ООО</span>.<br>Списание будет произведено с основного лицевого счета.
+</div>
+<div id="subscr-msisdn">
+	Ваш номер:&nbsp;<span id="msisdn">+79124800001</span>
+</div>
+<form id="subscr-form" method="post">
+	<input data-val="true" data-val-required="The IAoC field is required." id="IAoC" name="IAoC" type="hidden" value="True">
+	<input data-val="true" data-val-required="The HasMsisdnFromCookie field is required." id="HasMsisdnFromCookie" name="HasMsisdnFromCookie" type="hidden" value="False">
+	<div id="activation-code-container">
+		<label for="ActivationCode">Введите код активации, полученный в SMS:</label>
+		<input autocomplete="off" data-val="true" data-val-required="The ActivationCode field is required." id="ActivationCode" maxlength="4" name="ActivationCode" tabindex="1" type="text" value="">
+		<p id="ActivationCode_Validator" style="display: none;">* Введите код доступа.</p>
+	</div>
+	<div id="captcha-container">
+		<label>Введите символы с картинки:</label>
+		<div class="captcha-main">
+			<div class="captcha-i">
+				<div class="LBD_CaptchaDiv" id="Captcha_CaptchaDiv" style="width: 230px !important; height: 60px !important;">
+					<div class="LBD_CaptchaImageDiv" id="Captcha_CaptchaImageDiv" style="width: 200px !important; height: 60px !important;">
+						<a target="_blank" href="http://captcha.com/asp.net-captcha-info.html" title="BotDetect .NET CAPTCHA Control" onclick="Captcha.OnHelpLinkClick(); return Captcha.FollowHelpLink;">
+							<img class="LBD_CaptchaImage" id="Captcha_CaptchaImage" src="/lp/BotDetectCaptcha.ashx?get=image&amp;c=Captcha&amp;t=745ddfc871d64d6094b5a53c7352f244" alt="CAPTCHA">
+						</a>
+					</div>
+					<input type="hidden" name="LBD_VCID_Captcha" id="LBD_VCID_Captcha" value="745ddfc871d64d6094b5a53c7352f244">
+					<input type="hidden" name="LBD_BackWorkaround_Captcha" id="LBD_BackWorkaround_Captcha" value="1">
+				</div>
+			</div>
+			<div class="f">
+				<img class="arr" src="/lp/i/captcha-arrow.gif">
+				<input autocomplete="off" class="b-common-ctrl" id="CaptchaCode" maxlength="20" name="CaptchaCode" tabindex="2" type="text" value="" style="text-transform: uppercase;">
+			</div>
+			<div class="captcha-refresh">
+				<span id="c_renew">
+					<img class="captcha-throbber" src="/lp/i/next1.gif"><strong>показать другую картинку</strong>
+				</span>
+			</div>
+			<div class="captcha-comment">
+				<div id="Captcha_Value_Validator" class="captcha-err">* Необходимо ввести символы с&nbsp;картинки.</div>
+				<div id="Captcha_Value_Validator1" class="captcha-err" style="">* Вы неверно ввели символы с&nbsp;картинки</div>
+			</div>
+		</div>
+	</div>
+	<div id="submit-container">
+		<label for="ButtonSubmit">Если Вы согласны с условиями оказания услуги, нажмите кнопку <b>«Получить доступ»</b></label>
+		<div>
+			<input id="ButtonSubmit" type="submit" value="Скачать" onclick="if (!validateActivationForm()) { return false; };" class="btn">
+		</div>
+	</div>
+	<!-- <img src="//sync.rtb.mts.ru/collect" width="0" height="0" border="0" style="position:absolute;left:-9999px;"> -->
+	<input name="__RequestVerificationToken" type="hidden" value="cDsk1FDfJJK8IrbtTZ4TsX5i7NO1BLAVPc0mWyojY7KHOFPAgAooLpvGgLc30RxNCCGGIK1g5flUFEjf75qKQmj_vNADyHVe-iA9AgumKV81">
+</form>
+<input id="sid" name="sid" type="hidden" value="b9e776ab-a577-479d-907c-cfa5b37c0863"><div id="disclaimer-details">
+<p>Подписка на «http://getfiles.pro» предоставляется контент-провайдером: СДСП - Групп, ООО.</p>
+<p>Контактная информация контент-провайдера:</p>
+<p>Web-сайт:&nbsp;<a href="http://sdpays.com" target="_blank">http://sdpays.com</a></p>
+<p>E-mail:&nbsp;<a href="mailto:support@sdpays.com" target="_blank">support@sdpays.com</a></p>
+<p>Телефон:&nbsp;88002008642.</p>
+<p>С Правилами оказания услуги «http://getfiles.pro» Вы можете ознакомиться на сайте контент-провайдера <a href="http://sdpays.com/documents/subsoferta/31076-ed2bac991a112a3822110d54b066493d" target="_blank">http://sdpays.com/documents/subsoferta/31076-ed2bac991a112a3822110d54b066493d</a>.<br><br>
+ПАО «МТС» предоставляет доступ к Подписке на «http://getfiles.pro» и не несет ответственности за качество
+предоставляемой контент-провайдером Подписки на «http://getfiles.pro», а также за информацию, размещаемую контент-провайдером на указанном сайте.
+<br><br><strong>Важно!</strong> Если Вы заметили несоответствие условий оказания услуги, размещенных на данной странице, условиям оказания услуги,
+размещенным на сайте контент-провайдера, просьба сообщить об этом по адресу <a href="mailto:moipodpiski@mts.ru">moipodpiski@mts.ru</a> или заполнив форму <a href="javascript:void(0)" onclick="$('#subscr-feedback').toggle();">обратной связи</a>.</p>
+</div>
+<div id="subscr-feedback" style="display: none;">
+<p id="title">Описание проблемы:</p>
+<p id="msgRequireErr" style="color:Red;display:none;">* введите текст сообщения</p>
+<textarea rows="2" cols="20" id="TextBoxFeedBackMessage" style="height:120px;width:486px;"></textarea><p><br></p>
+<input type="submit" value="" onclick="javascript:if(!requireFieldValidate('TextBoxFeedBackMessage','msgRequireErr')){return false;}sendFeedBack();return false;" id="ImageButtonFeedBack">
+</div>
+<span style="display:none;">Correct response</span>
+<!-- CONTENT(END) -->
+	</div>
+	<div id="footerText"></div>
+	<a href="#" id="backBtn">Вернуться</a>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

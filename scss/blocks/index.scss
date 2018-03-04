@@ -1,0 +1,197 @@
+main.wrapper {
+    margin-top: 125px;
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.main-title {
+  display: block;
+
+  text-align: center;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.main-title span {
+}
+
+.promo .btn--main-action {
+  margin-top: 15px;
+}
+
+
+
+.a-db {
+  color: #ffffff;
+}
+
+.a-db:hover {
+  color: #dddddd;
+}
+
+.a-db:active {
+  color: #aaaaaa;
+}
+
+.a-lb {
+  color: #000;
+}
+
+.a-lb:hover {
+  color: #444;
+}
+
+.a-lb:active {
+  color: #666;
+}
+
+.g-btn--block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  border: 5px solid #ffffff;
+  border-color: #ffffff;
+  
+  color: #ffffff;
+  font: inherit;
+  text-decoration: none;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  box-shadow: 0 15px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.g-btn--block:hover {
+  color: #000000;
+  font: inherit;
+  
+  background-color: $color-main;
+}
+
+.g-btn--block:active {
+  transform: scale(0.97);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+.education-certificate:hover .certificate-wrapper {
+  visibility: visible;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+/*  padding: 20px 30px 10px;*/
+  margin-bottom: 65px;
+  
+  background-color: $color-main;
+}
+
+.price-list {
+/*  width: 500px;*/
+  
+  text-transform: none;
+}
+
+//.price-types-item {
+//  position: relative;
+//  
+//  padding-left: 12px;
+///*  padding-left: 20px;*/
+//}
+//
+//.price-types-item::before {
+//  content: "";
+//  
+//  position: absolute;
+//  left: 0;
+//  top: 7px;
+//  
+//  width: 6px;
+//  height: 6px;
+//  
+//  background-color: $color-main;
+//  transform: rotate(45deg);
+//}
+
+.price-list table {
+  width: 100%;
+  border-collapse: collapse;
+/*  border: 1px solid #000000;*/
+}
+
+.price-list td {
+  padding: 5px;
+  border: 1px solid #777;
+}
+
+
+
+
+
+.btn--main-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 250px;
+  height: 47px;
+  padding: 10px;
+  border: none;
+  
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 5px #000;
+  
+  cursor: pointer;
+  outline: none;
+  border-radius: 10px/25px;
+//  border-
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.8);
+  background-color: #ed5b3d;
+  background-image: linear-gradient(0deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
+/*  transform: scale(1.3);*/
+}
+
+.btn--main-action:hover {
+  background-image: linear-gradient(0deg, rgba(231, 74, 53, 0.1) 0%, rgba(242, 104, 67, 0.1) 100%);
+}
+
+.btn--main-action:active {
+  box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.8);
+  
+  transform: scale(0.97);
+}
+
+.btn--main-action--black {
+  box-shadow: 0 10px 15px 5px rgba(120, 120, 120, 0.8);
+  background-color: #222222;
+  background-image: linear-gradient(0deg,rgba(39, 39, 39, 1) 0%, rgba(39, 39, 39, 1) 100%);
+}
+
+.btn--main-action--black:hover {
+  background-image: linear-gradient(0deg,rgba(34, 34, 34, 0.1) 0%, rgba(34, 34, 34, 0.1) 100%);
+}
+
+.keks-link {
+  position: absolute;
+  bottom: -42px;
+  right: -10px;
+}
+/*ЗАМЕТКИ*/
+
+/*
+2. Плавный скролл
+3. Эфект сепии
+4. Ховер
+*/

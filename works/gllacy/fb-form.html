@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="modal-feedback-wrapper visible">
+        <div class="modal-feedback">
+            <a class="modal-back" href="index.html">Закрыть</a>
+            <span>Мы обязательно вам ответим!</span>
+            <form class="modal-feedback-form" action="#" method="post">
+                <input type="text" name="client" id="fb-name" placeholder="Как вас зовут?" required autofocus>
+                <label for="fb-name">Как вас зовут?</label>
+                <input type="text" name="email" id="fb-email" placeholder="Ваша почта для ответа?" required>
+                <label for="fb-email">Ваша почта для ответа?</label>
+                <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+                <button class="btn" type="submit" name="feedback-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

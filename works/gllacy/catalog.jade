@@ -1,0 +1,312 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title HTML Academy: Каталог Глейси
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic', rel='stylesheet')
+    link(href='css/normalize.css', rel='stylesheet')
+    link(href='css/style.css', rel='stylesheet')
+    link(href='css/mp-style.css', rel='stylesheet')
+  body.decorate-wrapper
+    header.page-header
+      .container
+        .page-header-top
+          .logo
+            a(href='page-gllacy-landing.html')
+              img(src='img/logo.png', alt='GllacyShop', width='154', height='64')
+          nav.page-header-menu
+            ul.menu
+              li.sub-menu-tuggle
+                a.header-btn-1.actual(href='#') Каталог
+                ul.sub-menu.hidden-container
+                  li
+                    a(href='#') Новинки
+                  li
+                    a.actual-sub(href='#') Сливочное
+                  li
+                    a(href='#') Щербеты
+                  li
+                    a(href='#') Фруктовый лед
+                  li
+                    a(href='#') Мелорин
+              li
+                a.header-btn-1(href='#') Доставка и оплата
+              li
+                a.header-btn-1(href='#') О Компании
+          .user-block
+            .user-block-controls
+              .search
+                button.search-btn.header-btn-2(type='button') Поиск
+                form.search-pop-up.hidden-container(action='#', method='get')
+                  input#search(type='text', name='search', placeholder='Что ищем?', required='')
+                  label(for='search') Что ищем?
+              .login
+                button.login-btn.header-btn-2(type='button') Вход
+                form.login-pop-up.hidden-container(action='#', method='post')
+                  input#login-email(type='text', name='login-email', placeholder='Электронная почта', required='')
+                  label(for='login-email') Электронная почта
+                  input#login-password(type='password', name='login-password', placeholder='Пароль', required='')
+                  label(for='login-password') Пароль
+                  button.btn(type='submit', name='login-btn') Войти
+                  a.a-lb(href='#') Забыли пароль?
+                  a.a-lb(href='#') Новая регистрация
+              .basket
+                button.active-basket-btn.header-btn-2(type='button') 2 товара
+                .basket-pop-up.hidden-container
+                  .basket-table
+                    .basket-tr
+                      button.cross-it-out(type='button')
+                      a.preview(href='#')
+                        img(src='img/preview-1.jpg', alt='Иконка товара', width='34', height='34')
+                      span.name
+                        a.a-lb(href='#') Пломбир с апельсиновым джемом
+                      span.weight
+                        | 1,5 кг х 
+                        span.disabled 200 руб.
+                      span.basket-price 300 руб.
+                    .basket-tr
+                      button.cross-it-out(type='button')
+                      a.preview(href='#')
+                        img(src='img/preview-3.jpg', alt='Иконка товара', width='34', height='34')
+                      span.name
+                        a.a-lb(href='#') Клубничный пломбир с присыпкой из белого шоколада
+                      span.weight
+                        | 1,5 кг х 
+                        span.disabled 300 руб.
+                      span.basket-price 450 руб.
+                  .basket-controls
+                    span Итого: 750 руб.
+                    a.btn(href='#') Оформить заказ
+            .user-block-contacts
+              p С 10 до 20, ежедневно
+              span 8 812 450-25-25
+    main.container.catalog
+      .breadcrumbs
+        ul
+          li
+            a.a-db(href='page-gllacy-landing.html') Главная
+          li
+            a.a-db(href='#') Каталог
+          li
+            a Сливочное
+      h1.h2 Сливочное мороженое
+      form.catalog-controls(action='https://echo.htmlacademy.ru', method='get')
+        .catalog-controls-floor
+          .catalog-controls-item
+            span Сортировка:
+            .catalog-controls-tuggle.tuggle-select
+              select#sort(name='sort', size='1')
+                option(value='По популярности') по популярности
+                option(value='Сначала недорогие') сначала недорогие
+                option(value='Сначала дорогие') сначала дорогие
+                option(value='По жирности') по жирности
+          .catalog-controls-item.label-range
+            span
+              | Цена: 
+              label(for='min-price')
+                input#min-price(type='text', name='min-price', readonly='')
+                | 100
+              |  руб.
+              |                          – 
+              label(for='max-price')
+                input#max-price(type='text', name='max-price', readonly='')
+                | 500
+              |  руб.
+            .catalog-controls-tuggle
+              .scale
+                .bar
+                .scale-tuggle.scale-tuggle-min
+                .scale-tuggle.scale-tuggle-max
+          .catalog-controls-item
+            span Жирность:
+            .catalog-controls-tuggle.tuggle-rbtn
+              .tuggle-rbtn-item
+                input#catalog-rbtn-1(type='radio', name='fatness', value='0%')
+                label(for='catalog-rbtn-1') 0%
+              .tuggle-rbtn-item
+                input#catalog-rbtn-2(type='radio', name='fatness', value='to 10%', checked='')
+                label(for='catalog-rbtn-2') до 10%
+              .tuggle-rbtn-item
+                input#catalog-rbtn-3(type='radio', name='fatness', value='to 30%')
+                label(for='catalog-rbtn-3') до 30%
+              .tuggle-rbtn-item
+                input#catalog-rbtn-4(type='radio', name='fatness', value='more then 30%')
+                label(for='catalog-rbtn-4') выше 30%
+        .catalog-controls-floor
+          .catalog-controls-item
+            span Наполнители:
+            .catalog-controls-tuggle.tuggle-cbx
+              .tuggle-cbx-item
+                input#cbx-1(type='checkbox', name='chocolate', checked='')
+                label(for='cbx-1') шоколадные
+              .tuggle-cbx-item
+                input#cbx-2(type='checkbox', name='shugar', checked='')
+                label(for='cbx-2') сахарные присыпки
+              .tuggle-cbx-item
+                input#cbx-3(type='checkbox', name='fruits')
+                label(for='cbx-3') фрукты
+              .tuggle-cbx-item
+                input#cbx-4(type='checkbox', name='syrup')
+                label(for='cbx-4') сиропы
+              .tuggle-cbx-item
+                input#cbx-5(type='checkbox', name='jam')
+                label(for='cbx-5') джемы
+          button.catalog-controls-tuggle(type='submit') Применить
+      .catalog-container
+        .catalog-item
+          img(src='img/preview-1.jpg', alt='Предпросторт товара 1', width='267', height='267')
+          b.price
+            | 310₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное с апельсиновым джемом и цитрусовой стружкой
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-2.jpg', alt='Предпросторт товара 2', width='267', height='267')
+          b.price
+            | 380₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочно-кофейное с кусочками шоколада
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-3.jpg', alt='Предпросторт товара 3', width='267', height='267')
+          b.price
+            | 355₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочно-клубничное с присыпкой из белого шоколада
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-4.jpg', alt='Предпросторт товара 4', width='267', height='267')
+          b.price
+            | 415₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное крем-брюле с карамельной подливкой
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-5.jpg', alt='Предпросторт товара 5', width='267', height='267')
+          b.price
+            | 325₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное с брусничным джемом
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-6.jpg', alt='Предпросторт товара 6', width='267', height='267')
+          b.price
+            | 410₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочно-черничное с цельными ягодами черники 
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-7.jpg', alt='Предпросторт товара 7', width='267', height='267')
+          b.price
+            | 375₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочно-лимонное с карамельной присыпкой
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-8.jpg', alt='Предпросторт товара 8', width='267', height='267')
+          b.price
+            | 320₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное с шоколадной стружкой
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-9.jpg', alt='Предпросторт товара 9', width='267', height='267')
+          b.price
+            | 440₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочно-ванильное с кусочками шоколада
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-10.jpg', alt='Предпросторт товара 10', width='267', height='267')
+          b.price
+            | 435₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочноe с ментоловым сиропом
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-11.jpg', alt='Предпросторт товара 11', width='267', height='267')
+          b.price
+            | 355₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное с кусочками черного шоколада
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+        .catalog-item
+          img(src='img/preview-12.jpg', alt='Предпросторт товара 12', width='267', height='267')
+          b.price
+            | 420₽
+            span /кг
+          .name
+            h3.h3.a-db
+              a(href='') Сливочное с мятным сиропом
+          .popular-item-hidden-btn
+            a.btn(href='#') Быстрый просмотр
+      .pegination
+        a.prev.disabled(href='#')
+        a.active(href='#') 1
+        a(href='#') 2
+        a(href='#') 3
+        a(href='#') 4
+        a(href='#') 5
+        a.next(href='')
+    footer.page-footer
+      .container
+        .footer-social
+          a.social-btn.social-btn-twitter(href='#') Твиттер
+          a.social-btn.social-btn-instagram(href='#') Инстаграмм
+          a.social-btn.social-btn-facebook(href='#') Фейсбук
+          a.social-btn.social-btn-vk(href='#') Вконтакте
+        nav.footer-menu
+          ul
+            li.love
+              a.a-db(href='#') Для поставщиков
+            li
+              a.a-db(href='#') О производстве
+          ul
+            li
+              a.a-db(href='#') Наши документы
+            li
+              a.a-db(href='#') Экологические стандарты
+        .footer-copyright
+          a(href='htmlacademy.ru')
+            img(src='img/logo-academy.png', alt='Логотип академии', width='108', height='38')
+          p
+            | Сделано в 
+            a.a-db(href='#') HTML Academy
+            |  © 2017
+    script(src='js/mp-script.js', async='')
+    script(src='js/minimize.js', async='')
+
+include /../1 var/var-gllacy-catalog.jade

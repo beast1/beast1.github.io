@@ -1,0 +1,259 @@
+@c-first: #222222;
+@c-second: #ffffff;
+
+//@c-first: #ffffff;
+//@c-second: #222222;
+
+.mp-g-hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ajs-come-left {
+  animation-name: come-left;
+  animation-duration: 1.5s;
+}
+
+.ajs-leave-left {
+  animation-name: leave-left;
+  animation-duration: 1.5s;
+}
+
+@keyframes come-left {
+  0% {
+    transform: translate(-1000px, 0);
+  }
+  
+  70% {
+    transform: translate(30px, 0);
+  }
+  
+  90% {
+    transform: translate(-10px, 0);
+  }
+  
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes leave-left {
+  0% {
+    transform: translate(0, 0);
+  }
+  
+  100% {
+    transform: translate(-1000px, 0);
+  }
+}
+
+.beast-branch {
+  position: fixed;
+  left: 2%;
+  top: 5%;
+  
+  z-index: 2000;
+  
+  font-weight: normal;
+  
+  &__controls {
+    display: flex;
+  }
+  
+  &__btn {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border: none;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    
+    color: @c-second;
+    font-size: 0;
+    
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+    background-color: @c-first;
+    box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
+    0 1px 4px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+    
+    transition: 0.1 ease;
+  }
+  
+  &__btn:hover {
+    background-color: lighten(@c-first, 10%);
+  }
+  
+  &__btn:active {
+    transform: scale(0.97);
+  }
+  
+  &__btn-exit {
+    background-image: url("../img/icon-back-2(32).png");
+    background-position: 9px center;
+    background-repeat: no-repeat;
+  }
+  
+  &__btn-visibility--hidden {
+    background-image: url("../img/icon-hide-b(32).png");
+    background-position: 12px center;
+    background-repeat: no-repeat;
+  }
+  
+  &__btn-visibility--visible {
+    background-image: url("../img/icon-hide-a(32).png");
+    background-position: 12px center;
+    background-repeat: no-repeat;
+  }
+}
+
+.modal-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 280px;
+  
+  box-sizing: border-box;
+  
+  font-family: "Roboto", "Arial", sans-serif;
+  color: @c-second;
+  font-size: 14px;
+  line-height: 16px;
+  
+  background-color: @c-first;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3),
+  0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5),
+  0 1px 4px rgba(0, 0, 0, 0.3),
+  0 0 40px rgba(0, 0, 0, 0.1) inset;
+  
+  transition: 0.35s ease;
+  
+  &__title {
+    margin: 10px 15px 5px;
+    max-width: 220px;
+    text-align: center;
+    line-height: 1.15em;
+    color: darken(@c-second, 30%);
+  }
+  
+  &__sub-title {
+    display: inline-block;
+    align-self: center;
+    margin: 5px 0;
+    
+    color: @c-second;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    
+    list-style: none;
+  }
+  
+  &__list:last-of-type {
+    padding-bottom: 10px;
+  }
+  
+  &__item {
+    color: darken(@c-second, 5%);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  &__item--line-through {
+    position: relative;
+    
+    opacity: 0.5;
+  }
+  
+  &__item--line-through::before {
+    content: '';
+    
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 50%;
+    
+    height: 1.3px;
+    margin-top: -1.3px;
+    
+    background-color: @c-second;
+  }
+  
+  &__range-list {    
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px 15px 15px;
+    
+    background-color: lighten(@c-first, 30%);
+  }
+  
+  &__range-item {
+    display: flex;
+    //width: 100px;
+    height: 40px;
+    margin-right: 10px;
+    
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  
+  &__range-item-logo {
+    display: inline-block;
+    order: 2;
+    width: 40px;
+    height: 40px;
+    
+    color: @c-second;
+    text-align: center;
+    font-size: 45px;
+    line-height: 45px;
+    
+    cursor: default;
+  }
+  
+  &__range-item-logo--time {
+    font-size: 40px;
+  }
+  
+  &__range-item-value {
+    order: 1;
+    color: @c-first;
+    font-size: 45px;
+    line-height: 45px;
+  }
+  
+  &__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 38px;
+    width: 100%;
+    
+    background-color: lighten(@c-first, 30%);
+  }
+  
+  &__date-value {
+    font-size: 30px;
+    line-height: 30px;
+    
+    color: @c-first;
+  }
+}
