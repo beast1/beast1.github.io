@@ -12,23 +12,25 @@
 </head>
 <body>
 
-	<header class="page-header">
-		<div class="btns-list  page-header__burger  page-header__child">
-			<button class="btns-item  btns-item_icon-only  btns-item_theme_empty">
-				<svg class="svg"><use href="#icon-burger_menu" /></svg>
-				Меню
-			</button>
-		</div>
-		<div class="page-header__logo  page-header__child">
-			<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
-		</div>
-		<a class="page-header__phone  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
-		<button class="page-header__call-me  page-header__child">Заказать звонок</button>
-		<div class="btns-list  page-header__feedback  page-header__child">
-			<button class="btns-item  btns-item_icon-only  btns-item_theme_empty">
-				<svg class="svg"><use href="#icon-message" /></svg>
-				Связаться по почте
-			</button>
+	<header class="page-header  page-header_bg_white">
+		<div class="page-header__container">
+			<div class="btns-list  page-header__burger  page-header__child">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty">
+					<svg class="svg"><use href="#icon-burger_menu" /></svg>
+					Меню
+				</button>
+			</div>
+			<div class="page-header__logo  page-header__child">
+				<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
+			</div>
+			<a class="page-header__phone  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
+			<button class="page-header__call-me  page-header__child">Заказать звонок</button>
+			<div class="btns-list  page-header__feedback  page-header__child">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty">
+					<svg class="svg"><use href="#icon-message" /></svg>
+					Связаться по почте
+				</button>
+			</div>
 		</div>
 	</header>
 
@@ -64,10 +66,10 @@
 	<div class="custom-page  swiper-container  swiper-container-root">
 		<div class="swiper-wrapper">
 			<div class="wellcome  swiper-slide">
-				<span class="common-block__title">Главная</span>
-				<div class="common-block  common-block_row  dynamic-bg  dynamic-bg_main  wellcome__content  fullscreen-element">
+				<span class="common-block__index">Главная</span>
+				<div class="common-block  common-block_row  dynamic-bg  dynamic-bg_main  wellcome__content">
 					<div class="common-block__root-col  common-block__root-col_content  common-block__root-col_left">
-						<h2 class="visually-hidden">Виды услуг</h2>
+						<h2 class="common-block__title">Главная</h2>
 						<ul class="accordion  m-t-a">
 							<li class="accordion-item">
 								<h3 class="accordion-thumb  dynamic-bg__toggle" data-bg="1">Комплектные насосные станции</h3>
@@ -147,7 +149,7 @@
 								</div>
 							</li>
 						</ul>
-						<button id="linkProjects" class="custom-link  m-t-a">
+						<button id="linkProjects" class="custom-link  m-t-a  wellcome__link-next">
 							Листайте вниз
 							<svg class="svg  svg_right"><use href="#icon-arrow_small_bottom" /></svg>
 						</button>
@@ -185,10 +187,11 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="common-block  common-block_row">
-								<h2 class="common-block__title  common-block__title_color_white">Проекты</h2>
+								<h2 class="common-block__index  common-block__index_color_white">Проекты</h2>
 								<div class="common-block__root-col  common-block__root-col_placeholder  common-block__root-col_left  dynamic-bg-hover"></div>
 								<div class="slider-controls-placeholder  common-block__root-col  common-block__root-col_content  common-block__root-col_right">
 									<article class="custom-section  m-t-a  m-b-a">
+										<span class="common-block__title">Проекты</span>
 										<h2 class="custom-section__title">
 											Поставка КНС на стадион<br>
 											к ЧМ-2018 по футболу<br>
@@ -217,6 +220,7 @@
 			</div>
 			<div class="swiper-slide">
 				<div id="services" class="single-slider-wrap">
+					<h2 class="single-slider__title">Услуги</h2>
 					<div class="single-slider-container">
 						<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  single-slider-controls-item  single-slider-controls-item_prev">
 							<svg class="svg"><use href="#icon-arrow_small_left" /></svg>
@@ -310,7 +314,7 @@
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<div class="common-block  common-block_row">
-								<span class="common-block__title">О компании</span>
+								<span class="common-block__index">О компании</span>
 								<div class="common-block__root-col  common-block__root-col_content  common-block__root-col_left">
 									<article class="features  m-t-a">
 										<h2 class="features__title">Факты о компании</h2>
@@ -354,12 +358,12 @@
 										<svg class="svg  svg_right"><use href="#icon-arrow_small_right" /></svg>
 									</a>
 								</div>
-								<div class="common-block__root-col  common-block__root-col_placeholder  common-block__root-col_right  bg_8"></div>
+								<div class="common-block__root-col  common-block__root-col_placeholder  common-block__root-col_right  bg  bg_8  bg_centered"></div>
 							</div>
 						</div>
 						<div class="swiper-slide">
 							<div class="common-block  common-block_row">
-								<span class="common-block__title">О компании</span>
+								<span class="common-block__index">О компании</span>
 								<div class="common-block__root-col  common-block__root-col_content  common-block__root-col_left">
 									<section class="custom-section  m-t-a  m-b-a">
 										<h3 class="custom-section__title">Проектирование</h3>
@@ -384,8 +388,8 @@
 			</div>
 			<div class="swiper-slide">
 				<div class="common-block  common-block_row  features-wrap">
-					<h2 class="common-block__title">Почему мы?</h2>
-					<div class="features-wrap__left  common-block__root-col  common-block__root-col_placeholder  common-block__root-col_left  bg_10"></div>
+					<h2 class="common-block__index">Почему мы?</h2>
+					<div class="features-wrap__left  common-block__root-col  common-block__root-col_placeholder  common-block__root-col_left  bg  bg_10  bg_centered"></div>
 					<div class="features-wrap__right  common-block__root-col  common-block__root-col_content  common-block__root-col_right">
 						<div class="features  m-t-a  m-b-a">
 							<h2 class="features__title">Нас выбирают 7 из 10 заказчиков</h2>
@@ -444,7 +448,7 @@
 			</div>
 			<div class="swiper-slide">
 				<div class="contacts-wrap  common-block  common-block_row">
-					<span class="common-block__title">Контакты</span>
+					<span class="common-block__index">Контакты</span>
 					<div class="contacts-wrap__contacts  common-block__root-col  common-block__root-col_content  common-block__root-col_left">
 						<section class="contacts  m-t-a  m-b-a">
 							<h2 class="contacts__title">Контакты</h2>
@@ -507,7 +511,7 @@
 							<div class="inputs-list  contacts__inputs-list">
 								<textarea class="inputs-item  inputs-item_textarea  inputs-item_bg_transparent  contacts__inputs-item" cols="30" rows="6" placeholder="Сообщение"></textarea>
 							</div>
-							<div class="btns-list">
+							<div class="btns-list  contacts__btns-list">
 								<button class="btns-item">Отправить сообщение</button>
 							</div>
 						</form>
