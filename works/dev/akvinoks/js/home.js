@@ -17,21 +17,14 @@ function initDynamicBackground() {
     });
   }
 }
-function initAccordions() {
-  $(".accordion > .accordion-item.is-active").children(".accordion-panel").slideDown();
-  $(".accordion > .accordion-item").click(function () {
-    $(this).siblings(".accordion-item").removeClass("is-active").children(".accordion-panel").slideUp();
-    $(this).toggleClass("is-active").children(".accordion-panel").slideToggle("ease-out");
-  });
-}
 function initSwipers() {
   var swiperRoot = new Swiper('.swiper-container-root', {
     direction: 'vertical',
     slidesPerView: 'auto',
     mousewheel: true,
     speed: 600,
-    autoHeight: window.innerWidth < index.freemodeBreakpoint,
-    freeMode: window.innerWidth < index.freemodeBreakpoint,
+    autoHeight: document.documentElement.clientWidth < index.freemodeBreakpoint,
+    freeMode: document.documentElement.clientWidth < index.freemodeBreakpoint,
     keyboard: {
       enabled: true
     }
@@ -82,7 +75,7 @@ function initSwipers() {
 
   function initDynamicColors (selector, elemColors) {
     var elem = document.querySelector('.' + selector);
-    if (window.innerWidth >= index.freemodeBreakpoint) {
+    if (document.documentElement.clientWidth >= index.freemodeBreakpoint) {
       function toggleColors () {
         elem.classList.remove(selector + '_color_alt');
         if (elemColors[swiperRoot.activeIndex]) {
@@ -120,6 +113,5 @@ function initSwipers() {
   initDynamicColors('page-header__feedback', [0, 1, 0, 0, 1, 0]);
 };
 
-initAccordions();
 initSwipers();
 initDynamicBackground();

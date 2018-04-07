@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>product_page</title>
+	<title>product</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,7 +21,7 @@
 					Меню
 				</button>
 			</div>
-			<a class="page-header__logo  page-header__child" href="index.html">
+			<a class="page-header__logo  page-header__child" href="home.html">
 				<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
 			</a>
 			<a class="page-header__phone  page-header__phone_color_white  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
@@ -36,7 +36,7 @@
 	</header>
 	<div class="hello-slider  slider-controls-parent  fullscreen-element">
 		<div class="hello-slider__gallery">
-			<a class="custom-link  hello-slider__link  hello-slider__link_back" href="projects_page.html">
+			<a class="custom-link  hello-slider__link  hello-slider__link_back" href="projects.html">
 				<svg class="svg  svg_left"><use href="#icon-arrow_small_left" /></svg>
 				Вернуться к каталогу продукции
 			</a>
@@ -68,11 +68,7 @@
 			</div>
 			<div class="swiper-container  hello-slider__swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="hello-slider__gallery-item">
-							<img class="img-responsive" src="img/img-product-1.jpg" alt="Фото продукта">
-						</div>
-					</div>
+					<div class="swiper-slide" style="background-image: url('img/img-product-1.jpg')"></div>
 					<div class="swiper-slide"></div>
 					<div class="swiper-slide"></div>
 					<div class="swiper-slide"></div>
@@ -159,8 +155,41 @@
 					<span class="project__docs-download-size">1.2 мб</span>
 				</div>
 			</div>
-			<div class="project__docs-list  project__section-col  project__section-col_center">
-				<a class="project__docs-item" href="#">
+			<div class="custom-scrollbar  custom-scrollbar_x  project__section-col  project__section-col_center">
+				<div class="project__docs-list">
+					<a class="project__docs-item" href="#">
+						<div class="project__docs-item-header">
+							<span class="project__docs-item-format  project__docs-item-format_bg_pdf">pdf</span>
+							<span class="project__docs-item-size">169 кб</span>
+						</div>
+						<h3 class="project__docs-item-title">Сертификат соответствия</h3>
+						<span class="project__docs-item-download">Скачать</span>
+					</a>
+					<a class="project__docs-item" href="#">
+						<div class="project__docs-item-header">
+							<span class="project__docs-item-format  project__docs-item-format_bg_pdf">pdf</span>
+							<span class="project__docs-item-size">169 кб</span>
+						</div>
+						<h3 class="project__docs-item-title">Сертификат соответствия</h3>
+						<span class="project__docs-item-download">Скачать</span>
+					</a>
+					<a class="project__docs-item" href="#">
+						<div class="project__docs-item-header">
+							<span class="project__docs-item-format  project__docs-item-format_bg_pdf">pdf</span>
+							<span class="project__docs-item-size">169 кб</span>
+						</div>
+						<h3 class="project__docs-item-title">Сертификат соответствия</h3>
+						<span class="project__docs-item-download">Скачать</span>
+					</a>
+					<a class="project__docs-item" href="#">
+						<div class="project__docs-item-header">
+							<span class="project__docs-item-format  project__docs-item-format_bg_doc">doc</span>
+							<span class="project__docs-item-size">169 кб</span>
+						</div>
+						<h3 class="project__docs-item-title">Сертификат соответствия</h3>
+						<span class="project__docs-item-download">Скачать</span>
+					</a>
+					<a class="project__docs-item" href="#">
 					<div class="project__docs-item-header">
 						<span class="project__docs-item-format  project__docs-item-format_bg_pdf">pdf</span>
 						<span class="project__docs-item-size">169 кб</span>
@@ -168,22 +197,7 @@
 					<h3 class="project__docs-item-title">Сертификат соответствия</h3>
 					<span class="project__docs-item-download">Скачать</span>
 				</a>
-				<a class="project__docs-item" href="#">
-					<div class="project__docs-item-header">
-						<span class="project__docs-item-format  project__docs-item-format_bg_doc">doc</span>
-						<span class="project__docs-item-size">169 кб</span>
-					</div>
-					<h3 class="project__docs-item-title">Сертификат соответствия</h3>
-					<span class="project__docs-item-download">Скачать</span>
-				</a>
-				<a class="project__docs-item" href="#">
-					<div class="project__docs-item-header">
-						<span class="project__docs-item-format  project__docs-item-format_bg_pdf">pdf</span>
-						<span class="project__docs-item-size">169 кб</span>
-					</div>
-					<h3 class="project__docs-item-title">Сертификат соответствия</h3>
-					<span class="project__docs-item-download">Скачать</span>
-				</a>
+				</div>
 			</div>
 		</section>
 		<div class="project__section-wrap  project__section-wrap_offer">
@@ -203,7 +217,9 @@
 						<button class="btns-item">Отправить</button>
 						<div class="cbxs-list  cbxs-list_centered  m-l-100">
 							<input id="cbx-1" class="cbxs-item-input" type="checkbox">
-							<label class="cbxs-item" for="cbx-1">Я принимаю <a href="#">условия</a> пользовательского соглашения сайта</label>
+							<label class="cbxs-item" for="cbx-1">
+								<span class="cbxs-item__text">Я принимаю <a href="#">условия</a> пользовательского соглашения сайта</span>
+							</label>
 						</div>
 					</div>
 				</div>
@@ -211,13 +227,9 @@
 		</div>
 		<div class="project__catalog">
 			<h2 class="project__catalog-title">Вас также может заинтересовать</h2>
-			<div class="project__section">
-				<div class="project__section-col  project__section-col_left">
-					<span class="project__catalog-descr">
-						Другие разделы продукции<br>
-						из категории "комплектные<br>
-						насосные станции"
-					</span>
+			<div class="project__section  project__catalog-section">
+				<div class="project__section-col  project__section-col_left  project__catalog-section-col  project__catalog-section-col_left">
+					<span class="project__catalog-descr">Другие разделы продукции из категории "комплектные насосные станции"</span>
 				</div>
 				<div class="project__catalog-slider-wrap  project__section-col  project__section-col_center">
 					<div class="swiper-container  project__catalog-swiper-container">
@@ -264,52 +276,58 @@
 		</div>
 	</footer>
 </div>
+<div id="menu" class="page  page_modal  page_modal-hidden">
+	<div class="menu-wrap">
+		<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit  page__exit_position_left">
+			<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+			Закрыть
+		</button>
+		<div class="menu-list">
+			<a class="menu-item" href="#">Каталог</a>
+			<a class="menu-item" href="#">Опросные листы</a>
+			<a class="menu-item" href="#">Поставки</a>
+			<a class="menu-item" href="#">Контактная информация</a>
+		</div>
+	</div>
+</div>
+<div id="call-me" class="page  page_modal  page_modal-hidden">
+	<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit">
+		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+		Закрыть
+	</button>
+	<form class="form">
+		<h1 class="custom-title  custom-title_h1">Заказать звонок</h1>
+		<div class="inputs-list">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+		</div>
+		<div class="btns-list">
+			<button class="btns-item">Отправить</button>
+		</div>
+	</form>
+</div>
+<div id="feedback" class="page  page_modal  page_modal-hidden">
+	<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit">
+		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+		Закрыть
+	</button>
+	<h1 class="custom-title  custom-title_h1">Связаться с нами</h1>
+	<div class="inputs-list">
+		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
+		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+	</div>
+	<div class="inputs-list">
+		<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
+	</div>
+	<div class="btns-list">
+		<button class="btns-item">Отправить</button>
+	</div>
+</div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
 <link rel="stylesheet" href="css/main.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/js/swiper.min.js"></script>
 <script src="js/common.min.js"></script>
-<script>
-//	function initExamples() {
-//	  var data = [
-//	    {
-//		    imgUrl: 'img/img-project-examples-item-1.jpg',
-//			  name: 'Горизонтальная КНС в Калининграде'
-//		  }, {
-//	      imgUrl: 'img/img-project-examples-item-1.jpg',
-//	      name: 'Горизонтальная КНС в Калининграде'
-//	    }, {
-//	      imgUrl: 'img/img-project-examples-item-1.jpg',
-//	      name: 'Горизонтальная КНС в Калининграде'
-//	    }, {
-//	      imgUrl: 'img/img-project-examples-item-1.jpg',
-//	      name: 'Горизонтальная КНС в Калининграде'
-//	    }
-//	  ]
-//	  var container = document.querySelector('.project__examples-list');
-//	  var btnMore = document.querySelector('.project__examples-controls-item_more');
-//		function appendElement(data) {
-//
-//		}
-//	}
-	function initSwiper() {
-    var helloSwiper = new Swiper('.hello-slider__swiper-container', {
-      navigation: {
-        nextEl: '.hello-slider .slider-controls-item_next',
-        prevEl: '.hello-slider .slider-controls-item_prev',
-      }
-    });
-    initCustomPagination('.hello-slider', helloSwiper);
-
-    var catalogSwiper = new Swiper('.project__catalog-swiper-container', {
-      navigation: {
-        nextEl: '.project__catalog .slider-controls-item_next',
-        prevEl: '.project__catalog .slider-controls-item_prev',
-      }
-    });
-    initCustomPagination('.project__catalog', catalogSwiper);
-  }
-  initSwiper();
-</script>
+<script src="js/product.js"></script>
 <!--<svg class="svg"><use href="#icon-arrow_small_right" /></svg>-->
 <svg class="visually-hidden" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 	<defs>

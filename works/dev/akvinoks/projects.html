@@ -4,7 +4,7 @@
 
 	<meta charset="utf-8">
 
-	<title>projects_map_page</title>
+	<title>projects</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -12,12 +12,155 @@
 </head>
 <body>
 
-<div class="page  page_theme_dark  page_modal  fullscreen-element">
+<div class="page  page_theme_dark  page_space_right  page-header-parent">
+	<header class="page-header">
+		<div class="page-header__container">
+			<div class="btns-list  page-header__burger  page-header__child">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+					<svg class="svg"><use href="#icon-burger_menu" /></svg>
+					Меню
+				</button>
+			</div>
+			<a class="page-header__logo  page-header__child" href="home.html">
+				<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
+			</a>
+			<a class="page-header__phone  page-header__phone_color_white  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
+			<button class="page-header__call-me  page-header__child">Заказать звонок</button>
+			<div class="btns-list  page-header__feedback  page-header__child">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+					<svg class="svg"><use href="#icon-message" /></svg>
+					Связаться по почте
+				</button>
+			</div>
+		</div>
+	</header>
+	<div class="projects">
+		<h1 class="projects__title  projects__child  projects__child_p_l">Наши проекты</h1>
+		<div class="custom-scrollbar custom-scrollbar_x  projects__filters-list  projects__child">
+			<span class="projects__filters-label">Выберите<br> раздел</span>
+			<a class="projects__filters-item projects__filters-item_current" href="#">Все</a>
+			<a class="projects__filters-item" href="#">Комплексная насосная стания</a>
+			<a class="projects__filters-item" href="#">Очистка стоков</a>
+			<a class="projects__filters-item" href="#">Ливневая канализация</a>
+			<a class="projects__filters-map" href="#">Показать все проекты на карте</a>
+		</div>
+		<div class="projects-list  projects__child  projects__child_p_l">
+			<section class="projects-item">
+				<div class="projects-item__preview">
+					<img class="img-responsive  projects-item__preview-img" src="img/img-projects-1.jpg" alt="фото проекта">
+				</div>
+				<div class="projects-item__content">
+					<span class="projects-item__date">1 февраля 2018</span>
+					<span class="projects-item__location">г. Петрозаводск</span>
+					<h3 class="projects-item__title"><a href="#">КНС в Петрозаводске</a></h3>
+					<div class="projects-item__descr">
+						<p>
+							Очистные сооружения промышленных сточных вод Алматинского мясоперерабатывающего завода АО «Алель Агро»
+						</p>
+					</div>
+					<button class="projects-item__link-more">Подробнее</button>
+				</div>
+			</section>
+			<section class="projects-item">
+				<div class="projects-item__preview">
+					<img class="img-responsive  projects-item__preview-img" src="img/img-projects-2.jpg" alt="фото проекта">
+				</div>
+				<div class="projects-item__content">
+					<span class="projects-item__date">25 января 2018</span>
+					<span class="projects-item__location">г. Калининград</span>
+					<h3 class="projects-item__title"><a href="#">Ливневая канализация в Калининграде</a></h3>
+					<div class="projects-item__descr">
+						<p>
+							Очистные сооружения поверхностных вод , КНС, колодцы и камеры для гипермаркета "Декатлон" в Туле.
+						</p>
+					</div>
+					<button class="projects-item__link-more">Подробнее</button>
+				</div>
+			</section>
+			<section class="projects-item">
+				<div class="projects-item__preview">
+					<img class="img-responsive  projects-item__preview-img" src="img/img-projects-3.jpg" alt="фото проекта">
+				</div>
+				<div class="projects-item__content">
+					<span class="projects-item__date">16 декабря 2017</span>
+					<span class="projects-item__location">г. калининград</span>
+					<h3 class="projects-item__title"><a href="#">КНС в Калининграде</a></h3>
+					<div class="projects-item__descr">
+						<p>
+							Ливневые очистные сооружения для многофункционального спортивного комплекса ХК "Локомотив"
+						</p>
+					</div>
+					<button class="projects-item__link-more">Подробнее</button>
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer class="page-footer">
+		<div class="page-footer__container">
+			<span class="page-footer__copyright">© 2017 Аквинокс</span>
+			<nav class="page-footer__nav-list">
+				<a class="page-footer__nav-item" href="#">Каталог</a>
+				<a class="page-footer__nav-item" href="#">Проекты</a>
+				<a class="page-footer__nav-item" href="#">Опросные листы</a>
+				<a class="page-footer__nav-item" href="#">Поставки</a>
+				<a class="page-footer__nav-item" href="#">Контактная информация</a>
+			</nav>
+		</div>
+	</footer>
+</div>
+<div id="menu" class="page  page_modal  page_modal-hidden">
+	<div class="menu-wrap">
+		<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit  page__exit_position_left">
+			<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+			Закрыть
+		</button>
+		<div class="menu-list">
+			<a class="menu-item" href="#">Каталог</a>
+			<a class="menu-item" href="#">Опросные листы</a>
+			<a class="menu-item" href="#">Поставки</a>
+			<a class="menu-item" href="#">Контактная информация</a>
+		</div>
+	</div>
+</div>
+<div id="call-me" class="page  page_modal  page_modal-hidden">
+	<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit">
+		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+		Закрыть
+	</button>
+	<form class="form">
+		<h1 class="custom-title  custom-title_h1">Заказать звонок</h1>
+		<div class="inputs-list">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+		</div>
+		<div class="btns-list">
+			<button class="btns-item">Отправить</button>
+		</div>
+	</form>
+</div>
+<div id="feedback" class="page  page_modal  page_modal-hidden">
+	<button class="btns-item  btns-item_icon-only  btns-item_theme_black  page__exit">
+		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
+		Закрыть
+	</button>
+	<h1 class="custom-title  custom-title_h1">Связаться с нами</h1>
+	<div class="inputs-list">
+		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
+		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+	</div>
+	<div class="inputs-list">
+		<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
+	</div>
+	<div class="btns-list">
+		<button class="btns-item">Отправить</button>
+	</div>
+</div>
+<div id="modal-map" class="page  page_theme_dark  page_modal  page_modal-hidden  fullscreen-element">
 	<button class="btns-item  btns-item_icon-only  btns-item_theme_white  page__exit">
 		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
 		Закрыть
 	</button>
-	<div class="projects">
+	<div class="viewport-width  projects  projects_map-container">
 		<h1 class="projects__title  projects__child  projects__child_p_l">Проекты на карте</h1>
 		<div class="custom-scrollbar custom-scrollbar_x  projects__filters-list  projects__child">
 			<span class="projects__filters-label">Выберите<br> раздел</span>
@@ -27,7 +170,7 @@
 			<a class="projects__filters-item" href="#">Ливневая канализация</a>
 		</div>
 		<div class="projects__map">
-			<div id="map" class="projects__map-iframe" style="height: 500px"></div>
+			<div id="map" class="projects__map-iframe"></div>
 		</div>
 	</div>
 </div>
@@ -38,7 +181,143 @@
 
     var map = new google.maps.Map(document.getElementById('map'), {
       zoom: 3,
-      center: {lat: -28.024, lng: 140.887}
+      center: {lat: -28.024, lng: 140.887},
+      styles: [
+        {
+          "featureType": "water",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#333739"
+            }
+          ]
+        },
+        {
+          "featureType": "landscape",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            }
+          ]
+        },
+        {
+          "featureType": "poi",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            },
+            {
+              "lightness": -7
+            }
+          ]
+        },
+        {
+          "featureType": "road.highway",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            },
+            {
+              "lightness": -28
+            }
+          ]
+        },
+        {
+          "featureType": "road.arterial",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            },
+            {
+              "visibility": "on"
+            },
+            {
+              "lightness": -15
+            }
+          ]
+        },
+        {
+          "featureType": "road.local",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            },
+            {
+              "lightness": -18
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.fill",
+          "stylers": [
+            {
+              "color": "#ffffff"
+            }
+          ]
+        },
+        {
+          "elementType": "labels.text.stroke",
+          "stylers": [
+            {
+              "visibility": "off"
+            }
+          ]
+        },
+        {
+          "featureType": "transit",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            },
+            {
+              "lightness": -34
+            }
+          ]
+        },
+        {
+          "featureType": "administrative",
+          "elementType": "geometry",
+          "stylers": [
+            {
+              "visibility": "on"
+            },
+            {
+              "color": "#333739"
+            },
+            {
+              "weight": 0.8
+            }
+          ]
+        },
+        {
+          "featureType": "poi.park",
+          "stylers": [
+            {
+              "color": "#2ecc71"
+            }
+          ]
+        },
+        {
+          "featureType": "road",
+          "elementType": "geometry.stroke",
+          "stylers": [
+            {
+              "color": "#333739"
+            },
+            {
+              "weight": 0.3
+            },
+            {
+              "lightness": 10
+            }
+          ]
+        }
+      ]
     });
 
     // Create an array of alphabetical characters used to label the markers.
@@ -56,8 +335,7 @@
     });
 
     // Add a marker clusterer to manage the markers.
-    var markerCluster = new MarkerClusterer(map, markers,
-      {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+    var markerCluster = new MarkerClusterer(map, markers, {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
   }
   var locations = [
     {lat: -31.563910, lng: 147.154312},
@@ -91,6 +369,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHg40XoSjqc7F8JcVKxRZXtjqRvgPaCk0&callback=initMap">
 </script>
 <script src="js/common.min.js"></script>
+<script src="js/projects.js"></script>
 
 <!--<svg class="svg"><use href="#icon-arrow_small_right" /></svg>-->
 <svg class="visually-hidden" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
