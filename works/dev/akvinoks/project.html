@@ -10,13 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 </head>
-<body>
+<body data-scroll-spy="true">
 
 <div class="page">
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="btns-list  page-header__burger  page-header__child">
-				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  page-header__dynamic-theme" data-theme="white">
 					<svg class="svg"><use href="#icon-burger_menu" /></svg>
 					Меню
 				</button>
@@ -24,10 +24,10 @@
 			<a class="page-header__logo  page-header__child" href="home.html">
 				<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
 			</a>
-			<a class="page-header__phone  page-header__phone_color_white  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
-			<button class="page-header__call-me  page-header__child">Заказать звонок</button>
+			<a class="page-header__phone  page-header__child  page-header__dynamic-theme" href="tel:88005004863" data-theme="white">8-800-500-48-63</a>
+			<button class="page-header__call-me  page-header__child  page-header__dynamic-theme" data-theme="white">Заказать звонок</button>
 			<div class="btns-list  page-header__feedback  page-header__child">
-				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  page-header__dynamic-theme" data-theme="white">
 					<svg class="svg"><use href="#icon-message" /></svg>
 					Связаться по почте
 				</button>
@@ -199,7 +199,7 @@
 			Закрыть
 		</button>
 		<div class="menu-list">
-			<a class="menu-item" href="#">Каталог</a>
+			<a class="menu-item" href="catalog.html">Каталог</a>
 			<a class="menu-item" href="#">Опросные листы</a>
 			<a class="menu-item" href="#">Поставки</a>
 			<a class="menu-item" href="#">Контактная информация</a>

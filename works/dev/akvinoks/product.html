@@ -10,13 +10,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 </head>
-<body>
+<body data-scroll-spy="true">
 
 <div class="page">
 	<header class="page-header">
 		<div class="page-header__container">
 			<div class="btns-list  page-header__burger  page-header__child">
-				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  page-header__dynamic-theme" data-theme="white">
 					<svg class="svg"><use href="#icon-burger_menu" /></svg>
 					Меню
 				</button>
@@ -24,10 +24,10 @@
 			<a class="page-header__logo  page-header__child" href="home.html">
 				<img class="page-header__logo-img" src="img/logo-home.png" alt="Аквинокс" width="200" height="45">
 			</a>
-			<a class="page-header__phone  page-header__phone_color_white  page-header__child" href="tel:88005004863">8-800-500-48-63</a>
-			<button class="page-header__call-me  page-header__child">Заказать звонок</button>
+			<a class="page-header__phone  page-header__child  page-header__dynamic-theme" href="tel:88005004863" data-theme="white">8-800-500-48-63</a>
+			<button class="page-header__call-me  page-header__child  page-header__dynamic-theme" data-theme="white">Заказать звонок</button>
 			<div class="btns-list  page-header__feedback  page-header__child">
-				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_white">
+				<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  page-header__dynamic-theme" data-theme="white">
 					<svg class="svg"><use href="#icon-message" /></svg>
 					Связаться по почте
 				</button>
@@ -41,10 +41,7 @@
 				Вернуться к каталогу продукции
 			</a>
 			<div class="hello-slider__title-wrap">
-				<h1 class="hello-slider__title">
-					Горизонтальные комплектные<br>
-					насосные станции
-				</h1>
+				<h1 class="hello-slider__title">Горизонтальные комплектные насосные станции</h1>
 				<a class="custom-link  hello-slider__link  hello-slider__link_down" href="#">
 					Листайте вниз
 					<svg class="svg  svg_right"><use href="#icon-arrow_small_bottom" /></svg>
@@ -66,7 +63,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="swiper-container  hello-slider__swiper-container">
+			<div class="swiper-container  swiper-container_pagination-color_light  hello-slider__swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide" style="background-image: url('img/img-product-1.jpg')"></div>
 					<div class="swiper-slide"></div>
@@ -75,6 +72,7 @@
 					<div class="swiper-slide"></div>
 					<div class="swiper-slide"></div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</div>
 	</div>
@@ -89,42 +87,39 @@
 				</nav>
 			</div>
 			<div class="project__section-col  project__section-col_center">
-				<div class="project__descr">
-				<h2>Общее описание</h2>
-				<p class="fw-700">
-					Предназначена для перекачки сточных вод бытового, промышленного или атмосферного происхождения,
-					а так же когда транспортировка самотеком невозможна
-					или экономически не оправдана.
-				</p>
-				<p>
-					Канализационная насосная станция с горизонтальным корпусом позволяет решить проблему неравномерного поступления жидкостей на очистные сооружения или
-					в КНС. Конструкция этой модели аккумулирует в резервуаре станции сброс ливневых стоков, откуда система насосов и перекачивает воду в штатном режиме.
-				</p>
-				<p>
-					Дополнительным преимуществом данной системы является не просто аккумулирование стоков, но и опция, позволяющая перекачивать накопленный
-					объем в период минимального потребления электроэнергии.
-				</p>
-			</div>
-			</div>
-			<div class="project__section-col  project__section-col_right">
-				<div class="project__controls-list">
-			<a class="project__controls-item" href="#">
-				<svg class="svg  project__controls-item-icon"><use href="#icon-fill" /></svg>
-				Заполнить опросный лист online
-			</a>
-			<a class="project__controls-item" href="#">
-				<svg class="svg  project__controls-item-icon"><use href="#icon-download_list" /></svg>
-				Скачать опросный лист
-			</a>
-		</div>
+				<div class="project__descr-wrap">
+					<div class="project__descr">
+						<h2>Общее описание</h2>
+						<p class="fw-700">
+							Предназначена для перекачки сточных вод бытового, промышленного или атмосферного происхождения,
+							а так же когда транспортировка самотеком невозможна
+							или экономически не оправдана.
+						</p>
+						<p>
+							Канализационная насосная станция с горизонтальным корпусом позволяет решить проблему неравномерного поступления жидкостей на очистные сооружения или
+							в КНС. Конструкция этой модели аккумулирует в резервуаре станции сброс ливневых стоков, откуда система насосов и перекачивает воду в штатном режиме.
+						</p>
+						<p>
+							Дополнительным преимуществом данной системы является не просто аккумулирование стоков, но и опция, позволяющая перекачивать накопленный
+							объем в период минимального потребления электроэнергии.
+						</p>
+					</div>
+					<div class="project__controls-list">
+						<a class="project__controls-item" href="#">
+							<svg class="svg  project__controls-item-icon"><use href="#icon-fill" /></svg>
+							Заполнить опросный лист online
+						</a>
+						<a class="project__controls-item" href="#">
+							<svg class="svg  project__controls-item-icon"><use href="#icon-download_list" /></svg>
+							Скачать опросный лист
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<section class="project__examples  project__section">
 			<div class="project__section-col  project__section-col_left">
-				<h2 class="project__section-title">
-					Примеры<br>
-					поставок
-				</h2>
+				<h2 class="project__section-title">Примеры поставок</h2>
 			</div>
 			<div class="project__examples-list-wrap  project__section-col  project__section-col_center">
 				<div class="project__examples-list">
@@ -149,10 +144,12 @@
 		<section class="project__docs  project__section">
 			<div class="project__section-col  project__section-col_left">
 				<h2 class="project__section-title">Документы</h2>
-				<div class="project__docs-download">
-					<svg class="svg  project__docs-download-icon"><use href="#icon-download" /></svg>
-					<a class="project__docs-download-link" href="#">Скачать одним файлом</a>
-					<span class="project__docs-download-size">1.2 мб</span>
+				<div class="project__controls-list">
+					<a class="project__controls-item" href="#">
+						<svg class="svg  project__controls-item-icon"><use href="#icon-download" /></svg>
+						Скачать одним файлом
+						<span class="project__controls-item-download-size">1.2 мб</span>
+					</a>
 				</div>
 			</div>
 			<div class="custom-scrollbar  custom-scrollbar_x  project__section-col  project__section-col_center">
@@ -200,22 +197,22 @@
 				</div>
 			</div>
 		</section>
-		<div class="project__section-wrap  project__section-wrap_offer">
+		<div class="offer  project__section-wrap  project__section-wrap_offer">
 			<form class="project__section">
 				<div class="project__section-col  project__section-col_left">
 					<h2 class="project__section-title">Заказать подбор оборудования</h2>
 				</div>
 				<div class="project__section-col  project__section-col_center">
-					<div class="inputs-list">
-						<input class="inputs-item  inputs-item_size_max-width  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
-						<input class="inputs-item  inputs-item_size_max-width  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+					<div class="inputs-list  offer__targets-list">
+						<input class="inputs-item  inputs-item_size_max-width  inputs-item_bg_transparent  offer__targets-item" type="text" placeholder="Представьтесь">
+						<input class="inputs-item  inputs-item_size_max-width  inputs-item_bg_transparent  offer__targets-item" type="text" placeholder="Телефон">
 					</div>
-					<div class="inputs-list">
-						<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_bg_transparent" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
+					<div class="inputs-list  offer__targets-list">
+						<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_bg_transparent  offer__targets-item" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
 					</div>
-					<div class="btns-list">
-						<button class="btns-item">Отправить</button>
-						<div class="cbxs-list  cbxs-list_centered  m-l-100">
+					<div class="btns-list  offer__targets-list">
+						<button class="btns-item  offer__targets-item">Отправить</button>
+						<div class="cbxs-list  cbxs-list_centered  offer__cbxs-list  offer__targets-item">
 							<input id="cbx-1" class="cbxs-item-input" type="checkbox">
 							<label class="cbxs-item" for="cbx-1">
 								<span class="cbxs-item__text">Я принимаю <a href="#">условия</a> пользовательского соглашения сайта</span>
@@ -232,18 +229,31 @@
 					<span class="project__catalog-descr">Другие разделы продукции из категории "комплектные насосные станции"</span>
 				</div>
 				<div class="project__catalog-slider-wrap  project__section-col  project__section-col_center">
-					<div class="swiper-container  project__catalog-swiper-container">
+					<div class="swiper-container  swiper-container_pagination-color_dark  project__catalog-swiper-container">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<img class="img-responsive  project__catalog-item-img" src="img/img-project-catalog-1.jpg" alt="Фото проекта">
-								<h3 class="project__catalog-item-descr"><a href="#">Станции повышения давления Аквинокс-КНС-ПДВ</a></h3>
+								<div class="project__catalog-item">
+									<img class="img-responsive  project__catalog-item-img" src="img/img-project-catalog-1.jpg" alt="Фото проекта">
+									<h3 class="project__catalog-item-descr"><a href="#">Станции повышения давления Аквинокс-КНС-ПДВ</a></h3>
+								</div>
 							</div>
-							<div class="swiper-slide">2</div>
-							<div class="swiper-slide">3</div>
-							<div class="swiper-slide">4</div>
-							<div class="swiper-slide">5</div>
-							<div class="swiper-slide">6</div>
+							<div class="swiper-slide">
+								<div class="project__catalog-item">1</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="project__catalog-item">1</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="project__catalog-item">1</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="project__catalog-item">1</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="project__catalog-item">1</div>
+							</div>
 						</div>
+						<div class="swiper-pagination"></div>
 					</div>
 					<div class="btns-list  slider-controls-list  slider-controls-list_align_vertical  project__catalog-controls-list">
 						<button class="btns-item  btns-item_icon-only  btns-item_theme_empty  btns-item_theme_black  slider-controls-item  slider-controls-item_prev">
@@ -283,7 +293,7 @@
 			Закрыть
 		</button>
 		<div class="menu-list">
-			<a class="menu-item" href="#">Каталог</a>
+			<a class="menu-item" href="catalog.html">Каталог</a>
 			<a class="menu-item" href="#">Опросные листы</a>
 			<a class="menu-item" href="#">Поставки</a>
 			<a class="menu-item" href="#">Контактная информация</a>
