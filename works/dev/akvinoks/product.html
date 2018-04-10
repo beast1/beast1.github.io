@@ -80,15 +80,15 @@
 		<div class="project__section">
 			<div class="project__section-col  project__section-col_left">
 				<nav class="project__nav-list">
-					<a class="project__nav-item" href="#">Общее описание</a>
-					<a class="project__nav-item" href="#">Примеры поставок</a>
-					<a class="project__nav-item" href="#">Документы</a>
-					<a class="project__nav-item" href="#">Оставить заявку</a>
+					<a class="project__nav-item" href="#common-descr">Общее описание</a>
+					<a class="project__nav-item" href="#delivery-examples">Примеры поставок</a>
+					<a class="project__nav-item" href="#documents">Документы</a>
+					<a class="project__nav-item" href="#add-offer">Оставить заявку</a>
 				</nav>
 			</div>
 			<div class="project__section-col  project__section-col_center">
 				<div class="project__descr-wrap">
-					<div class="project__descr">
+					<div id="common-descr" class="project__descr">
 						<h2>Общее описание</h2>
 						<p class="fw-700">
 							Предназначена для перекачки сточных вод бытового, промышленного или атмосферного происхождения,
@@ -117,7 +117,7 @@
 				</div>
 			</div>
 		</div>
-		<section class="project__examples  project__section">
+		<section id="delivery-examples" class="project__examples  project__section">
 			<div class="project__section-col  project__section-col_left">
 				<h2 class="project__section-title">Примеры поставок</h2>
 			</div>
@@ -141,7 +141,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="project__docs  project__section">
+		<section id="documents" class="project__docs  project__section">
 			<div class="project__section-col  project__section-col_left">
 				<h2 class="project__section-title">Документы</h2>
 				<div class="project__controls-list">
@@ -197,7 +197,7 @@
 				</div>
 			</div>
 		</section>
-		<div class="offer  project__section-wrap  project__section-wrap_offer">
+		<div id="add-offer" class="offer  project__section-wrap  project__section-wrap_offer">
 			<form class="project__section">
 				<div class="project__section-col  project__section-col_left">
 					<h2 class="project__section-title">Заказать подбор оборудования</h2>
@@ -305,7 +305,7 @@
 		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
 		Закрыть
 	</button>
-	<form class="form">
+	<form class="form  form_maw_1200">
 		<h1 class="custom-title  custom-title_h1">Заказать звонок</h1>
 		<div class="inputs-list">
 			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
@@ -321,17 +321,19 @@
 		<svg class="svg  page__exit-svg"><use href="#icon-crest" /></svg>
 		Закрыть
 	</button>
-	<h1 class="custom-title  custom-title_h1">Связаться с нами</h1>
-	<div class="inputs-list">
-		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
-		<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
-	</div>
-	<div class="inputs-list">
-		<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
-	</div>
-	<div class="btns-list">
-		<button class="btns-item">Отправить</button>
-	</div>
+	<form class="form form_maw_1200">
+		<h1 class="custom-title  custom-title_h1">Связаться с нами</h1>
+		<div class="inputs-list">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Представьтесь">
+			<input class="inputs-item  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" type="text" placeholder="Телефон">
+		</div>
+		<div class="inputs-list">
+			<textarea class="inputs-item  inputs-item_textarea  inputs-item_size_max-width  inputs-item_theme_dark  inputs-item_bg_transparent" rows="3" placeholder="Оставьте сообщение (по желанию)"></textarea>
+		</div>
+		<div class="btns-list">
+			<button class="btns-item">Отправить</button>
+		</div>
+	</form>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.0/css/swiper.min.css">
 <link rel="stylesheet" href="css/main.min.css">
