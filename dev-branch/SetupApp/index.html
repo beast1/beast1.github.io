@@ -30,571 +30,643 @@
 
 <body>
 <div class="app">
-    <div class="app-header">
-        <div class="logo app-header__logo">
-            <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
-        </div>
-        <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
-        <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
-        <div class="clearfix"></div>
-    </div>
-    <!--screen 3.3-->
-    <div class="app-main">
-        <div class="app-steps app-steps_green">
-            <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
-            <div class="app-steps-item app-steps-item_black-arrow">2. Рекомендации</div>
-            <div class="app-steps-item">3. Загрузка и установка</div>
-            <div class="clearfix"></div>
-        </div>
-        <div>
-            <div class="app-programs app-programs_large">
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__download-name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__loading">
-                            <div class="progress progress_complete app-programs-item__progress"></div>
-                            100%
-                        </td>
-                        <td class="app-programs-item__status app-programs-item__status_green"><img src="img/icon-check_green.png" alt="">Установлено</td>
-                    </tr>
-
-                    <tr>
-                        <td class="app-programs-item__download-name"><img src="img/icon-skype.png" alt="">Skype</td>
-                        <td class="app-programs-item__loading">
-                            <div class="progress app-programs-item__progress"><div class="progress__bar" style="width: 80%"></div></div>
-                            80%
-                        </td>
-                        <td class="app-programs-item__status"><img src="img/icon-download_black.png" alt="">Загружается</td>
-                    </tr>
-
-                    <tr>
-                        <td class="app-programs-item__download-name"><img src="img/icon-torrent.png" alt="">Torrent</td>
-                        <td class="app-programs-item__loading">
-                            <div class="progress app-programs-item__progress"></div>
-                            0%
-                        </td>
-                        <td class="app-programs-item__status"><img src="img/icon-clock_black.png" alt="">В очереди</td>
-                    </tr>
-                </table>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="app-loader">
-            <img src="img/img-clock.png" alt="" width="138" height="138">
-            <p>Дождитесь завершения установки…</p>
-        </div>
-        <div class="app-download">
-            <button class="app-download__back">
-                <img src="img/icon-back.png" alt="" width="22" height="22">
-                Назад
-                <span class="clearfix"></span>
-            </button>
-            <div class="app-download__agreement">
-                <img src="img/icon-shield.png" alt="" width="19" height="22">
-                <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <button class="app-download__btn">
-                <img src="img/icon-download.png" alt="" width="22" height="22">
-                Начать установку
-                <span class="clearfix"></span>
-            </button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--screen 3.2-->
-    <div class="app-main">
-        <div class="app-steps">
-            <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
-            <div class="app-steps-item app-steps-item_green-arrow">2. Рекомендации</div>
-            <div class="app-steps-item">3. Загрузка и установка</div>
-            <div class="clearfix"></div>
-        </div>
-        <div>
-            <div class="app-sidebar">
-                <div class="app-sidebar__search">
-                    <input type="text" class="app-sidebar__search-input" placeholder="Поиск...">
-                </div>
-                <div class="app-sidebar-menu">
-                    <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
-                </div>
-            </div>
-            <div class="app-programs">
-                <div class="app-programs__title app-programs__title_green">Выбранные</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="app-programs__title">Топ 50</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="app-yabrowser">
-            <img src="img/logo-yandex_large.png" alt="" width="226" height="54" class="app-yabrowser__logo">
-            <div class="app-yabrowser__title">Быстро и безопасно</div>
-            <div class="app-yabrowser__title-second">скачивай файлы<br> и открывай страницы</div>
-            <p>Установливая рекомендуемое программное обеспечение, вы соглашаетесь с лицензионным соглашением <a href="#">Яндекс.Браузера</a> и <a href="#">Настольного ПО Яндекса</a></p>
-            <div class="clearfix"></div>
-        </div>
-        <div class="app-download">
-            <button class="app-download__back">
-                Отказаться
-                <div class="clearfix"></div>
-            </button>
-            <div class="app-download__spam">
-                <div class="app-download__spam-list">
-                    <div class="app-download__spam-item">
-                        <label for="cb1">Установить Яндекс.Браузер</label>
-                        <input id="cb1" type="checkbox">
-                    </div>
-                    <div class="app-download__spam-item app-download__spam-item_last">
-                        <label for="cb1">Установить настройи быстрого доступа к поиску<br> и сервисам Яндекса <a href="#">узнать подробности</a></label>
-                        <input id="cb1" type="checkbox">
-                    </div>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <button class="app-download__btn">
-                Принять
-                <div class="clearfix"></div>
-            </button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--screen 3.1-->
-    <div class="app-main">
-        <div class="app-steps">
-            <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
-            <div class="app-steps-item app-steps-item_green-arrow">2. Рекомендации</div>
-            <div class="app-steps-item">3. Загрузка и установка</div>
-            <div class="clearfix"></div>
-        </div>
-        <div>
-            <div class="app-sidebar">
-                <div class="app-sidebar__search">
-                    <input type="text" class="app-sidebar__search-input" placeholder="Поиск...">
-                </div>
-                <div class="app-sidebar-menu">
-                    <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
-                </div>
-            </div>
-            <div class="app-programs">
-                <div class="app-programs__title app-programs__title_green">Выбранные</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label class="checked" for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="app-programs__title">Топ 50</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="app-spam-bg"></div>
-        <div class="app-spam">
-            <div class="app-spam__left">
-                <img src="img/logo-yandex.png" alt="" width="102" height="54" class="app-spam__logo">
-                <div class="app-spam__title">Быстро и безопасно</div>
-                <div class="app-spam__title-second">скачивай файлы и открывай страницы</div>
-                <div class="app-spam__checkbox-list">
-                    <div class="app-spam__checkbox-item">
-                        <label for="cb1">Установить Яндекс.Браузер</label>
-                        <input id="cb1" type="checkbox">
-                    </div>
-                    <div class="app-spam__checkbox-item">
-                        <label for="cb1">Установить настройи быстрого доступа к поиску и сервисам Яндекса <a href="#">узнать подробности</a></label>
-                        <input id="cb1" type="checkbox">
-                    </div>
-                </div>
-            </div>
-            <div class="app-spam__right">
-                <div class="app-spam__preview">
-                    <img src="img/img-briks.png" alt="" class="app-spam__briks" width="164" height="60">
-                    <img src="img/img-yabrowser.png" alt="" width="441" height="229">
-                </div>
-                <p>Установливая рекомендуемое программное обеспечение, вы соглашаетесь с лицензионным соглашением <a href="#">Яндекс.Браузера</a> и <a href="#">Настольного ПО Яндекса</a></p>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-        <div class="app-download">
-            <button class="app-download__back">
-                <img src="img/icon-back.png" alt="" width="22" height="22">
-                Назад
-                <div class="clearfix"></div>
-            </button>
-            <div class="app-download__agreement">
-                <img src="img/icon-shield.png" alt="" width="19" height="22">
-                <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <button class="app-download__btn">
-                <img src="img/icon-download.png" alt="" width="22" height="22">
-                Далее
-                <div class="clearfix"></div>
-            </button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--screen 2.2-->
-    <div class="app-main">
-        <div class="app-steps">
-            <div class="app-steps-item app-steps-item_green-arrow">1. Выбор программы</div>
-            <div class="app-steps-item">2. Рекомендации</div>
-            <div class="app-steps-item">3. Загрузка и установка</div>
-            <div class="clearfix"></div>
-        </div>
-        <div>
-            <div class="app-sidebar">
-                <div class="app-sidebar__search">
-                    <input type="text" class="app-sidebar__search-input" placeholder="Поиск...">
-                </div>
-                <div class="app-sidebar-menu">
-                    <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
-                </div>
-            </div>
-            <div class="app-programs">
-                <div class="app-programs__title app-programs__title_green">Выбранные</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="app-programs__title">Топ 50</div>
-                <table class="app-programs__table">
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="app-download">
-            <div class="app-download__agreement">
-                <img src="img/icon-shield.png" alt="" width="19" height="22">
-                <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="app-download__descr">
-                <p><b class="blue">5 Мб</b> нужно для установки</p>
-                <p><b>24 Гб</b> доступно <a href="#">выбрать другую папку</a></p>
-                <div class="clearfix"></div>
-            </div>
-            <button class="app-download__btn">
-                <img src="img/icon-download.png" alt="" width="22" height="22">
-                Далее
-                <div class="clearfix"></div>
-            </button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-    <!--screen 2.1-->
-    <div class="app-main">
-        <div class="app-steps">
-            <div class="app-steps-item app-steps-item_green-arrow">1. Выбор программы</div>
-            <div class="app-steps-item">2. Рекомендации</div>
-            <div class="app-steps-item">3. Загрузка и установка</div>
-            <div class="clearfix"></div>
-        </div>
-        <div>
-            <div class="app-sidebar">
-                <div class="app-sidebar__search">
-                    <input type="text" class="app-sidebar__search-input" placeholder="Поиск...">
-                </div>
-                <div class="app-sidebar-menu">
-                    <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
-                    <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
-                </div>
-            </div>
-            <div class="app-programs">
-                <table>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb1" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb2" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                    <tr>
-                        <td class="app-programs-item__checkbox">
-                            <label for="cb1"></label>
-                            <input id="cb3" type="checkbox">
-                        </td>
-                        <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
-                        <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
-                        <td class="app-programs-item__ver">1.0.8.5</td>
-                        <td class="app-programs-item__type">Плееры</td>
-                        <td class="app-programs-item__weight">1 Мб</td>
-                    </tr>
-                </table>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
     <!--screen 1-->
-    <div class="app-main app-main_install">
-        <div class="app-main__title">Идет подготовка к установке</div>
-        <div class="app-main__descr">Пожалуйста, не закрывайте окно</div>
-        <img src="img/bg-app-main.png" alt="" class="app-main__bg" width="202" height="75">
-        <div class="clearfix"></div>
-    </div>
-</div>
-<div class="container">
-
-    <div class="row">
-
-        <div class="col-sm-8 col-sm-offset-2">
-
-            <img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-            <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова,
-                силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни
-                это, первую переулка правилами?</p>
-            <p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось
-                вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты?
-                Предупреждал повстречался, но которое!</p>
-            <p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка
-                необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая
-                предложения рот скатился.</p>
-
+    <div class="screen">
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
         </div>
-
+        <div class="app-main app-main_install">
+            <div class="app-main__title">Идет подготовка к установке</div>
+            <div class="app-main__descr">Пожалуйста, не закрывайте окно</div>
+            <img src="img/bg-app-main.png" alt="" class="app-main__bg" width="202" height="75">
+            <div class="clearfix"></div>
+        </div>
     </div>
+    <div class="screen">
+        <!--screen 2.1-->
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="app-main">
+            <div class="app-steps">
+                <div class="app-steps-item app-steps-item_green-arrow">1. Выбор программы</div>
+                <div class="app-steps-item">2. Рекомендации</div>
+                <div class="app-steps-item">3. Загрузка и установка</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="app-sidebar">
+                    <div class="app-sidebar__search">
+                        <input type="text" class="app-sidebar__search-input" placeholder="Поиск..." required>
+                    </div>
+                    <div class="app-sidebar-menu">
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</a>
+                        <a href="#" class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</a>
+                    </div>
+                </div>
+                <div class="app-programs">
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">uTorrent</td>
+                            <td class="app-programs-item__score">5.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Торрент-клиент</td>
+                            <td class="app-programs-item__weight">25 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">Skype</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">uTorrent</td>
+                            <td class="app-programs-item__score">5.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Торрент-клиент</td>
+                            <td class="app-programs-item__weight">25 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">Skype</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">uTorrent</td>
+                            <td class="app-programs-item__score">5.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Торрент-клиент</td>
+                            <td class="app-programs-item__weight">25 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">Skype</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">uTorrent</td>
+                            <td class="app-programs-item__score">5.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Торрент-клиент</td>
+                            <td class="app-programs-item__weight">25 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <div class="app-checkbox checked"></div>
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-torrent.png" alt="">Skype</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="app-download">
+                <div class="app-download__agreement">
+                    <img src="img/icon-shield.png" alt="" width="19" height="22">
+                    <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="app-download__descr">
+                    <p><b class="blue">5 Мб</b> нужно для установки</p>
+                    <p><b>24 Гб</b> доступно <a href="#">выбрать другую папку</a></p>
+                    <div class="clearfix"></div>
+                </div>
+                <button class="app-download__btn">
+                    <img src="img/icon-download.png" alt="" width="22" height="22">
+                    Далее
+                    <div class="clearfix"></div>
+                </button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <!--screen 2.2-->
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="app-main">
+            <div class="app-steps">
+                <div class="app-steps-item app-steps-item_green-arrow">1. Выбор программы</div>
+                <div class="app-steps-item">2. Рекомендации</div>
+                <div class="app-steps-item">3. Загрузка и установка</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="app-sidebar">
+                    <div class="app-sidebar__search">
+                        <input type="text" class="app-sidebar__search-input" placeholder="Поиск..." required>
+                    </div>
+                    <div class="app-sidebar-menu">
+                        <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
+                        <div class="app-sidebar-menu-item app-sidebar-menu-item_current"><img src="img/icon-cross_orange.png" alt="">Топ 50</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
+                    </div>
+                </div>
+                <div class="app-programs">
+                    <div class="app-programs__title app-programs__title_green">Выбранные</div>
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb1" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb2" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb3" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="app-programs__title">Топ 50</div>
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb1" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb2" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb3" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="app-download">
+                <div class="app-download__agreement">
+                    <img src="img/icon-shield.png" alt="" width="19" height="22">
+                    <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="app-download__descr">
+                    <p><b class="blue">5 Мб</b> нужно для установки</p>
+                    <p><b>24 Гб</b> доступно <a href="#">выбрать другую папку</a></p>
+                    <div class="clearfix"></div>
+                </div>
+                <button class="app-download__btn">
+                    <img src="img/icon-download.png" alt="" width="22" height="22">
+                    Далее
+                    <div class="clearfix"></div>
+                </button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <!--screen 3.1-->
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="app-main">
+            <div class="app-steps">
+                <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
+                <div class="app-steps-item app-steps-item_green-arrow">2. Рекомендации</div>
+                <div class="app-steps-item">3. Загрузка и установка</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="app-programs app-programs_large">
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb1" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb2" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb3" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="app-spam-bg"></div>
+            <div class="app-spam">
+                <div class="app-spam__left">
+                    <img src="img/logo-yandex.png" alt="" width="102" height="54" class="app-spam__logo">
+                    <div class="app-spam__title">Быстро и безопасно</div>
+                    <div class="app-spam__title-second">скачивай файлы и открывай страницы</div>
+                    <div class="app-spam__checkbox-list">
+                        <div class="app-spam__checkbox-item">
+                            <label for="cb1">Установить Яндекс.Браузер</label>
+                            <input id="cb1" type="checkbox">
+                        </div>
+                        <div class="app-spam__checkbox-item">
+                            <label for="cb1">Установить настройи быстрого доступа к поиску и сервисам Яндекса <a href="#">узнать подробности</a></label>
+                            <input id="cb1" type="checkbox">
+                        </div>
+                    </div>
+                </div>
+                <div class="app-spam__right">
+                    <div class="app-spam__preview">
+                        <img src="img/img-briks.png" alt="" class="app-spam__briks" width="164" height="60">
+                        <img src="img/img-yabrowser.png" alt="" width="441" height="229">
+                    </div>
+                    <p>Установливая рекомендуемое программное обеспечение, вы соглашаетесь с лицензионным соглашением <a href="#">Яндекс.Браузера</a> и <a href="#">Настольного ПО Яндекса</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="app-download">
+                <button class="app-download__back">
+                    <img src="img/icon-back.png" alt="" width="22" height="22">
+                    Назад
+                    <div class="clearfix"></div>
+                </button>
+                <div class="app-download__agreement">
+                    <img src="img/icon-shield.png" alt="" width="19" height="22">
+                    <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
+                    <div class="clearfix"></div>
+                </div>
+                <button class="app-download__btn">
+                    <img src="img/icon-download.png" alt="" width="22" height="22">
+                    Далее
+                    <div class="clearfix"></div>
+                </button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <!--screen 3.2-->
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="app-main">
+            <div class="app-steps">
+                <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
+                <div class="app-steps-item app-steps-item_green-arrow">2. Рекомендации</div>
+                <div class="app-steps-item">3. Загрузка и установка</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="app-sidebar">
+                    <div class="app-sidebar__search">
+                        <input type="text" class="app-sidebar__search-input" placeholder="Поиск..." required>
+                    </div>
+                    <div class="app-sidebar-menu">
+                        <div class="app-sidebar-menu-item"><img src="img/icon-like.png" alt="">Рекомендуемые</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-rocket.png" alt="">Стартовый набор</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-cross.png" alt="">Топ 50</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-play.png" alt="">Мультимедиа</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-globe.png" alt="">Интернет</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-paper.png" alt="">Офис</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-system.png" alt="">Система</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-message.png" alt="">Общение</div>
+                        <div class="app-sidebar-menu-item"><img src="img/icon-safe.png" alt="">Безопасность</div>
+                    </div>
+                </div>
+                <div class="app-programs">
+                    <div class="app-programs__title app-programs__title_green">Выбранные</div>
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb1" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb2" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label class="checked" for="cb1"></label>
+                                <input id="cb3" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="app-programs__title">Топ 50</div>
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb1" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb2" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                        <tr>
+                            <td class="app-programs-item__checkbox">
+                                <label for="cb1"></label>
+                                <input id="cb3" type="checkbox">
+                            </td>
+                            <td class="app-programs-item__name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__score">4.3<img src="img/icon-star.png" alt=""></td>
+                            <td class="app-programs-item__ver">1.0.8.5</td>
+                            <td class="app-programs-item__type">Плееры</td>
+                            <td class="app-programs-item__weight">1 Мб</td>
+                        </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="app-yabrowser">
+                <img src="img/logo-yandex_large.png" alt="" width="226" height="54" class="app-yabrowser__logo">
+                <div class="app-yabrowser__title">Быстро и безопасно</div>
+                <div class="app-yabrowser__title-second">скачивай файлы<br> и открывай страницы</div>
+                <p>Установливая рекомендуемое программное обеспечение, вы соглашаетесь с лицензионным соглашением <a href="#">Яндекс.Браузера</a> и <a href="#">Настольного ПО Яндекса</a></p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="app-download">
+                <button class="app-download__back">
+                    Отказаться
+                    <div class="clearfix"></div>
+                </button>
+                <div class="app-download__spam">
+                    <div class="app-download__spam-list">
+                        <div class="app-download__spam-item">
+                            <label for="cb1">Установить Яндекс.Браузер</label>
+                            <input id="cb1" type="checkbox">
+                        </div>
+                        <div class="app-download__spam-item app-download__spam-item_last">
+                            <label for="cb1">Установить настройи быстрого доступа к поиску<br> и сервисам Яндекса <a href="#">узнать подробности</a></label>
+                            <input id="cb1" type="checkbox">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <button class="app-download__btn">
+                    Принять
+                    <div class="clearfix"></div>
+                </button>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <div class="screen">
+        <!--screen 3.3-->
+        <div class="app-header">
+            <div class="logo app-header__logo">
+                <img src="img/logo-app.png" alt="" class="logo__img" width="173" height="28">
+            </div>
+            <div class="app-header__descr">Самый быстрый способ установить нужные<br> программы на компьютер</div>
+            <div><img src="img/img-briks.png" alt="" class="app-header__bg" width="164" height="60"></div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="app-main">
+            <div class="app-steps app-steps_green">
+                <div class="app-steps-item app-steps-item_black">1. Выбор программы</div>
+                <div class="app-steps-item app-steps-item_black-arrow">2. Рекомендации</div>
+                <div class="app-steps-item">3. Загрузка и установка</div>
+                <div class="clearfix"></div>
+            </div>
+            <div>
+                <div class="app-programs app-programs_large">
+                    <table class="app-programs__table">
+                        <tr>
+                            <td class="app-programs-item__download-name"><img src="img/icon-yandex.png" alt="">Яндекс.Браузер</td>
+                            <td class="app-programs-item__loading">
+                                <div class="progress progress_complete app-programs-item__progress"></div>
+                                100%
+                            </td>
+                            <td class="app-programs-item__status app-programs-item__status_green"><img src="img/icon-check_green.png" alt="">Установлено</td>
+                        </tr>
 
+                        <tr>
+                            <td class="app-programs-item__download-name"><img src="img/icon-skype.png" alt="">Skype</td>
+                            <td class="app-programs-item__loading">
+                                <div class="progress app-programs-item__progress"><div class="progress__bar" style="width: 80%"></div></div>
+                                80%
+                            </td>
+                            <td class="app-programs-item__status"><img src="img/icon-download_black.png" alt="">Загружается</td>
+                        </tr>
+
+                        <tr>
+                            <td class="app-programs-item__download-name"><img src="img/icon-torrent.png" alt="">Torrent</td>
+                            <td class="app-programs-item__loading">
+                                <div class="progress app-programs-item__progress"></div>
+                                0%
+                            </td>
+                            <td class="app-programs-item__status"><img src="img/icon-clock_black.png" alt="">В очереди</td>
+                        </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="app-loader">
+                <img src="img/img-clock.png" alt="" width="138" height="138">
+                <p>Дождитесь завершения установки…</p>
+            </div>
+            <div class="app-download">
+                <div class="app-download__agreement">
+                    <img src="img/icon-shield.png" alt="" width="19" height="22">
+                    <div class="app-download__agreement-descr">Используя InstallNow, вы соглашаетесь с условиями <a href="#">лицензионнго соглашения</a></div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--<script>-->
 <!--    if (!document.querySelectorAll) {-->
