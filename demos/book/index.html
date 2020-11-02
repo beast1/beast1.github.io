@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:image" content="images/dest/preview.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+<div class="lines"></div>
+<div class="main">
+    <div class="noise"></div>
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+<!--        <div class="swiper-slide">-->
+<!--            <div class="book-page">-->
+<!--&lt;!&ndash;                <div class="vhs" data-splitting>VHS</div>&ndash;&gt;-->
+<!--                -->
+<!--            </div>-->
+<!--        </div>-->
+        <div class="swiper-slide">
+            <div class="book-page cover">
+                <h1 class="vhs">КНИГА ТРАВМ <b data-splitting>ЗАЧЕМ</b></h1>
+                <div class="time"><span id="time"></span></div>
+                <div class="counter">REC <label id="minutes">00</label>:<label id="seconds">00</label></div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="book-page">
+                <h2 class="vhs">Мысли преследуют меня?</h2>
+                <div class="text-field">
+                    <p>
+                        Самое странное что когда я думаю о какой-то идее долго она истязает мое мышление, чем дольше я
+                        о чем-то думаю тем сильнее мозоль от этой мысли кровоточит.</p>
+                    <p>Жизнь превращается в цикл и чем больше вещей напоминают о мысли тем глубже она впитывается в мое повседневное сознание. Чтобы
+                        обрести покой мне нужно отпускать мысли воплощать их в графике, творчестве, ремесле.</p>
+                    <p>Спрятав мысль достаточно глубоко от своего ума я получаю шанс освободиться и впредь вспоминать о ней без горечи.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="book-page">
+                <img class="img-responsive i418 vhs-img" src="images/418--transparent.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+<!--    <div class="swiper-pagination"></div>-->
+
+    <!-- If we need navigation buttons -->
+<!--    <div class="swiper-button-prev"></div>-->
+<!--    <div class="swiper-button-next"></div>-->
+
+    <!-- If we need scrollbar -->
+<!--    <div class="swiper-scrollbar"></div>-->
+</div>
+</div>
+<style>
+    /* credits to creme (https://codepen.io/creme)*/
+
+    @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: 400;
+        opacity: 0.8;
+        pointer-events: none;
+        opacity: 1;
+        z-index: 450;
+    }
+
+    .noise:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url('https://ice-creme.de/images/background-noise.png');
+        pointer-events: none;
+        will-change: background-position;
+        animation: noise 1s infinite alternate;
+    }
+
+    .lines {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 300;
+        opacity: 0.6;
+        will-change: opacity;
+        animation: opacity 3s linear infinite;
+    }
+
+    .lines:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        pointer-events: none;
+        background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+        background-size: 100% 4px;
+        will-change: background, background-size;
+        animation: scanlines 0.2s linear infinite;
+    }
+
+    .main {
+        position: fixed;
+        top: 0;
+        left: 0;
+        font-family: 'Press Start 2P', cursive;
+        color: #fff;
+        /*font-size: 2rem;*/
+        width: 100vw;
+        height: 100vh;
+        background: #2b52ff;
+    }
+
+    .main .noise:before {
+        background-size: 150%;
+    }
+
+    .main .vhs {
+        /*position: absolute;*/
+        /*left: 2rem;*/
+        /*top: 2rem;*/
+        will-change: text-shadow;
+        animation: rgbText 2s steps(9) 0s infinite alternate;
+    }
+
+    .main .vhs-img {
+        filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(0px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 0px 3px rgba(0, 233, 235, 0.8)) drop-shadow(0px 0 3px rgba(0, 242, 14, 0.8)) drop-shadow(0 0px 3px rgba(244, 45, 0, 0.8)) drop-shadow(0px 0 3px rgba(59, 0, 226, 0.8));
+        /*will-change: filter;*/
+        /*animation: rgbImg 2s steps(9) 0s infinite alternate;*/
+    }
+
+    /*.main .vhs .char {*/
+    /*    will-change: opacity;*/
+    /*    animation: type 1.2s infinite alternate;*/
+    /*    animation-delay: calc(60ms * var(--char-index));*/
+    /*}*/
+
+    .main .time {
+        position: absolute;
+        right: 2rem;
+        top: 2rem;
+        z-index: 2;
+        will-change: text-shadow;
+        animation: rgbText 1s steps(9) 0s infinite alternate;
+    }
+
+    .main .counter {
+        position: absolute;
+        left: 2rem;
+        bottom: 2rem;
+        z-index: 2;
+        will-change: text-shadow;
+        animation: rgbText 1s steps(9) 0s infinite alternate;
+    }
+
+    @keyframes noise {
+        0%,
+        100% {
+            background-position: 0 0;
+        }
+        10% {
+            background-position: -5% -10%;
+        }
+        20% {
+            background-position: -15% 5%;
+        }
+        30% {
+            background-position: 7% -25%;
+        }
+        40% {
+            background-position: 20% 25%;
+        }
+        50% {
+            background-position: -25% 10%;
+        }
+        60% {
+            background-position: 15% 5%;
+        }
+        70% {
+            background-position: 0 15%;
+        }
+        80% {
+            background-position: 25% 35%;
+        }
+        90% {
+            background-position: -10% 10%;
+        }
+    }
+
+    @keyframes opacity {
+        0% {
+            opacity: 0.6;
+        }
+        20% {
+            opacity: 0.3;
+        }
+        35% {
+            opacity: 0.5;
+        }
+        50% {
+            opacity: 0.8;
+        }
+        60% {
+            opacity: 0.4;
+        }
+        80% {
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 0.6;
+        }
+    }
+
+    @keyframes scanlines {
+        from {
+            background: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, .5) 51%);
+            background-size: 100% 4px;
+        }
+        to {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 50%, transparent 51%);
+            background-size: 100% 4px;
+        }
+    }
+
+    @keyframes rgbText {
+        0% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+        }
+        25% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+        }
+        45% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8), 5px 0 1px rgba(59, 0, 226, 0.8);
+        }
+        50% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);
+        }
+        55% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 3px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);
+        }
+        90% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8), 5px 0 1px rgba(59, 0, 226, 0.8);
+        }
+        100% {
+            text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);
+        }
+    }
+
+    @keyframes rgbImg {
+        0% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);*/
+        filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(0px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 0px 3px rgba(0, 233, 235, 0.8)) drop-shadow(0px 0 3px rgba(0, 242, 14, 0.8)) drop-shadow(0 0px 3px rgba(244, 45, 0, 0.8)) drop-shadow(0px 0 3px rgba(59, 0, 226, 0.8));
+        }
+        25% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 1px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(0px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0px 0 3px rgba(0, 242, 14, 0.8)) drop-shadow(0 0px 3px rgba(244, 45, 0, 0.8)) drop-shadow(0px 0 3px rgba(59, 0, 226, 0.8));
+        }
+        45% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(5px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 5px 1px rgba(0, 233, 235, 0.8)) drop-shadow(-5px 0 1px rgba(0, 242, 14, 0.8)) drop-shadow(0 -5px 1px rgba(244, 45, 0, 0.8));
+        }
+        50% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(-5px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 -5px 1px rgba(0, 233, 235, 0.8)) drop-shadow(5px 0 1px rgba(0, 242, 14, 0.8)) drop-shadow(0 5px 1px rgba(244, 45, 0, 0.8)) drop-shadow(-5px 0 1px rgba(59, 0, 226, 0.8));
+        }
+        55% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 0px 0 3px rgba(251, 0, 231, 0.8), 0 0px 3px rgba(0, 233, 235, 0.8), 0px 0 3px rgba(0, 242, 14, 0.8), 0 0px 3px rgba(244, 45, 0, 0.8), 0px 0 3px rgba(59, 0, 226, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(0px 0 3px rgba(251, 0, 231, 0.8)) drop-shadow(0 0px 3px rgba(0, 233, 235, 0.8)) drop-shadow(0 0px 3px rgba(244, 45, 0, 0.8)) drop-shadow(0px 0 3px rgba(59, 0, 226, 0.8));
+        }
+        90% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), -5px 0 1px rgba(251, 0, 231, 0.8), 0 5px 1px rgba(0, 233, 235, 0.8), 5px 0 1px rgba(0, 242, 14, 0.8), 0 -5px 1px rgba(244, 45, 0, 0.8), 5px 0 1px rgba(59, 0, 226, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(-5px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 5px 1px rgba(0, 233, 235, 0.8)) drop-shadow(0 -5px 1px rgba(244, 45, 0, 0.8)) drop-shadow(5px 0 1px rgba(59, 0, 226, 0.8));
+        }
+        100% {
+            /*text-shadow: -1px 1px 8px rgba(255, 255, 255, 0.6), 1px -1px 8px rgba(255, 255, 235, 0.7), 5px 0 1px rgba(251, 0, 231, 0.8), 0 -5px 1px rgba(0, 233, 235, 0.8), -5px 0 1px rgba(0, 242, 14, 0.8), 0 5px 1px rgba(244, 45, 0, 0.8), -5px 0 1px rgba(59, 0, 226, 0.8);*/
+            filter: invert(100%) drop-shadow(-1px 1px 8px rgba(255, 255, 255, 0.6)) drop-shadow(1px -1px 8px rgba(255, 255, 235, 0.7)) drop-shadow(5px 0 1px rgba(251, 0, 231, 0.8)) drop-shadow(0 -5px 1px rgba(0, 233, 235, 0.8)) drop-shadow(-5px 0 1px rgba(0, 242, 14, 0.8)) drop-shadow(0 5px 1px rgba(244, 45, 0, 0.8)) drop-shadow(-5px 0 1px rgba(59, 0, 226, 0.8));
+        }
+    }
+
+    @keyframes type {
+        0%,
+        19% {
+            opacity: 0;
+        }
+        20%,
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<script>
+    Splitting();
+
+    /* COUNTER */
+    function pad(val) {
+        var valString = val + "";
+        if (valString.length < 2) {
+            return "0" + valString;
+        } else {
+            return valString;
+        }
+    }
+
+    var totalSeconds = 0;
+
+    setInterval(setTime, 1000);
+
+    function setTime() {
+        ++totalSeconds;
+        document.getElementById("seconds").innerHTML = pad(totalSeconds % 60);
+        document.getElementById("minutes").innerHTML = pad(parseInt(totalSeconds / 60));
+    }
+
+    /* TIME IN FORMAT HH:MM:SS */
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    setInterval(getTime, 1000);
+
+    function getTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        // add a zero in front of numbers < 10
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML = h + ":" + m + ":" + s;
+        t = setTimeout(function() {
+            getTime()
+        }, 500);
+    }
+</script>
+<style>
+	.swiper-container {
+		/*max-width: 480px;*/
+		/*width: 100%;*/
+		/*max-height: 720px;*/
+		/*height: 100%;*/
+		/*width: 480px;*/
+		/*height: 720px;*/
+        width: 100vw;
+        height: 100vh;
+		background-color: grey;
+	}
+    h1, h2 {
+        font-family: "soviet font", sans-serif;
+    }
+    p {
+        /*font-family: "Segoe UI", sans-serif;*/
+        font-family: 'Ubuntu Mono', monospace;
+        text-transform: uppercase;
+    }
+    .book-page {
+        position: relative;
+        height: 100%;
+        padding: 20px;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        background-image: linear-gradient(#212529, #333333);
+        color: #d9f3ff;
+    }
+    .cover {
+        display: flex;
+    }
+    .cover h1 {
+        margin: auto;
+        padding-bottom: 50%;
+        font-size: 2.5em;
+    }
+    .cover h1 b {
+        display: block;
+        font-size: 2.1em;
+        position: relative;
+        left: -5px;
+        line-height: 1;
+    }
+    .text-field p {
+        font-size: 1.3em;
+    }
+    .img-responsive {
+        display: block;
+        max-width: 100%;
+    }
+    .i418 {
+        position: absolute;
+        width: 306px;
+        top: 0;
+        filter: invert(100%);
+    }
+</style>
+<script src="js/app.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+        effect: 'flip',
+        // loop: true,
+		// If we need pagination
+		// pagination: {
+		// 	el: '.swiper-pagination',
+		// },
+
+		// Navigation arrows
+		// navigation: {
+		// 	nextEl: '.swiper-button-next',
+		// 	prevEl: '.swiper-button-prev',
+		// },
+
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: '.swiper-scrollbar',
+		// },
+	})
+</script>
+</body>
+</html>
