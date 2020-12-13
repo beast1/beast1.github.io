@@ -5,13 +5,14 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^6.7.5",
+    "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-less": "^1.4.0",
-    "grunt": "^1.0.1",
     "grunt-contrib-watch": "^1.0.0",
+    "grunt-css-mqpacker": "^3.0.1",
     "grunt-postcss": "^0.8.0",
-    "grunt-css-mqpacker": "^3.0.1"
+    "gulp": "^4.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.18.8",

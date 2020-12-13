@@ -8,6 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/libs.min.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
+  <link href="css/update.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/6406f4c456.js"></script>
 </head>
 
@@ -15,128 +16,46 @@
   <header class="page-header">
     <div class="page-header__wrapper  wrapper">
       <nav class="page-header__nav">
-        <a class="js-smooth-scroll  js-btn-slide-00  page-header__nav-link" href="#about-me">Прайс</a>
-        <a class="js-smooth-scroll  page-header__nav-link" href="#works">Портфолио</a>
-        <a class="js-smooth-scroll  js-btn-slide-01  page-header__nav-link" href="#about-me">Рекрутерам</a>
+        <a class="js-smooth-scroll  page-header__nav-link  hvr-bounce-to-bottom" href="#works">Портфолио</a>
+        <a class="js-smooth-scroll  page-header__nav-link  hvr-bounce-to-bottom" href="Frontend-Developer-Hliebov-Yehor.doc">Скачать резюме</a>
       </nav>
       <div class="page-header__social">
-<!--        <a class="social__item social__item--vk" href="https://vk.com/a_beast" target="_blank"><span>Вконтакте</span></a>-->
-        <a class="page-header__social-item page-header__social-item--skype" href="skype:live:de87e91f51ed96dd?chat" target="_blank">
-          <i class="fa fa-skype" aria-hidden="true"></i>
-          Скайп
-        </a>
-        <a class="page-header__social-item page-header__social-item--gmail" href="https://beast.loby@gmail.com" target="_blank">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-          Почта гугл
+        <a class="page-header__social-item page-header__social-item--skype  hvr-bounce-to-bottom" href="http://t.me/beast_hotline" target="_blank">
+          <i class="fa fa-telegram" aria-hidden="true"></i>
+
         </a>
       </div>
     </div>
   </header>
   <main class="wrapper">
-<!--
-  <div class="promo">
-    <h1 class="main-title">
-      Одностраничный статичный сайт за два рабочих дня<br>
-      <span>Если не успеваю, заканчиваю бесплатно!</span>
-    </h1>
-    <a href="skype:live:de87e91f51ed96dd?chat" class="btn--main-action  btn--main-action--black">Сделать заказ</a>
-  </div>
--->
-  <div class="features">
-    <div class="features__item">
-      <i class="fa fa-tablet" aria-hidden="true"></i>
-      <h2 class="features__title">Адаптивность</h2>
-      <p class="features__descr">Ваш сайт будет оптимизирован для смартфонов, планшетов, мониторов и широкоформатных мониторов</p>
-    </div>
-    <div class="features__item">
-      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
-      <h2 class="features__title">Кроссбраузерность</h2>
-      <p class="features__descr">Ваш сайт выглядит одинаково во всех браузерах с аудиторией >2%</p>
-    </div>
-    <div class="features__item">
-      <i class="fa fa-lock" aria-hidden="true"></i>
-      <h2 class="features__title">Безопасность</h2>
-      <p class="features__descr">Оплата через безопасную сделку на weblancer.net</p>
-    </div>
-  </div>
-  <div class="about-me holder"  id="about">
-    <div class="js-anchor--about-me" id="about-me"></div>
-    <div class="holder__slider">
-      <div class="holder__slider-item" id="price-slide">
-        <div class="holder__fill  holder__fill--black">
-          <div class="about-me__container">
-            <h2 class="h2  h2--light">Обо мне</h2>
-            <p class="about-me__descr">
-              Привет, я занимаюсь версткой всего лишь с декабря прошлого года. Однако за последние шесть месяцев я успел пройти 45 онлайн-курсов на крупнейшем <a class="a-db" href="https://htmlacademy.ru/" target="_blank">образовательном ресурсе</a> в сфере web-разработки, где получил самые актуальные знания HTML, CSS и JS. А после закончил <a class="a-db" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">интенсивный курс</a>, где защитил второй по сложности проект в потоке на 100%.
-            </p>
-            <p class="about-me__descr">
-              Да, мой рабочий опыт - пять полноценных проектов, только два из которых коммерческие. Безусловно любой верстальщик-фрилансер с +50 положительных отзывов выполнит любой заказ в два раза быстрее чем я. 
-              Однако цену он потребует соответствующую. Я же предлагаю полное соответствие ТЗ за вдвое меньшую цену.
-            </p>
-          </div>
-          <div class="price-list">
-            <h2 class="h2  h2--light">Услуги</h2>
-            <h3>Базовые</h3>
-            <ul class="price-types">
-              <li class="price-types-item">Кроссбраузерность</li>
-              <li class="price-types-item">Прогрессивное улучшение</li>
-              <li class="price-types-item">Оптимизированную скорость загрузки</li>
-              <li class="price-types-item">Адаптивность(mobile-first)</li>
-            </ul>
-            <h3>Дополнительные</h3>
-            <ul class="price-types">
-              <li class="price-types-item">Семантичность</li>
-              <li class="price-types-item">Пиксель-перфект</li>
-            </ul>
-            <small class="g-text-muted">Не ждите пока я наберу базу заказчиков и подниму тарифы! <a class="a-db" href="skype:live:de87e91f51ed96dd?chat" target="_blank">Закажите</a> верстку сейчас.</small>
-          </div>
-        </div>
-      </div>
-      <div class="holder__slider-item" id="employer-slide">
-        <div class="holder__fill  holder__fill--white">
-          <div class="about-me__container">
-            <h2 class="h2  h2--dark">Рекрутерам</h2>
-            <p class="about-me__descr">
-              Способен создавать верстку(SCSS+HTML) и фронт-енд окружение(JS||JQuery). Оптимизация рабочего процесса посредством Avocode+Gulp+Git. Есть опыт нарезки верстки(Shopyfy Liquid), настройки CMS(inSales), подключение плагинов(JQuery, VK). 
-            </p>
-            <p>
-              Мои рабочие решения: 
-              <a class="a-lb" href="https://github.com/beast1/start-project" target="_blank">start-project</a>,
-              <a class="a-lb" href="https://github.com/beast1/scss-mixins" target="_blank">Библиотека миксинов</a>
-            </p>
-            <p class="about-me__descr">
-              Готов выполнять тестовые задания, проходить стажировку, работать удаленно.
-            </p>
-            <div class="about-me__links">
-              <a class="about-me__link" href="https://github.com/beast1" target="_blank">
-                <i class="fa fa-github" aria-hidden="true"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="education  holder__fill  holder__fill--1-of-2  holder__fill--white">
-      <h2 class="h2  h2--dark">Мои навыки</h2>
-      <div class="education__item">
-        <p>
-          <b class="education__title">Интенсивный курс «Базовый HTML и CSS»</b><br>
-          <span class="education__description">HTML Academy / 17 января – 22 февраля 2017</span>
+    <div class="container container--header">
+      <div class="talk">
+        <h1 class="talk__title">Привет, я Егор,<br>
+          свободный Фронтенд разработчик</h1>
+        <p class="talk__descr">
+          Я занимаюсь фронтенд-разработкой<br>
+          <b>с упором в верстку</b>.<br>
+          Мне 20. В 17 лет я защитил курс "Профессиональная верстка сайтов" в HTML Academy и в 19 начал на нем преподавать.<br>
+          Параллельно я работал в нескольких <b>продуктовых компаниях</b> где занимал должность верстальщика.<br>
+          С 2019 года я работаю самостоятельно но <b>продолжаю поддерживать сотрудничество</b><br>
+          с ребятами из <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a>, <a href="https://liga-a.ru/">Лига А.</a> и
+          <a href="https://hoba.solutions/">HOBA Studio</a>
         </p>
-        <div class="education__certificate  interactive-img">
-          <img src="img/preview-certificate-15(384x540).jpg" alt="Сертификат Интенсивный курс «Базовый HTML и CSS»" width="384" height="540px">
-          <div class="education__certificate-inner  interactive-img__holder">
-            <a class="interactive-img__target" href="certificate.pdf" target="_blank">Pdf</a>
-          </div>
-        </div>
-        <a class="keks-link" href="https://htmlacademy.ru/profile/beast" title="Мой профиль в HTML Academy" target="_blank">
-          <img src="img/keks-logo.svg" alt="Ссылка на мой профиль HTML Academy" width="207.24" height="207.24">
-        </a>
+      </div>
+      <div class="directions">
+        <h2 class="directions__title">Что я делаю?</h2>
+        <ul class="directions__list">
+          <li>Верстка по готовому дизайну</li>
+          <li>Фронтенд разработка на ES6, Angular</li>
+          <li>Создание редкостных визуальных образов для прогрессивных брендов</li>
+        </ul>
       </div>
     </div>
-  </div>
   <div class="works">
     <div id="works"></div>
+    <a class="keks-link" href="https://htmlacademy.ru/profile/beast" title="Мой профиль в HTML Academy" target="_blank">
+      <img src="img/keks-logo.svg" alt="Ссылка на мой профиль HTML Academy" width="207.24" height="207.24">
+    </a>
     <h2 class="h2  h2--dark">Мои работы</h2>
     <ul class="js-masonry  grid  clearfix  effect-2  works__list" id="grid">
       <li class="grid-item  grid-item--height1  interactive-img">
@@ -187,12 +106,12 @@
   </main>
   <div class="page-footer">
     <div class="wrapper">
-      <p class="page-footer__contacts">
+      <a href="tel:+38(050)20-56-810" class="page-footer__contacts">
         +38(050)20-56-810
-      </p>
-      <p class="page-footer__contacts">
-        beast.loby@gmail.com
-      </p>
+      </a>
+      <a href="mailto:yehor.hliebov@gmail.com" class="page-footer__contacts">
+        yehor.hliebov@gmail.com
+      </a>
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
