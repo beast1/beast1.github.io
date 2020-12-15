@@ -270,7 +270,9 @@ body {
 
 @media (max-width: 1366px) {
     .page-header__nav-link {
-        padding: 0 18px;
+        white-space: nowrap;
+        padding: 0 15px;
+        font-size: 17px;
     }
 
     .page-header__wrapper {
@@ -319,6 +321,10 @@ body {
 
     .simple-footer a {
         min-height: 36px;
+    }
+
+    .keks-link {
+        bottom: -19px;
     }
 }
 
