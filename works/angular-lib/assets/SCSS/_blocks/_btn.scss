@@ -1,0 +1,15 @@
+.btn {
+  border: none;
+  padding: 12px 18px;
+  text-transform: uppercase;
+
+  &-outline-danger {
+    color: #D0021B;
+    background-color: rgba(#D0021B, .1);
+  }
+
+  &-outline-info {
+    color: #50E3C2;
+    background-color: rgba(#50E3C2, .1);
+  }
+}

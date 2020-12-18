@@ -1,0 +1,25 @@
+.fw {
+  &-m {
+    &b {
+      &-primary {
+        margin-bottom: 16px;
+
+        @media (min-width: 560px) {
+          margin-bottom: 30px;
+        }
+
+        @media (min-width: 768px) {
+          margin-bottom: 80px;
+        }
+      }
+
+      &-36 {
+        margin-bottom: 36px;
+      }
+
+      &-80 {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
