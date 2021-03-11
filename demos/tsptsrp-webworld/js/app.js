@@ -60,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function() {
         loop: true,
         hashNavigation: {
             watchState: true,
-        }
+        },
         // If we need pagination
-        // pagination: {
-        // 	el: '.swiper-pagination',
-        // },
+        pagination: {
+        	el: '.swiper-pagination',
+        },
 
         // Navigation arrows
         // navigation: {
