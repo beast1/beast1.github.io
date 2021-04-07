@@ -4,11 +4,11 @@
 <head>
 
     <meta charset="utf-8">
-    <title>tsptsrp</title>
+    <title>Демо</title>
     <meta name="description" content="Web Art book 'взрослые_травмы' which included works created by the tsaptsarap crew during the false spring, among which cresananton, vesperarsncx, determinism and others. Mastered by zzza4em, supported by MNCLT, Kiev, 2021">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" href="images/favicon.png">
-    <meta property="og:image" content="images/dest/preview.jpg">
+    <meta property="og:image" content="assets/tsptsrp/prod/cover.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
@@ -32,9 +32,19 @@
             <!--                </div>-->
             <!--            </div>-->
             <div class="swiper-slide" data-hash="взрослые_травмы">
-                <div class="fw-flex" style="background: black; margin: 0 auto">
+                <div class="fw-flex" style="background: black; margin: 0 auto; flex-direction: column;">
+                    <p id="swipe-info" class="tsptsrp-tip console-font">листать вправо</p>
                     <img class="img-responsive" src="assets/tsptsrp/prod/cover.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
                 </div>
+                <script>
+                    var swipeInfo = document.querySelector('#swipe-info');
+                    var swipeTimeout = setTimeout(function() {
+                        swipeInfo.classList.add('slide-bottom');
+                        setTimeout(function() {
+                            swipeInfo.classList.remove('slide-bottom');
+                        }, 8000);
+                    }, 5000);
+                </script>
             </div>
             <div class="swiper-slide" data-hash="epigraph">
                 <div class="determinism" style="width: 100vw;">
@@ -112,11 +122,6 @@
                     <img class="img-responsive" src="assets/tsptsrp/prod/cresananton.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
                 </div>
             </div>
-            <div class="swiper-slide" data-hash="velvet_dream">
-                <div class="fw-flex" style="background: black; margin: 0 auto">
-                    <img class="img-responsive" src="assets/tsptsrp/prod/velvet_dream.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
-                </div>
-            </div>
             <div class="swiper-slide" data-hash="последнее_столетие">
                 <div class="fw-flex" style="background: black; margin: 0 auto">
                     <img class="img-responsive" src="assets/tsptsrp/prod/05-последнее_столетие.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
@@ -127,11 +132,11 @@
                     <img class="img-responsive" src="assets/tsptsrp/prod/06-бесполезно.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
                 </div>
             </div>
-            <div class="swiper-slide" data-hash="fear_fetish">
-                <div class="fw-flex" style="background: black; margin: 0 auto">
-                    <img class="img-responsive" src="assets/tsptsrp/prod/fear_fetish.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
-                </div>
-            </div>
+<!--            <div class="swiper-slide" data-hash="fear_fetish">-->
+<!--                <div class="fw-flex" style="background: black; margin: 0 auto">-->
+<!--                    <img class="img-responsive" src="assets/tsptsrp/prod/fear_fetish.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="swiper-slide" data-hash="параллельная_нефть">
                 <div class="fw-flex" style="background: black; margin: 0 auto">
                     <img class="img-responsive" src="assets/tsptsrp/prod/07-параллельная_нефть.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
@@ -157,6 +162,71 @@
                     <img class="img-responsive" src="assets/tsptsrp/prod/12-эпитафия.jpg" alt="" style="margin: 0 auto; max-height: 100vh;">
                 </div>
             </div>
+            <div class="swiper-slide" data-hash="fresh_meat">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/13-white_meat.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="eternal">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/14-eternal.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="metamorphosis">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/15-metamorphosis.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="evening_meal">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/16-evening_meal.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="nevermind">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/17-nevermind.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="black_minded">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/18-black_minded.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="heavy_industry">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/19-heavy_industry.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="are_you">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/20-are_you.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="four_riders">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/21-four_riders.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="acid_bath">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/22-acidbask20.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="liquid_sanity">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/23-liquid_sanity.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="they_online">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/24-they_online.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
+            <div class="swiper-slide" data-hash="не_за_горами">
+                <div class="fw-flex" style="background: black; margin: 0 auto">
+                    <img class="img-responsive" src="assets/tsptsrp/prod/25-не_за_горами.png" alt="" style="margin: 0 auto; max-height: 100vh;">
+                </div>
+            </div>
             <div class="swiper-slide" data-hash="credits" style="justify-content: center">
                 <div class="fw-flex fw-text-center">
                 <ul class="credits unlink-parent">
@@ -165,15 +235,15 @@
                             <h3 class="credits-item__name">
                                 <a href="https://www.instagram.com/anton.kresan/" target="_blank">kresan<small class="credits-item__inst">@anton.kresan</small></a>
                             </h3>
-                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#cresananton">09</a>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#cresananton">09, 14, 15</a>
                         </header>
                     </li>
                     <li class="credits-item">
                         <header class="credits-item__header">
                             <h3 class="credits-item__name">
-                                <a href="https://www.instagram.com/vesperarsncx/" target="_blank">vesper<small class="credits-item__inst">@vesperarsncx</small></a>
+                                <a href="https://instagram.com/killswitch_tattoo?igshid=1sau4cgxme5sz" target="_blank">killswitch<small class="credits-item__inst">@killswitch_tattoo</small></a>
                             </h3>
-                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#velvet_dream">10</a>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#velvet_dream">13</a>
                         </header>
                     </li>
                     <li class="credits-item">
@@ -187,9 +257,81 @@
                     <li class="credits-item">
                         <header class="credits-item__header">
                             <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/sasha_animal/" target="_blank">SAD<small class="credits-item__inst">@sasha_animal</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#evening_meal">16</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/broken.kos/" target="_blank">broken.kos<small class="credits-item__inst">@broken.kos</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#nevermind">17</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/reactive_mind/" target="_blank">reactive_mind<small class="credits-item__inst">@reactive_mind</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#black_minded">18</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/slavakononov/" target="_blank">GERTSOG<small class="credits-item__inst">@slavakononov</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#heavy_industry">19</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
                                 <a href="https://www.instagram.com/ave__marina/" target="_blank">ave marina<small class="credits-item__inst">@ave__marina</small></a>
                             </h3>
-                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#fear_fetish">13</a>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#are_you">20</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/mx_sft_/" target="_blank">mx sft<small class="credits-item__inst">@mx_sft_</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#four_riders">21</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/acidbask/" target="_blank">acidbask<small class="credits-item__inst">@acidbask</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#acid_bath">22</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/dasetattoo/" target="_blank">termodaser<small class="credits-item__inst">@dasetattoo</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#liquid_sanity">23</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/dsmt/" target="_blank">dsmt<small class="credits-item__inst">@dsmt</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#they_online">24</a>
+                        </header>
+                    </li>
+                    <li class="credits-item">
+                        <header class="credits-item__header">
+                            <h3 class="credits-item__name">
+                                <a href="https://www.instagram.com/staglaagh/" target="_blank">staglaagh<small class="credits-item__inst">@staglaagh</small></a>
+                            </h3>
+                            <a class="credits-item__pages" href="/tsptsrp-wrldwd.html#не_за_горами">25</a>
                         </header>
                     </li>
                     <li class="credits-item">
@@ -204,11 +346,15 @@
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </div>
     <style>
         .swiper-slide {
             display: flex;
             align-items: center;
+            background: black;
+        }
+        .swiper-pagination-bullet-active {
             background: black;
         }
     </style>
