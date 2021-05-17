@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/app.min.css">
 
 </head>
-<body>
+<body class="no-adaptive">
 <div class="shell">
     <div class="shell-header">
         <div class="shell-logo">
@@ -124,6 +124,15 @@
 </div>
 
 <style>
+    .no-adaptive {
+      background: black;
+    }
+
+    .no-adaptive .shell {
+        max-width: 375px;
+        margin: 0 auto;
+    }
+
     .swiper-container {
         max-width: 600px;
         width: 100%;
