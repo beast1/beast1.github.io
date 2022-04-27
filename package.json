@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^6.7.5",
-    "grunt": "^1.0.1",
+    "grunt": "^1.5.2",
     "grunt-browser-sync": "^2.2.0",
     "grunt-cli": "^1.2.0",
     "grunt-contrib-less": "^1.4.0",
